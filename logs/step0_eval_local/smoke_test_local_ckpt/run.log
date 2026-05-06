@@ -1,0 +1,16 @@
+2026-03-30 18:51:58,149 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/smoke_test_local_ckpt
+2026-03-30 18:51:58,149 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=2 max_steps=10 eval_dataset=eval_in_distribution
+2026-03-30 18:51:58,150 - Merging verl FSDP checkpoint to HF format: /home/nvidia/miniconda3/envs/skillrl/bin/python /home/nvidia/Jiashu/SkillRL/scripts/model_merger.py merge --backend fsdp --local_dir /mnt/agent-project/ckpts/Alfworld-7B-RL/actor --target_dir /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/smoke_test_local_ckpt/merged_hf_model
+2026-03-30 18:52:44,903 - Step 0 | finished 0/2
+2026-03-30 18:52:48,863 - Step 1 | finished 0/2
+2026-03-30 18:52:52,075 - Step 2 | finished 0/2
+2026-03-30 18:52:59,778 - Step 3 | finished 0/2
+2026-03-30 18:53:05,554 - Step 4 | finished 0/2
+2026-03-30 18:53:11,242 - Step 5 | finished 0/2
+2026-03-30 18:53:14,162 - Step 6 | finished 0/2
+2026-03-30 18:53:17,045 - Step 7 | finished 0/2
+2026-03-30 18:53:19,898 - Step 8 | finished 0/2
+2026-03-30 18:53:23,756 - Step 9 | finished 0/2
+2026-03-30 18:53:27,172 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/smoke_test_local_ckpt/summary.json
+2026-03-30 18:53:27,173 - Overall success rate: 0.0000
+2026-03-30 18:53:27,174 - unfinished | 0.0000 (0/2)

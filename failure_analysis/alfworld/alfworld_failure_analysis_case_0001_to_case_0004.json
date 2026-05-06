@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "case_id": "case_0001",
+      "env_idx": 7,
+      "task": "find two spraybottle and put them in toilet.",
+      "task_type": "pick_two_obj_and_place",
+      "failure_stage": "subgoal_transition",
+      "failure_type": "insufficient_second_object_search",
+      "confidence": "high",
+      "evidence": "After placing first spraybottle (steps 10-12), agent repeatedly returns to toilet area but fails to robustly find or pick the second spraybottle (steps 13-49).",
+      "short_explanation": "The agent successfully found and placed the first spraybottle but failed to locate or pick the second spraybottle despite repeated exploration near the toilet and sink areas. This indicates poor subgoal transition to the second object.",
+      "concise_cause_summary": "Agent completed the first spraybottle subgoal but did not effectively initiate or execute a search to find or pick the second spraybottle, leading to task failure.",
+      "suggested_fix": "Improve policy to clearly transition and robustly search for the second object after placing the first."
+    },
+    {
+      "case_id": "case_0002",
+      "env_idx": 9,
+      "task": "find two spraybottle and put them in toilet.",
+      "task_type": "pick_two_obj_and_place",
+      "failure_stage": "subgoal_transition",
+      "failure_type": "insufficient_second_object_search",
+      "confidence": "high",
+      "evidence": "Agent places first spraybottle early (steps 5-7), but then repeatedly returns to toilet area and various surfaces without picking the second spraybottle (steps 11-49).",
+      "short_explanation": "The agent picked and placed the first spraybottle but never transitions effectively to find and pick the second spraybottle, repeatedly returning to the toilet and nearby surfaces without progress.",
+      "concise_cause_summary": "Agent's systematic search fails to clearly transition focus from first to second spraybottle, resulting in repeated failed attempts and no successful second pickup.",
+      "suggested_fix": "Enhance state tracking and subgoal switching to ensure systematic, focused search and pickup of second object."
+    },
+    {
+      "case_id": "case_0003",
+      "env_idx": 12,
+      "task": "cool some pan and put it in diningtable.",
+      "task_type": "pick_cool_then_place_in_recep",
+      "failure_stage": "subgoal_transition",
+      "failure_type": "success_detection_failure",
+      "confidence": "high",
+      "evidence": "Steps 45-49 show repeated moving pot 2 to diningtable 1 after already placing it, indicating failure to detect task completion.",
+      "short_explanation": "The agent successfully cooled and placed the pan but continued repeating placing actions without recognizing task completion, causing failure despite progress.",
+      "concise_cause_summary": "Agent completed cooling and placing the pan but kept redundantly moving it to the dining table, failing to detect successful task completion and terminate appropriately.",
+      "suggested_fix": "Implement explicit success detection with termination after placing the cooled pan once."
+    },
+    {
+      "case_id": "case_0004",
+      "env_idx": 18,
+      "task": "find two spraybottle and put them in toilet.",
+      "task_type": "pick_two_obj_and_place",
+      "failure_stage": "subgoal_transition",
+      "failure_type": "insufficient_second_object_search",
+      "confidence": "high",
+      "evidence": "After placing the first spraybottle at step 34, the agent explores repeatedly nearby surfaces (bathtubbasin, sinkbasin, countertop) in steps 35-49 without successfully locating or picking up the second spraybottle.",
+      "short_explanation": "The agent found and placed the first spraybottle but failed to efficiently locate and pick the second one, showing repeated surface visits without effective object acquisition.",
+      "concise_cause_summary": "Agent successfully placed the first spraybottle but inadequately searched or failed to pick the second bottle, causing incomplete task fulfillment.",
+      "suggested_fix": "Enhance systematic search and state tracking for locating and picking the second object after placing the first."
+    }
+  ],
+  "aggregate_summary": {
+    "top_failure_patterns": [
+      {
+        "failure_type": "insufficient_second_object_search",
+        "count": 3
+      },
+      {
+        "failure_type": "success_detection_failure",
+        "count": 1
+      }
+    ],
+    "task_type_patterns": [
+      {
+        "task_type": "pick_two_obj_and_place",
+        "pattern": "Common failure to transition from placing first object to robustly finding and placing second object due to inadequate subgoal switching and state tracking."
+      },
+      {
+        "task_type": "pick_cool_then_place_in_recep",
+        "pattern": "Tends to complete initial object manipulation successfully but fails to detect task completion and stops too late, causing redundant actions."
+      },
+      {
+        "task_type": "pick_two_obj_and_place",
+        "pattern": "Shows difficulty transitioning from placing the first object to effectively locating and acquiring the second, resulting in partial but incomplete execution."
+      }
+    ],
+    "actionable_recommendations": [
+      "Implement clearer subgoal transition signals in policy to shift from first to second object search.",
+      "Improve state tracking to confirm first object placement and trigger second object search.",
+      "Increase exploration diversity after first subgoal completion to avoid stuck repetition near first object location.",
+      "In evaluation, explicitly verify subgoal progress transitions to diagnose multi-object task failures.",
+      "Introduce explicit success detection and termination conditions to stop redundant post-completion actions.",
+      "Improve state tracking for multiple object tasks to distinctly track progress on each subgoal.",
+      "Enhance prompting to emphasize transitioning cleanly between sequential subgoals, especially finding the second object after the first placement.",
+      "Incorporate checkpoints or counters for acquired and placed objects to facilitate policy subgoal transitions."
+    ]
+  },
+  "local_stats": {
+    "num_failed_cases": 4,
+    "task_type_counts": {
+      "pick_two_obj_and_place": 3,
+      "pick_cool_then_place_in_recep": 1
+    },
+    "avg_num_steps": 50.0,
+    "cases_with_repeated_action_run_ge_3": 4,
+    "cases_included_full_budget": 4
+  },
+  "progress": {
+    "analysis_model": "gpt-4.1-mini",
+    "start_case_id": "case_0001",
+    "target_end_case_id": "case_0004",
+    "last_completed_case_id": "case_0004",
+    "next_case_id": null,
+    "processed_cases": 4,
+    "total_failed_cases_in_run": 4
+  }
+}

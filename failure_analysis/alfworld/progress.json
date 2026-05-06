@@ -1,0 +1,9 @@
+{
+  "analysis_model": "gpt-4.1-mini",
+  "start_case_id": "case_0070",
+  "target_end_case_id": "case_0134",
+  "last_completed_case_id": "case_0134",
+  "next_case_id": null,
+  "processed_cases": 65,
+  "total_failed_cases_in_run": 65
+}

@@ -1,0 +1,23 @@
+2026-03-30 20:31:50,243 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset60_n20
+2026-03-30 20:31:50,244 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=20 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-03-30 20:31:50,244 - Evaluation coverage | game_offset=60 num_games=20
+2026-03-30 20:31:50,244 - Merging verl FSDP checkpoint to HF format: /home/nvidia/miniconda3/envs/skillrl/bin/python /home/nvidia/Jiashu/SkillRL/scripts/model_merger.py merge --backend fsdp --local_dir /mnt/agent-project/ckpts/Alfworld-7B-RL/actor --target_dir /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset60_n20/merged_hf_model
+2026-03-30 20:32:12,108 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-03-30 20:32:33,790 - Step 0 | finished 0/20
+2026-03-30 20:32:54,787 - Step 1 | finished 0/20
+2026-03-30 20:33:16,816 - Step 2 | finished 0/20
+2026-03-30 20:33:37,817 - Step 3 | finished 0/20
+2026-03-30 20:34:06,326 - Step 4 | finished 2/20
+2026-03-30 20:34:28,058 - Step 5 | finished 3/20
+2026-03-30 20:35:00,706 - Step 6 | finished 3/20
+2026-03-30 20:35:23,838 - Step 7 | finished 3/20
+2026-03-30 20:35:45,595 - Step 8 | finished 3/20
+2026-03-30 20:36:08,235 - Step 9 | finished 3/20
+2026-03-30 20:36:28,968 - Step 10 | finished 3/20
+2026-03-30 20:36:53,000 - Step 11 | finished 6/20
+2026-03-30 20:37:12,427 - Step 12 | finished 6/20
+2026-03-30 20:37:31,553 - Step 13 | finished 7/20
+2026-03-30 20:37:47,951 - Step 14 | finished 7/20
+2026-03-30 20:38:03,773 - Step 15 | finished 8/20
+2026-03-30 20:38:17,960 - Step 16 | finished 8/20
+2026-03-30 20:38:34,546 - Step 17 | finished 9/20

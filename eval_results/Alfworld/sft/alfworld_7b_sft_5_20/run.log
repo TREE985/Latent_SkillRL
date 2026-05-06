@@ -1,0 +1,51 @@
+2026-04-08 18:38:02,357 - Run directory: /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_5_20
+2026-04-08 18:38:02,357 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-SFT-hf env_num=8 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-04-08 18:38:02,357 - Evaluation coverage | game_offset=5 num_games=20
+2026-04-08 18:38:02,357 - --env-num=8 is ignored for execution concurrency. This script now runs strictly serial on a single GPU process. Total requested games=20.
+2026-04-08 18:38:02,959 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-08 18:38:04,617 - Episode 1/20 | dataset index=5
+2026-04-08 18:39:57,039 - Episode 5 finished at step 49 | won=False
+2026-04-08 18:39:57,040 - Episode 2/20 | dataset index=6
+2026-04-08 18:42:11,309 - Episode 6 finished at step 49 | won=False
+2026-04-08 18:42:11,309 - Episode 3/20 | dataset index=7
+2026-04-08 18:44:14,972 - Episode 7 finished at step 49 | won=False
+2026-04-08 18:44:14,972 - Episode 4/20 | dataset index=8
+2026-04-08 18:45:51,732 - Episode 8 finished at step 49 | won=False
+2026-04-08 18:45:51,733 - Episode 5/20 | dataset index=9
+2026-04-08 18:47:18,180 - Episode 9 finished at step 49 | won=False
+2026-04-08 18:47:18,180 - Episode 6/20 | dataset index=10
+2026-04-08 18:47:31,079 - Episode 10 finished at step 3 | won=True
+2026-04-08 18:47:31,079 - Episode 7/20 | dataset index=11
+2026-04-08 18:49:42,276 - Episode 11 finished at step 49 | won=False
+2026-04-08 18:49:42,277 - Episode 8/20 | dataset index=12
+2026-04-08 18:51:37,896 - Episode 12 finished at step 49 | won=False
+2026-04-08 18:51:37,897 - Episode 9/20 | dataset index=13
+2026-04-08 18:53:51,050 - Episode 13 finished at step 49 | won=False
+2026-04-08 18:53:51,051 - Episode 10/20 | dataset index=14
+2026-04-08 18:55:18,228 - Episode 14 finished at step 49 | won=False
+2026-04-08 18:55:18,229 - Episode 11/20 | dataset index=15
+2026-04-08 18:57:17,380 - Episode 15 finished at step 49 | won=False
+2026-04-08 18:57:17,381 - Episode 12/20 | dataset index=16
+2026-04-08 18:58:45,566 - Episode 16 finished at step 49 | won=False
+2026-04-08 18:58:45,566 - Episode 13/20 | dataset index=17
+2026-04-08 19:00:27,651 - Episode 17 finished at step 49 | won=False
+2026-04-08 19:00:27,652 - Episode 14/20 | dataset index=18
+2026-04-08 19:02:27,776 - Episode 18 finished at step 49 | won=False
+2026-04-08 19:02:27,777 - Episode 15/20 | dataset index=19
+2026-04-08 19:04:33,436 - Episode 19 finished at step 49 | won=False
+2026-04-08 19:04:33,436 - Episode 16/20 | dataset index=20
+2026-04-08 19:06:03,533 - Episode 20 finished at step 49 | won=False
+2026-04-08 19:06:03,533 - Episode 17/20 | dataset index=21
+2026-04-08 19:08:06,895 - Episode 21 finished at step 49 | won=False
+2026-04-08 19:08:06,895 - Episode 18/20 | dataset index=22
+2026-04-08 19:10:00,972 - Episode 22 finished at step 49 | won=False
+2026-04-08 19:10:00,972 - Episode 19/20 | dataset index=23
+2026-04-08 19:11:56,533 - Episode 23 finished at step 49 | won=False
+2026-04-08 19:11:56,534 - Episode 20/20 | dataset index=24
+2026-04-08 19:13:59,298 - Episode 24 finished at step 49 | won=False
+2026-04-08 19:13:59,393 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_5_20/summary.json
+2026-04-08 19:13:59,394 - Overall success rate: 0.0500
+2026-04-08 19:13:59,394 - pick_and_place | 0.1429 (1/7)
+2026-04-08 19:13:59,394 - pick_clean_then_place_in_recep | 0.0000 (0/5)
+2026-04-08 19:13:59,394 - pick_two_obj_and_place | 0.0000 (0/4)
+2026-04-08 19:13:59,394 - pick_cool_then_place_in_recep | 0.0000 (0/4)

@@ -1,0 +1,15 @@
+{
+  "num_episodes": 2,
+  "num_success": 0,
+  "success_rate": 0.0,
+  "by_task": {
+    "unfinished": {
+      "success": 0,
+      "total": 2,
+      "success_rate": 0.0
+    }
+  },
+  "elapsed_seconds": 42.26797294616699,
+  "model_path": "/mnt/agent-project/ckpts/Alfworld-7B-RL",
+  "eval_dataset": "eval_in_distribution"
+}

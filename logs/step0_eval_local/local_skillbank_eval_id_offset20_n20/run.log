@@ -1,0 +1,63 @@
+2026-03-30 20:05:55,638 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset20_n20
+2026-03-30 20:05:55,639 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=20 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-03-30 20:05:55,639 - Evaluation coverage | game_offset=20 num_games=20
+2026-03-30 20:05:55,639 - Merging verl FSDP checkpoint to HF format: /home/nvidia/miniconda3/envs/skillrl/bin/python /home/nvidia/Jiashu/SkillRL/scripts/model_merger.py merge --backend fsdp --local_dir /mnt/agent-project/ckpts/Alfworld-7B-RL/actor --target_dir /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset20_n20/merged_hf_model
+2026-03-30 20:06:17,563 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-03-30 20:06:38,172 - Step 0 | finished 0/20
+2026-03-30 20:07:00,603 - Step 1 | finished 0/20
+2026-03-30 20:07:23,204 - Step 2 | finished 0/20
+2026-03-30 20:07:47,484 - Step 3 | finished 0/20
+2026-03-30 20:08:16,811 - Step 4 | finished 2/20
+2026-03-30 20:08:45,366 - Step 5 | finished 3/20
+2026-03-30 20:09:08,081 - Step 6 | finished 4/20
+2026-03-30 20:09:29,750 - Step 7 | finished 4/20
+2026-03-30 20:09:52,149 - Step 8 | finished 5/20
+2026-03-30 20:10:11,755 - Step 9 | finished 5/20
+2026-03-30 20:10:33,385 - Step 10 | finished 5/20
+2026-03-30 20:10:52,841 - Step 11 | finished 5/20
+2026-03-30 20:11:16,010 - Step 12 | finished 5/20
+2026-03-30 20:11:37,363 - Step 13 | finished 5/20
+2026-03-30 20:11:58,395 - Step 14 | finished 5/20
+2026-03-30 20:12:22,927 - Step 15 | finished 7/20
+2026-03-30 20:12:44,133 - Step 16 | finished 7/20
+2026-03-30 20:13:02,706 - Step 17 | finished 7/20
+2026-03-30 20:13:23,104 - Step 18 | finished 8/20
+2026-03-30 20:13:38,978 - Step 19 | finished 8/20
+2026-03-30 20:13:56,027 - Step 20 | finished 10/20
+2026-03-30 20:14:09,719 - Step 21 | finished 11/20
+2026-03-30 20:14:21,634 - Step 22 | finished 11/20
+2026-03-30 20:14:34,615 - Step 23 | finished 11/20
+2026-03-30 20:14:46,901 - Step 24 | finished 11/20
+2026-03-30 20:15:01,246 - Step 25 | finished 12/20
+2026-03-30 20:15:14,245 - Step 26 | finished 12/20
+2026-03-30 20:15:26,492 - Step 27 | finished 12/20
+2026-03-30 20:15:38,681 - Step 28 | finished 13/20
+2026-03-30 20:15:49,572 - Step 29 | finished 13/20
+2026-03-30 20:16:00,407 - Step 30 | finished 14/20
+2026-03-30 20:16:08,672 - Step 31 | finished 14/20
+2026-03-30 20:16:17,694 - Step 32 | finished 15/20
+2026-03-30 20:16:24,380 - Step 33 | finished 15/20
+2026-03-30 20:16:32,255 - Step 34 | finished 15/20
+2026-03-30 20:16:40,313 - Step 35 | finished 15/20
+2026-03-30 20:16:46,770 - Step 36 | finished 15/20
+2026-03-30 20:16:56,373 - Step 37 | finished 15/20
+2026-03-30 20:17:03,672 - Step 38 | finished 15/20
+2026-03-30 20:17:11,679 - Step 39 | finished 15/20
+2026-03-30 20:17:19,455 - Step 40 | finished 15/20
+2026-03-30 20:17:25,794 - Step 41 | finished 15/20
+2026-03-30 20:17:33,702 - Step 42 | finished 15/20
+2026-03-30 20:17:40,025 - Step 43 | finished 15/20
+2026-03-30 20:17:47,573 - Step 44 | finished 15/20
+2026-03-30 20:17:55,304 - Step 45 | finished 15/20
+2026-03-30 20:18:01,760 - Step 46 | finished 15/20
+2026-03-30 20:18:10,109 - Step 47 | finished 15/20
+2026-03-30 20:18:16,616 - Step 48 | finished 15/20
+2026-03-30 20:18:23,225 - Step 49 | finished 15/20
+2026-03-30 20:18:30,986 - All environments finished early at step 49
+2026-03-30 20:18:31,036 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset20_n20/summary.json
+2026-03-30 20:18:31,037 - Overall success rate: 0.7500
+2026-03-30 20:18:31,037 - pick_and_place | 1.0000 (6/6)
+2026-03-30 20:18:31,037 - look_at_obj_in_light | 1.0000 (3/3)
+2026-03-30 20:18:31,037 - pick_cool_then_place_in_recep | 1.0000 (2/2)
+2026-03-30 20:18:31,037 - pick_two_obj_and_place | 0.5000 (4/8)
+2026-03-30 20:18:31,037 - pick_clean_then_place_in_recep | 0.0000 (0/1)

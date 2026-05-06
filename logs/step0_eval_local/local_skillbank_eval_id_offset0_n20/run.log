@@ -1,0 +1,63 @@
+2026-03-30 19:52:16,083 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset0_n20
+2026-03-30 19:52:16,083 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=20 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-03-30 19:52:16,083 - Evaluation coverage | game_offset=0 num_games=20
+2026-03-30 19:52:16,083 - Merging verl FSDP checkpoint to HF format: /home/nvidia/miniconda3/envs/skillrl/bin/python /home/nvidia/Jiashu/SkillRL/scripts/model_merger.py merge --backend fsdp --local_dir /mnt/agent-project/ckpts/Alfworld-7B-RL/actor --target_dir /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset0_n20/merged_hf_model
+2026-03-30 19:52:39,994 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-03-30 19:52:59,793 - Step 0 | finished 0/20
+2026-03-30 19:53:20,387 - Step 1 | finished 0/20
+2026-03-30 19:53:42,873 - Step 2 | finished 0/20
+2026-03-30 19:54:07,244 - Step 3 | finished 0/20
+2026-03-30 19:54:30,789 - Step 4 | finished 0/20
+2026-03-30 19:54:59,367 - Step 5 | finished 0/20
+2026-03-30 19:55:34,064 - Step 6 | finished 0/20
+2026-03-30 19:56:00,004 - Step 7 | finished 0/20
+2026-03-30 19:56:24,127 - Step 8 | finished 2/20
+2026-03-30 19:56:44,765 - Step 9 | finished 2/20
+2026-03-30 19:57:06,220 - Step 10 | finished 2/20
+2026-03-30 19:57:31,120 - Step 11 | finished 2/20
+2026-03-30 19:57:55,401 - Step 12 | finished 3/20
+2026-03-30 19:58:20,158 - Step 13 | finished 4/20
+2026-03-30 19:58:44,891 - Step 14 | finished 4/20
+2026-03-30 19:59:05,360 - Step 15 | finished 4/20
+2026-03-30 19:59:25,674 - Step 16 | finished 6/20
+2026-03-30 19:59:45,097 - Step 17 | finished 6/20
+2026-03-30 20:00:04,022 - Step 18 | finished 8/20
+2026-03-30 20:00:21,615 - Step 19 | finished 10/20
+2026-03-30 20:00:35,097 - Step 20 | finished 11/20
+2026-03-30 20:00:50,555 - Step 21 | finished 12/20
+2026-03-30 20:01:03,588 - Step 22 | finished 12/20
+2026-03-30 20:01:15,893 - Step 23 | finished 12/20
+2026-03-30 20:01:27,838 - Step 24 | finished 12/20
+2026-03-30 20:01:38,742 - Step 25 | finished 13/20
+2026-03-30 20:01:49,257 - Step 26 | finished 13/20
+2026-03-30 20:02:00,822 - Step 27 | finished 13/20
+2026-03-30 20:02:10,686 - Step 28 | finished 13/20
+2026-03-30 20:02:22,732 - Step 29 | finished 14/20
+2026-03-30 20:02:33,253 - Step 30 | finished 14/20
+2026-03-30 20:02:42,107 - Step 31 | finished 14/20
+2026-03-30 20:02:50,443 - Step 32 | finished 14/20
+2026-03-30 20:02:58,460 - Step 33 | finished 14/20
+2026-03-30 20:03:08,185 - Step 34 | finished 14/20
+2026-03-30 20:03:18,994 - Step 35 | finished 14/20
+2026-03-30 20:03:28,641 - Step 36 | finished 14/20
+2026-03-30 20:03:37,932 - Step 37 | finished 14/20
+2026-03-30 20:03:49,316 - Step 38 | finished 14/20
+2026-03-30 20:04:01,931 - Step 39 | finished 14/20
+2026-03-30 20:04:14,294 - Step 40 | finished 14/20
+2026-03-30 20:04:24,101 - Step 41 | finished 14/20
+2026-03-30 20:04:33,042 - Step 42 | finished 14/20
+2026-03-30 20:04:42,040 - Step 43 | finished 14/20
+2026-03-30 20:04:51,892 - Step 44 | finished 14/20
+2026-03-30 20:05:03,239 - Step 45 | finished 14/20
+2026-03-30 20:05:11,849 - Step 46 | finished 14/20
+2026-03-30 20:05:20,670 - Step 47 | finished 15/20
+2026-03-30 20:05:29,100 - Step 48 | finished 15/20
+2026-03-30 20:05:39,072 - Step 49 | finished 15/20
+2026-03-30 20:05:47,391 - All environments finished early at step 49
+2026-03-30 20:05:47,442 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset0_n20/summary.json
+2026-03-30 20:05:47,443 - Overall success rate: 0.8000
+2026-03-30 20:05:47,443 - pick_heat_then_place_in_recep | 1.0000 (1/1)
+2026-03-30 20:05:47,443 - pick_and_place | 1.0000 (5/5)
+2026-03-30 20:05:47,443 - pick_cool_then_place_in_recep | 0.8000 (4/5)
+2026-03-30 20:05:47,443 - pick_clean_then_place_in_recep | 1.0000 (5/5)
+2026-03-30 20:05:47,443 - pick_two_obj_and_place | 0.2500 (1/4)

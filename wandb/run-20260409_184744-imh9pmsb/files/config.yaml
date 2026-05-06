@@ -1,0 +1,448 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            bd4jc8wblvsnltmk6objmuwb3fv28m21:
+                args:
+                    - --node-ip-address=172.16.0.11
+                    - --node-manager-port=34963
+                    - --object-store-name=/tmp/ray/session_2026-04-09_18-44-20_842780_1469350/sockets/plasma_store
+                    - --raylet-name=/tmp/ray/session_2026-04-09_18-44-20_842780_1469350/sockets/raylet
+                    - --redis-address=None
+                    - --metrics-agent-port=0
+                    - --logging-rotate-bytes=536870912
+                    - --logging-rotate-backup-count=5
+                    - --runtime-env-agent-port=0
+                    - --gcs-address=172.16.0.11:38461
+                    - --session-name=session_2026-04-09_18-44-20_842780_1469350
+                    - --temp-dir=/tmp/ray
+                    - --webui=127.0.0.1:8265
+                    - --cluster-id=32bd38b17923dc54babf7c51ce4eb18eb193063c2a5d5d8540c71a4b
+                    - --worker-id=83f32820619d9b8d784ae349f637fc664f06adb0d25b6bf5d822549e
+                    - --worker-launch-time-ms=1775760270582
+                    - --node-id=4a7664c4d24d460020d91eb2a4e783671670063a3b7cd64177cfdd6e
+                    - --runtime-env-hash=-1580796864
+                cpu_count: 96
+                cpu_count_logical: 96
+                cudaVersion: "13.1"
+                disk:
+                    /:
+                        total: "518933680128"
+                        used: "440905957376"
+                email: shaoyux@uci.edu
+                executable: /home/nvidia/miniconda3/envs/skillrl/bin/python3
+                git:
+                    commit: 48c8446f5993e96b65c696a78b930b6a53084981
+                    remote: git@github.com:aiming-lab/SkillRL.git
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-16065649-5182-7aea-cdab-1fb60bee7408
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-b42ff9be-f21f-506d-3a5e-2b3dfaafd0af
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-45b4476f-24d3-9d8c-b301-773dd9c387b5
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-1d17a5df-4443-0ed9-001b-6d5db1f649d5
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-861e3c8e-934a-4575-c65b-61d7d76a81ce
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-b158637b-fd13-21d9-b709-bbff687de50d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-ba19563f-48a1-f724-3a4c-05cd7d8b2ee7
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-c46e9f71-b357-7ce7-0bdc-7af35587fec8
+                host: brev-fnhb2id59
+                memory:
+                    total: "1902382301184"
+                os: Linux-6.17.0-1008-azure-x86_64-with-glibc2.39
+                program: /home/nvidia/miniconda3/envs/skillrl/lib/python3.10/site-packages/ray/_private/workers/default_worker.py
+                python: CPython 3.10.20
+                root: /home/nvidia/Jiashu/SkillRL
+                startedAt: "2026-04-09T18:47:44.935600Z"
+                writerId: bd4jc8wblvsnltmk6objmuwb3fv28m21
+        m: []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 30
+                - 41
+                - 49
+                - 50
+                - 51
+                - 53
+                - 71
+                - 75
+                - 95
+                - 98
+                - 105
+            "2":
+                - 1
+                - 5
+                - 11
+                - 30
+                - 41
+                - 49
+                - 50
+                - 51
+                - 53
+                - 71
+                - 75
+                - 95
+                - 98
+                - 105
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.20
+            "5": 0.25.1
+            "6": 4.57.3
+            "12": 0.25.1
+            "13": linux-x86_64
+actor_rollout_ref:
+    value:
+        actor:
+            checkpoint:
+                contents:
+                    - model
+                    - optimizer
+                    - extra
+            clip_ratio: 0.2
+            clip_ratio_c: 3
+            clip_ratio_high: 0.2
+            clip_ratio_low: 0.2
+            entropy_coeff: 0
+            fsdp_config:
+                fsdp_size: -1
+                offload_policy: false
+                optimizer_offload: false
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            grad_clip: 1
+            invalid_action_penalty_coef: 0.01
+            kl_loss_coef: 0.001
+            kl_loss_type: low_var_kl
+            loss_agg_mode: token-mean
+            optim:
+                lr: 1e-06
+                lr_warmup_steps: -1
+                lr_warmup_steps_ratio: 0.1
+                min_lr_ratio: 0
+                num_cycles: 0.5
+                total_training_steps: 0
+                warmup_style: constant
+                weight_decay: 0.01
+            policy_loss:
+                loss_mode: vanilla
+            ppo_epochs: 1
+            ppo_max_token_len_per_gpu: 16384
+            ppo_micro_batch_size: null
+            ppo_micro_batch_size_per_gpu: 8
+            ppo_mini_batch_size: 256
+            shuffle: false
+            strategy: fsdp
+            ulysses_sequence_parallel_size: 1
+            use_dynamic_bsz: false
+            use_invalid_action_penalty: true
+            use_kl_loss: true
+            use_torch_compile: true
+        hybrid_engine: true
+        model:
+            enable_activation_offload: false
+            enable_gradient_checkpointing: true
+            external_lib: null
+            lora_alpha: 16
+            lora_rank: 0
+            path: /mnt/agent-project/ckpts/Search-7B-SFT-hf
+            target_modules: all-linear
+            trust_remote_code: false
+            use_fused_kernels: false
+            use_liger: false
+            use_remove_padding: false
+            use_shm: false
+        ref:
+            fsdp_config:
+                param_offload: true
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            log_prob_max_token_len_per_gpu: 16384
+            log_prob_micro_batch_size: null
+            log_prob_micro_batch_size_per_gpu: 32
+            log_prob_use_dynamic_bsz: false
+            strategy: fsdp
+            ulysses_sequence_parallel_size: 1
+            use_torch_compile: true
+        rollout:
+            chat_scheduler: null
+            disable_log_stats: true
+            do_sample: true
+            dtype: bfloat16
+            enable_chunked_prefill: false
+            enforce_eager: false
+            engine_kwargs:
+                sglang:
+                    attention_backend: null
+                vllm:
+                    swap_space: null
+            free_cache_engine: false
+            gpu_memory_utilization: 0.4
+            ignore_eos: false
+            layered_summon: false
+            load_format: dummy_dtensor
+            log_prob_max_token_len_per_gpu: 16384
+            log_prob_micro_batch_size: null
+            log_prob_micro_batch_size_per_gpu: 32
+            log_prob_use_dynamic_bsz: false
+            max_model_len: null
+            max_num_batched_tokens: 8192
+            max_num_seqs: 1024
+            mode: sync
+            multi_turn:
+                enable: false
+                format: chatml
+                max_turns: null
+                tool_config_path: null
+            "n": 1
+            name: vllm
+            prompt_length: 5000
+            response_length: 700
+            temperature: 1
+            tensor_model_parallel_size: 1
+            top_k: -1
+            top_p: 1
+            use_fire_sampling: false
+            val_kwargs:
+                do_sample: false
+                "n": 1
+                temperature: 0
+                top_k: -1
+                top_p: 1
+algorithm:
+    value:
+        adv_estimator: grpo
+        filter_groups:
+            enable: false
+            max_num_gen_batches: 10
+        gamma: 1
+        gigpo:
+            enable_similarity: false
+            mode: mean_norm
+            similarity_thresh: 0.95
+            step_advantage_w: 1
+        kl_ctrl:
+            horizon: 10000
+            kl_coef: 0.001
+            target_kl: 0.1
+            type: fixed
+        kl_penalty: kl
+        lam: 1
+        norm_adv_by_std_in_grpo: true
+        pf_ppo:
+            reweight_method: pow
+            weight_pow: 2
+        use_kl_in_reward: false
+        use_pf_ppo: false
+critic:
+    value:
+        checkpoint:
+            contents:
+                - model
+                - optimizer
+                - extra
+        cliprange_value: 0.5
+        forward_max_token_len_per_gpu: 32768
+        forward_micro_batch_size: null
+        forward_micro_batch_size_per_gpu: null
+        grad_clip: 1
+        loss_agg_mode: token-mean
+        model:
+            enable_activation_offload: false
+            enable_gradient_checkpointing: true
+            external_lib: null
+            fsdp_config:
+                fsdp_size: -1
+                offload_policy: false
+                optimizer_offload: false
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            lora_alpha: 16
+            lora_rank: 0
+            path: ~/models/deepseek-llm-7b-chat
+            target_modules: all-linear
+            tokenizer_path: /mnt/agent-project/ckpts/Search-7B-SFT-hf
+            trust_remote_code: false
+            use_remove_padding: false
+            use_shm: false
+        optim:
+            lr: 1e-05
+            lr_warmup_steps_ratio: 0
+            min_lr_ratio: null
+            total_training_steps: 0
+            warmup_style: constant
+            weight_decay: 0.01
+        ppo_epochs: 1
+        ppo_max_token_len_per_gpu: 32768
+        ppo_micro_batch_size: null
+        ppo_micro_batch_size_per_gpu: null
+        ppo_mini_batch_size: 256
+        rollout_n: 1
+        shuffle: false
+        strategy: fsdp
+        ulysses_sequence_parallel_size: 1
+        use_dynamic_bsz: false
+custom_reward_function:
+    value:
+        name: compute_score
+        path: null
+data:
+    value:
+        custom_cls:
+            name: null
+            path: null
+        filter_overlong_prompts: true
+        filter_overlong_prompts_workers: 1
+        image_key: images
+        max_prompt_length: 5000
+        max_response_length: 700
+        prompt_key: prompt
+        return_full_prompt: false
+        return_raw_chat: true
+        return_raw_input_ids: false
+        reward_fn_key: data_source
+        shuffle: true
+        tokenizer: null
+        train_batch_size: 256
+        train_files: /home/nvidia/Jiashu/SkillRL/data/searchR1_processed_direct/test_processed.parquet
+        truncation: left
+        trust_remote_code: false
+        use_shm: false
+        val_batch_size: 32
+        val_files: /home/nvidia/Jiashu/SkillRL/data/searchR1_processed_direct/test_processed.parquet
+        video_key: videos
+env:
+    value:
+        alfworld:
+            eval_dataset: eval_in_distribution
+        env_name: search
+        history_length: 4
+        max_steps: 4
+        resources_per_worker:
+            num_cpus: 0.1
+            num_gpus: 0
+        rollout:
+            "n": 4
+        search:
+            log_requests: false
+            search_url: http://127.0.0.1:8030/retrieve
+            timeout: 60
+            topk: 3
+        seed: 0
+        skills_only_memory:
+            skills_json_path: memory_data/search/claude_style_skills_search.json
+            top_k: 6
+        sokoban:
+            dim_room:
+                - 6
+                - 6
+            mode: tiny_rgb_array
+            num_boxes: 1
+            search_depth: 30
+        use_skills_only_memory: true
+        webshop:
+            human_goals: false
+            use_small: true
+ray_init:
+    value:
+        num_cpus: null
+reward_model:
+    value:
+        enable: false
+        forward_max_token_len_per_gpu: 32768
+        launch_reward_fn_async: false
+        max_length: null
+        micro_batch_size: null
+        micro_batch_size_per_gpu: null
+        model:
+            external_lib: null
+            fsdp_config:
+                fsdp_size: -1
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            input_tokenizer: /mnt/agent-project/ckpts/Search-7B-SFT-hf
+            path: ~/models/FsfairX-LLaMA3-RM-v0.1
+            trust_remote_code: false
+            use_fused_kernels: false
+            use_remove_padding: false
+            use_shm: false
+        reward_manager: episode
+        sandbox_fusion:
+            max_concurrent: 64
+            url: null
+        strategy: fsdp
+        ulysses_sequence_parallel_size: 1
+        use_dynamic_bsz: false
+trainer:
+    value:
+        balance_batch: true
+        critic_warmup: 0
+        default_hdfs_dir: null
+        default_local_dir: checkpoints/verl_agent_search/grpo_qwen2.5_7b_instruct
+        del_local_ckpt_after_load: false
+        device: cuda
+        experiment_name: grpo_qwen2.5_7b_instruct
+        log_val_generations: 0
+        logger:
+            - console
+            - wandb
+        max_actor_ckpt_to_keep: null
+        max_critic_ckpt_to_keep: null
+        n_gpus_per_node: 4
+        nnodes: 1
+        project_name: verl_agent_search
+        ray_wait_register_center_timeout: 300
+        resume_from_path: null
+        resume_mode: auto
+        rollout_data_dir: null
+        save_freq: 5
+        test_freq: 200
+        total_epochs: 0
+        total_training_steps: null
+        val_before_train: true
+        val_only: true
+        validation_data_dir: null

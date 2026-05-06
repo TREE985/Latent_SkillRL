@@ -1,0 +1,2167 @@
+nohup: ignoring input
+2026-04-08 18:38:02,357 - Run directory: /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_5_20
+2026-04-08 18:38:02,357 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-SFT-hf env_num=8 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-04-08 18:38:02,357 - Evaluation coverage | game_offset=5 num_games=20
+2026-04-08 18:38:02,357 - --env-num=8 is ignored for execution concurrency. This script now runs strictly serial on a single GPU process. Total requested games=20.
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-04-08 18:38:02,959 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:00<00:01,  5.06it/s]Loading checkpoint shards:  22%|██▏       | 2/9 [00:00<00:01,  4.96it/s]Loading checkpoint shards:  33%|███▎      | 3/9 [00:00<00:01,  5.00it/s]Loading checkpoint shards:  44%|████▍     | 4/9 [00:00<00:00,  5.00it/s]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:00<00:00,  5.02it/s]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:01<00:00,  5.00it/s]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:01<00:00,  5.05it/s]Loading checkpoint shards:  89%|████████▉ | 8/9 [00:01<00:00,  5.88it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:01<00:00,  6.72it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:01<00:00,  5.61it/s]
+ALFWorld eval episodes:   0%|          | 0/20 [00:00<?, ?it/s]ALFWorld eval episodes:   0%|          | 0/20 [00:00<?, ?it/s, offset=5]2026-04-08 18:38:04,617 - Episode 1/20 | dataset index=5
+2026-04-08 18:38:11,698	INFO worker.py:2004 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+/home/nvidia/miniconda3/envs/skillrl/lib/python3.10/site-packages/ray/_private/worker.py:2052: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 67%|██████▋   | 330/494 [00:00<00:00, 3292.20it/s][A100%|██████████| 494/494 [00:00<00:00, 3107.63it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=5)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 5:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 5:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 5:   2%|▏         | 1/50 [00:01<01:14,  1.53s/it, done=0, won=0][A
+Game 5:   2%|▏         | 1/50 [00:02<01:14,  1.53s/it, done=0, won=0][A
+Game 5:   4%|▍         | 2/50 [00:02<01:01,  1.28s/it, done=0, won=0][A
+Game 5:   4%|▍         | 2/50 [00:05<01:01,  1.28s/it, done=0, won=0][A
+Game 5:   6%|▌         | 3/50 [00:05<01:27,  1.86s/it, done=0, won=0][A
+Game 5:   6%|▌         | 3/50 [00:08<01:27,  1.86s/it, done=0, won=0][A
+Game 5:   8%|▊         | 4/50 [00:08<01:43,  2.25s/it, done=0, won=0][A
+Game 5:   8%|▊         | 4/50 [00:09<01:43,  2.25s/it, done=0, won=0][A
+Game 5:  10%|█         | 5/50 [00:09<01:29,  2.00s/it, done=0, won=0][A
+Game 5:  10%|█         | 5/50 [00:11<01:29,  2.00s/it, done=0, won=0][A
+Game 5:  12%|█▏        | 6/50 [00:11<01:25,  1.94s/it, done=0, won=0][A
+Game 5:  12%|█▏        | 6/50 [00:13<01:25,  1.94s/it, done=0, won=0][A
+Game 5:  14%|█▍        | 7/50 [00:13<01:20,  1.88s/it, done=0, won=0][A
+Game 5:  14%|█▍        | 7/50 [00:14<01:20,  1.88s/it, done=0, won=0][A
+Game 5:  16%|█▌        | 8/50 [00:14<01:13,  1.75s/it, done=0, won=0][A
+Game 5:  16%|█▌        | 8/50 [00:15<01:13,  1.75s/it, done=0, won=0][A
+Game 5:  18%|█▊        | 9/50 [00:15<01:06,  1.62s/it, done=0, won=0][A
+Game 5:  18%|█▊        | 9/50 [00:17<01:06,  1.62s/it, done=0, won=0][A
+Game 5:  20%|██        | 10/50 [00:17<01:04,  1.61s/it, done=0, won=0][A
+Game 5:  20%|██        | 10/50 [00:20<01:04,  1.61s/it, done=0, won=0][A
+Game 5:  22%|██▏       | 11/50 [00:20<01:17,  1.99s/it, done=0, won=0][A
+Game 5:  22%|██▏       | 11/50 [00:21<01:17,  1.99s/it, done=0, won=0][A
+Game 5:  24%|██▍       | 12/50 [00:21<01:06,  1.75s/it, done=0, won=0][A
+Game 5:  24%|██▍       | 12/50 [00:23<01:06,  1.75s/it, done=0, won=0][A
+Game 5:  26%|██▌       | 13/50 [00:23<01:05,  1.76s/it, done=0, won=0][A
+Game 5:  26%|██▌       | 13/50 [00:26<01:05,  1.76s/it, done=0, won=0][A
+Game 5:  28%|██▊       | 14/50 [00:26<01:15,  2.08s/it, done=0, won=0][A
+Game 5:  28%|██▊       | 14/50 [00:28<01:15,  2.08s/it, done=0, won=0][A
+Game 5:  30%|███       | 15/50 [00:28<01:13,  2.09s/it, done=0, won=0][A
+Game 5:  30%|███       | 15/50 [00:29<01:13,  2.09s/it, done=0, won=0][A
+Game 5:  32%|███▏      | 16/50 [00:29<01:03,  1.87s/it, done=0, won=0][A
+Game 5:  32%|███▏      | 16/50 [00:31<01:03,  1.87s/it, done=0, won=0][A
+Game 5:  34%|███▍      | 17/50 [00:31<00:58,  1.77s/it, done=0, won=0][A
+Game 5:  34%|███▍      | 17/50 [00:34<00:58,  1.77s/it, done=0, won=0][A
+Game 5:  36%|███▌      | 18/50 [00:34<01:09,  2.17s/it, done=0, won=0][A
+Game 5:  36%|███▌      | 18/50 [00:36<01:09,  2.17s/it, done=0, won=0][A
+Game 5:  38%|███▊      | 19/50 [00:36<01:07,  2.19s/it, done=0, won=0][A
+Game 5:  38%|███▊      | 19/50 [00:38<01:07,  2.19s/it, done=0, won=0][A
+Game 5:  40%|████      | 20/50 [00:38<01:01,  2.05s/it, done=0, won=0][A
+Game 5:  40%|████      | 20/50 [00:39<01:01,  2.05s/it, done=0, won=0][A
+Game 5:  42%|████▏     | 21/50 [00:39<00:56,  1.95s/it, done=0, won=0][A
+Game 5:  42%|████▏     | 21/50 [00:42<00:56,  1.95s/it, done=0, won=0][A
+Game 5:  44%|████▍     | 22/50 [00:42<01:00,  2.15s/it, done=0, won=0][A
+Game 5:  44%|████▍     | 22/50 [00:43<01:00,  2.15s/it, done=0, won=0][A
+Game 5:  46%|████▌     | 23/50 [00:43<00:51,  1.91s/it, done=0, won=0][A
+Game 5:  46%|████▌     | 23/50 [00:45<00:51,  1.91s/it, done=0, won=0][A
+Game 5:  48%|████▊     | 24/50 [00:45<00:45,  1.73s/it, done=0, won=0][A
+Game 5:  48%|████▊     | 24/50 [00:47<00:45,  1.73s/it, done=0, won=0][A
+Game 5:  50%|█████     | 25/50 [00:47<00:45,  1.81s/it, done=0, won=0][A
+Game 5:  50%|█████     | 25/50 [00:49<00:45,  1.81s/it, done=0, won=0][A
+Game 5:  52%|█████▏    | 26/50 [00:49<00:43,  1.83s/it, done=0, won=0][A
+Game 5:  52%|█████▏    | 26/50 [00:50<00:43,  1.83s/it, done=0, won=0][A
+Game 5:  54%|█████▍    | 27/50 [00:50<00:38,  1.66s/it, done=0, won=0][A
+Game 5:  54%|█████▍    | 27/50 [00:51<00:38,  1.66s/it, done=0, won=0][A
+Game 5:  56%|█████▌    | 28/50 [00:51<00:34,  1.58s/it, done=0, won=0][A
+Game 5:  56%|█████▌    | 28/50 [00:53<00:34,  1.58s/it, done=0, won=0][A
+Game 5:  58%|█████▊    | 29/50 [00:53<00:33,  1.58s/it, done=0, won=0][A
+Game 5:  58%|█████▊    | 29/50 [00:54<00:33,  1.58s/it, done=0, won=0][A
+Game 5:  60%|██████    | 30/50 [00:54<00:31,  1.56s/it, done=0, won=0][A
+Game 5:  60%|██████    | 30/50 [00:56<00:31,  1.56s/it, done=0, won=0][A
+Game 5:  62%|██████▏   | 31/50 [00:56<00:29,  1.58s/it, done=0, won=0][A
+Game 5:  62%|██████▏   | 31/50 [00:57<00:29,  1.58s/it, done=0, won=0][A
+Game 5:  64%|██████▍   | 32/50 [00:57<00:27,  1.52s/it, done=0, won=0][A
+Game 5:  64%|██████▍   | 32/50 [01:00<00:27,  1.52s/it, done=0, won=0][A
+Game 5:  66%|██████▌   | 33/50 [01:00<00:30,  1.78s/it, done=0, won=0][A
+Game 5:  66%|██████▌   | 33/50 [01:02<00:30,  1.78s/it, done=0, won=0][A
+Game 5:  68%|██████▊   | 34/50 [01:02<00:29,  1.86s/it, done=0, won=0][A
+Game 5:  68%|██████▊   | 34/50 [01:05<00:29,  1.86s/it, done=0, won=0][A
+Game 5:  70%|███████   | 35/50 [01:05<00:34,  2.31s/it, done=0, won=0][A
+Game 5:  70%|███████   | 35/50 [01:07<00:34,  2.31s/it, done=0, won=0][A
+Game 5:  72%|███████▏  | 36/50 [01:07<00:31,  2.24s/it, done=0, won=0][A
+Game 5:  72%|███████▏  | 36/50 [01:09<00:31,  2.24s/it, done=0, won=0][A
+Game 5:  74%|███████▍  | 37/50 [01:09<00:26,  2.00s/it, done=0, won=0][A
+Game 5:  74%|███████▍  | 37/50 [01:12<00:26,  2.00s/it, done=0, won=0][A
+Game 5:  76%|███████▌  | 38/50 [01:12<00:26,  2.24s/it, done=0, won=0][A
+Game 5:  76%|███████▌  | 38/50 [01:14<00:26,  2.24s/it, done=0, won=0][A
+Game 5:  78%|███████▊  | 39/50 [01:14<00:26,  2.37s/it, done=0, won=0][A
+Game 5:  78%|███████▊  | 39/50 [01:15<00:26,  2.37s/it, done=0, won=0][A
+Game 5:  80%|████████  | 40/50 [01:15<00:20,  2.03s/it, done=0, won=0][A
+Game 5:  80%|████████  | 40/50 [01:17<00:20,  2.03s/it, done=0, won=0][A
+Game 5:  82%|████████▏ | 41/50 [01:17<00:18,  2.01s/it, done=0, won=0][A
+Game 5:  82%|████████▏ | 41/50 [01:20<00:18,  2.01s/it, done=0, won=0][A
+Game 5:  84%|████████▍ | 42/50 [01:20<00:16,  2.09s/it, done=0, won=0][A
+Game 5:  84%|████████▍ | 42/50 [01:21<00:16,  2.09s/it, done=0, won=0][A
+Game 5:  86%|████████▌ | 43/50 [01:21<00:13,  1.89s/it, done=0, won=0][A
+Game 5:  86%|████████▌ | 43/50 [01:23<00:13,  1.89s/it, done=0, won=0][A
+Game 5:  88%|████████▊ | 44/50 [01:23<00:11,  1.90s/it, done=0, won=0][A
+Game 5:  88%|████████▊ | 44/50 [01:24<00:11,  1.90s/it, done=0, won=0][A
+Game 5:  90%|█████████ | 45/50 [01:24<00:08,  1.74s/it, done=0, won=0][A
+Game 5:  90%|█████████ | 45/50 [01:26<00:08,  1.74s/it, done=0, won=0][A
+Game 5:  92%|█████████▏| 46/50 [01:26<00:06,  1.66s/it, done=0, won=0][A
+Game 5:  92%|█████████▏| 46/50 [01:28<00:06,  1.66s/it, done=0, won=0][A
+Game 5:  94%|█████████▍| 47/50 [01:28<00:05,  1.70s/it, done=0, won=0][A
+Game 5:  94%|█████████▍| 47/50 [01:30<00:05,  1.70s/it, done=0, won=0][A
+Game 5:  96%|█████████▌| 48/50 [01:30<00:03,  1.91s/it, done=0, won=0][A
+Game 5:  96%|█████████▌| 48/50 [01:32<00:03,  1.91s/it, done=0, won=0][A
+Game 5:  98%|█████████▊| 49/50 [01:32<00:01,  1.95s/it, done=0, won=0][A
+Game 5:  98%|█████████▊| 49/50 [01:34<00:01,  1.95s/it, done=1, won=0][A2026-04-08 18:39:57,039 - Episode 5 finished at step 49 | won=False
+
+                                                                      [AALFWorld eval episodes:   5%|▌         | 1/20 [01:52<35:36, 112.42s/it, offset=5]ALFWorld eval episodes:   5%|▌         | 1/20 [01:52<35:36, 112.42s/it, offset=6]2026-04-08 18:39:57,040 - Episode 2/20 | dataset index=6
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 21%|██▏       | 106/494 [00:00<00:01, 362.25it/s][A
+ 81%|████████  | 399/494 [00:00<00:00, 1202.38it/s][A100%|██████████| 494/494 [00:00<00:00, 1162.30it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=6)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 6:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 6:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 6:   2%|▏         | 1/50 [00:01<00:49,  1.02s/it, done=0, won=0][A
+Game 6:   2%|▏         | 1/50 [00:02<00:49,  1.02s/it, done=0, won=0][A
+Game 6:   4%|▍         | 2/50 [00:02<01:05,  1.37s/it, done=0, won=0][A
+Game 6:   4%|▍         | 2/50 [00:05<01:05,  1.37s/it, done=0, won=0][A
+Game 6:   6%|▌         | 3/50 [00:05<01:35,  2.04s/it, done=0, won=0][A
+Game 6:   6%|▌         | 3/50 [00:08<01:35,  2.04s/it, done=0, won=0][A
+Game 6:   8%|▊         | 4/50 [00:08<01:54,  2.49s/it, done=0, won=0][A
+Game 6:   8%|▊         | 4/50 [00:10<01:54,  2.49s/it, done=0, won=0][A
+Game 6:  10%|█         | 5/50 [00:10<01:37,  2.17s/it, done=0, won=0][A
+Game 6:  10%|█         | 5/50 [00:13<01:37,  2.17s/it, done=0, won=0][A
+Game 6:  12%|█▏        | 6/50 [00:13<01:53,  2.58s/it, done=0, won=0][A
+Game 6:  12%|█▏        | 6/50 [00:16<01:53,  2.58s/it, done=0, won=0][A
+Game 6:  14%|█▍        | 7/50 [00:16<01:51,  2.58s/it, done=0, won=0][A
+Game 6:  14%|█▍        | 7/50 [00:17<01:51,  2.58s/it, done=0, won=0][A
+Game 6:  16%|█▌        | 8/50 [00:17<01:36,  2.30s/it, done=0, won=0][A
+Game 6:  16%|█▌        | 8/50 [00:20<01:36,  2.30s/it, done=0, won=0][A
+Game 6:  18%|█▊        | 9/50 [00:20<01:40,  2.44s/it, done=0, won=0][A
+Game 6:  18%|█▊        | 9/50 [00:23<01:40,  2.44s/it, done=0, won=0][A
+Game 6:  20%|██        | 10/50 [00:23<01:40,  2.51s/it, done=0, won=0][A
+Game 6:  20%|██        | 10/50 [00:26<01:40,  2.51s/it, done=0, won=0][A
+Game 6:  22%|██▏       | 11/50 [00:26<01:40,  2.58s/it, done=0, won=0][A
+Game 6:  22%|██▏       | 11/50 [00:29<01:40,  2.58s/it, done=0, won=0][A
+Game 6:  24%|██▍       | 12/50 [00:29<01:47,  2.82s/it, done=0, won=0][A
+Game 6:  24%|██▍       | 12/50 [00:31<01:47,  2.82s/it, done=0, won=0][A
+Game 6:  26%|██▌       | 13/50 [00:31<01:30,  2.45s/it, done=0, won=0][A
+Game 6:  26%|██▌       | 13/50 [00:32<01:30,  2.45s/it, done=0, won=0][A
+Game 6:  28%|██▊       | 14/50 [00:32<01:18,  2.18s/it, done=0, won=0][A
+Game 6:  28%|██▊       | 14/50 [00:36<01:18,  2.18s/it, done=0, won=0][A
+Game 6:  30%|███       | 15/50 [00:36<01:33,  2.67s/it, done=0, won=0][A
+Game 6:  30%|███       | 15/50 [00:39<01:33,  2.67s/it, done=0, won=0][A
+Game 6:  32%|███▏      | 16/50 [00:39<01:30,  2.67s/it, done=0, won=0][A
+Game 6:  32%|███▏      | 16/50 [00:40<01:30,  2.67s/it, done=0, won=0][A
+Game 6:  34%|███▍      | 17/50 [00:40<01:16,  2.32s/it, done=0, won=0][A
+Game 6:  34%|███▍      | 17/50 [00:43<01:16,  2.32s/it, done=0, won=0][A
+Game 6:  36%|███▌      | 18/50 [00:43<01:18,  2.44s/it, done=0, won=0][A
+Game 6:  36%|███▌      | 18/50 [00:44<01:18,  2.44s/it, done=0, won=0][A
+Game 6:  38%|███▊      | 19/50 [00:44<01:03,  2.05s/it, done=0, won=0][A
+Game 6:  38%|███▊      | 19/50 [00:46<01:03,  2.05s/it, done=0, won=0][A
+Game 6:  40%|████      | 20/50 [00:46<01:05,  2.18s/it, done=0, won=0][A
+Game 6:  40%|████      | 20/50 [00:50<01:05,  2.18s/it, done=0, won=0][A
+Game 6:  42%|████▏     | 21/50 [00:50<01:13,  2.52s/it, done=0, won=0][A
+Game 6:  42%|████▏     | 21/50 [00:52<01:13,  2.52s/it, done=0, won=0][A
+Game 6:  44%|████▍     | 22/50 [00:52<01:10,  2.53s/it, done=0, won=0][A
+Game 6:  44%|████▍     | 22/50 [00:54<01:10,  2.53s/it, done=0, won=0][A
+Game 6:  46%|████▌     | 23/50 [00:54<00:58,  2.17s/it, done=0, won=0][A
+Game 6:  46%|████▌     | 23/50 [00:57<00:58,  2.17s/it, done=0, won=0][A
+Game 6:  48%|████▊     | 24/50 [00:57<01:02,  2.42s/it, done=0, won=0][A
+Game 6:  48%|████▊     | 24/50 [01:00<01:02,  2.42s/it, done=0, won=0][A
+Game 6:  50%|█████     | 25/50 [01:00<01:06,  2.66s/it, done=0, won=0][A
+Game 6:  50%|█████     | 25/50 [01:03<01:06,  2.66s/it, done=0, won=0][A
+Game 6:  52%|█████▏    | 26/50 [01:03<01:07,  2.81s/it, done=0, won=0][A
+Game 6:  52%|█████▏    | 26/50 [01:06<01:07,  2.81s/it, done=0, won=0][A
+Game 6:  54%|█████▍    | 27/50 [01:06<01:05,  2.85s/it, done=0, won=0][A
+Game 6:  54%|█████▍    | 27/50 [01:08<01:05,  2.85s/it, done=0, won=0][A
+Game 6:  56%|█████▌    | 28/50 [01:08<00:54,  2.47s/it, done=0, won=0][A
+Game 6:  56%|█████▌    | 28/50 [01:09<00:54,  2.47s/it, done=0, won=0][A
+Game 6:  58%|█████▊    | 29/50 [01:09<00:44,  2.10s/it, done=0, won=0][A
+Game 6:  58%|█████▊    | 29/50 [01:10<00:44,  2.10s/it, done=0, won=0][A
+Game 6:  60%|██████    | 30/50 [01:10<00:38,  1.94s/it, done=0, won=0][A
+Game 6:  60%|██████    | 30/50 [01:13<00:38,  1.94s/it, done=0, won=0][A
+Game 6:  62%|██████▏   | 31/50 [01:13<00:41,  2.21s/it, done=0, won=0][A
+Game 6:  62%|██████▏   | 31/50 [01:16<00:41,  2.21s/it, done=0, won=0][A
+Game 6:  64%|██████▍   | 32/50 [01:16<00:43,  2.39s/it, done=0, won=0][A
+Game 6:  64%|██████▍   | 32/50 [01:19<00:43,  2.39s/it, done=0, won=0][A
+Game 6:  66%|██████▌   | 33/50 [01:19<00:43,  2.53s/it, done=0, won=0][A
+Game 6:  66%|██████▌   | 33/50 [01:23<00:43,  2.53s/it, done=0, won=0][A
+Game 6:  68%|██████▊   | 34/50 [01:23<00:46,  2.94s/it, done=0, won=0][A
+Game 6:  68%|██████▊   | 34/50 [01:26<00:46,  2.94s/it, done=0, won=0][A
+Game 6:  70%|███████   | 35/50 [01:26<00:46,  3.07s/it, done=0, won=0][A
+Game 6:  70%|███████   | 35/50 [01:29<00:46,  3.07s/it, done=0, won=0][A
+Game 6:  72%|███████▏  | 36/50 [01:29<00:42,  3.07s/it, done=0, won=0][A
+Game 6:  72%|███████▏  | 36/50 [01:31<00:42,  3.07s/it, done=0, won=0][A
+Game 6:  74%|███████▍  | 37/50 [01:31<00:33,  2.61s/it, done=0, won=0][A
+Game 6:  74%|███████▍  | 37/50 [01:34<00:33,  2.61s/it, done=0, won=0][A
+Game 6:  76%|███████▌  | 38/50 [01:34<00:32,  2.68s/it, done=0, won=0][A
+Game 6:  76%|███████▌  | 38/50 [01:37<00:32,  2.68s/it, done=0, won=0][A
+Game 6:  78%|███████▊  | 39/50 [01:37<00:31,  2.84s/it, done=0, won=0][A
+Game 6:  78%|███████▊  | 39/50 [01:40<00:31,  2.84s/it, done=0, won=0][A
+Game 6:  80%|████████  | 40/50 [01:40<00:28,  2.88s/it, done=0, won=0][A
+Game 6:  80%|████████  | 40/50 [01:41<00:28,  2.88s/it, done=0, won=0][A
+Game 6:  82%|████████▏ | 41/50 [01:41<00:22,  2.46s/it, done=0, won=0][A
+Game 6:  82%|████████▏ | 41/50 [01:43<00:22,  2.46s/it, done=0, won=0][A
+Game 6:  84%|████████▍ | 42/50 [01:43<00:17,  2.13s/it, done=0, won=0][A
+Game 6:  84%|████████▍ | 42/50 [01:44<00:17,  2.13s/it, done=0, won=0][A
+Game 6:  86%|████████▌ | 43/50 [01:44<00:13,  1.98s/it, done=0, won=0][A
+Game 6:  86%|████████▌ | 43/50 [01:47<00:13,  1.98s/it, done=0, won=0][A
+Game 6:  88%|████████▊ | 44/50 [01:47<00:13,  2.27s/it, done=0, won=0][A
+Game 6:  88%|████████▊ | 44/50 [01:50<00:13,  2.27s/it, done=0, won=0][A
+Game 6:  90%|█████████ | 45/50 [01:50<00:11,  2.38s/it, done=0, won=0][A
+Game 6:  90%|█████████ | 45/50 [01:53<00:11,  2.38s/it, done=0, won=0][A
+Game 6:  92%|█████████▏| 46/50 [01:53<00:10,  2.57s/it, done=0, won=0][A
+Game 6:  92%|█████████▏| 46/50 [01:56<00:10,  2.57s/it, done=0, won=0][A
+Game 6:  94%|█████████▍| 47/50 [01:56<00:07,  2.63s/it, done=0, won=0][A
+Game 6:  94%|█████████▍| 47/50 [01:57<00:07,  2.63s/it, done=0, won=0][A
+Game 6:  96%|█████████▌| 48/50 [01:57<00:04,  2.24s/it, done=0, won=0][A
+Game 6:  96%|█████████▌| 48/50 [02:00<00:04,  2.24s/it, done=0, won=0][A
+Game 6:  98%|█████████▊| 49/50 [02:00<00:02,  2.48s/it, done=0, won=0][A
+Game 6:  98%|█████████▊| 49/50 [02:03<00:02,  2.48s/it, done=1, won=0][A2026-04-08 18:42:11,309 - Episode 6 finished at step 49 | won=False
+
+                                                                      [AALFWorld eval episodes:  10%|█         | 2/20 [04:06<37:34, 125.27s/it, offset=6]ALFWorld eval episodes:  10%|█         | 2/20 [04:06<37:34, 125.27s/it, offset=7]2026-04-08 18:42:11,309 - Episode 3/20 | dataset index=7
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 65%|██████▍   | 321/494 [00:00<00:00, 3209.43it/s][A100%|██████████| 494/494 [00:00<00:00, 2998.10it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=7)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 7:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 7:   0%|          | 0/50 [00:00<?, ?it/s, done=0, won=0][A
+Game 7:   2%|▏         | 1/50 [00:00<00:48,  1.01it/s, done=0, won=0][A
+Game 7:   2%|▏         | 1/50 [00:03<00:48,  1.01it/s, done=0, won=0][A
+Game 7:   4%|▍         | 2/50 [00:03<01:31,  1.91s/it, done=0, won=0][A
+Game 7:   4%|▍         | 2/50 [00:05<01:31,  1.91s/it, done=0, won=0][A
+Game 7:   6%|▌         | 3/50 [00:05<01:36,  2.06s/it, done=0, won=0][A
+Game 7:   6%|▌         | 3/50 [00:09<01:36,  2.06s/it, done=0, won=0][A
+Game 7:   8%|▊         | 4/50 [00:09<02:05,  2.72s/it, done=0, won=0][A
+Game 7:   8%|▊         | 4/50 [00:12<02:05,  2.72s/it, done=0, won=0][A
+Game 7:  10%|█         | 5/50 [00:12<02:10,  2.91s/it, done=0, won=0][A
+Game 7:  10%|█         | 5/50 [00:14<02:10,  2.91s/it, done=0, won=0][A
+Game 7:  12%|█▏        | 6/50 [00:14<01:50,  2.50s/it, done=0, won=0][A
+Game 7:  12%|█▏        | 6/50 [00:17<01:50,  2.50s/it, done=0, won=0][A
+Game 7:  14%|█▍        | 7/50 [00:17<01:56,  2.70s/it, done=0, won=0][A
+Game 7:  14%|█▍        | 7/50 [00:20<01:56,  2.70s/it, done=0, won=0][A
+Game 7:  16%|█▌        | 8/50 [00:20<02:01,  2.89s/it, done=0, won=0][A
+Game 7:  16%|█▌        | 8/50 [00:22<02:01,  2.89s/it, done=0, won=0][A
+Game 7:  18%|█▊        | 9/50 [00:22<01:43,  2.52s/it, done=0, won=0][A
+Game 7:  18%|█▊        | 9/50 [00:24<01:43,  2.52s/it, done=0, won=0][A
+Game 7:  20%|██        | 10/50 [00:24<01:36,  2.41s/it, done=0, won=0][A
+Game 7:  20%|██        | 10/50 [00:26<01:36,  2.41s/it, done=0, won=0][A
+Game 7:  22%|██▏       | 11/50 [00:26<01:23,  2.14s/it, done=0, won=0][A
+Game 7:  22%|██▏       | 11/50 [00:28<01:23,  2.14s/it, done=0, won=0][A
+Game 7:  24%|██▍       | 12/50 [00:28<01:19,  2.10s/it, done=0, won=0][A
+Game 7:  24%|██▍       | 12/50 [00:29<01:19,  2.10s/it, done=0, won=0][A
+Game 7:  26%|██▌       | 13/50 [00:29<01:13,  1.99s/it, done=0, won=0][A
+Game 7:  26%|██▌       | 13/50 [00:32<01:13,  1.99s/it, done=0, won=0][A
+Game 7:  28%|██▊       | 14/50 [00:32<01:18,  2.19s/it, done=0, won=0][A
+Game 7:  28%|██▊       | 14/50 [00:34<01:18,  2.19s/it, done=0, won=0][A
+Game 7:  30%|███       | 15/50 [00:34<01:12,  2.07s/it, done=0, won=0][A
+Game 7:  30%|███       | 15/50 [00:37<01:12,  2.07s/it, done=0, won=0][A
+Game 7:  32%|███▏      | 16/50 [00:37<01:23,  2.46s/it, done=0, won=0][A
+Game 7:  32%|███▏      | 16/50 [00:39<01:23,  2.46s/it, done=0, won=0][A
+Game 7:  34%|███▍      | 17/50 [00:39<01:14,  2.25s/it, done=0, won=0][A
+Game 7:  34%|███▍      | 17/50 [00:41<01:14,  2.25s/it, done=0, won=0][A
+Game 7:  36%|███▌      | 18/50 [00:41<01:05,  2.05s/it, done=0, won=0][A
+Game 7:  36%|███▌      | 18/50 [00:43<01:05,  2.05s/it, done=0, won=0][A
+Game 7:  38%|███▊      | 19/50 [00:43<01:04,  2.08s/it, done=0, won=0][A
+Game 7:  38%|███▊      | 19/50 [00:45<01:04,  2.08s/it, done=0, won=0][A
+Game 7:  40%|████      | 20/50 [00:45<01:01,  2.06s/it, done=0, won=0][A
+Game 7:  40%|████      | 20/50 [00:47<01:01,  2.06s/it, done=0, won=0][A
+Game 7:  42%|████▏     | 21/50 [00:47<00:59,  2.06s/it, done=0, won=0][A
+Game 7:  42%|████▏     | 21/50 [00:48<00:59,  2.06s/it, done=0, won=0][A
+Game 7:  44%|████▍     | 22/50 [00:48<00:52,  1.86s/it, done=0, won=0][A
+Game 7:  44%|████▍     | 22/50 [00:49<00:52,  1.86s/it, done=0, won=0][A
+Game 7:  46%|████▌     | 23/50 [00:49<00:44,  1.64s/it, done=0, won=0][A
+Game 7:  46%|████▌     | 23/50 [00:51<00:44,  1.64s/it, done=0, won=0][A
+Game 7:  48%|████▊     | 24/50 [00:51<00:41,  1.61s/it, done=0, won=0][A
+Game 7:  48%|████▊     | 24/50 [00:55<00:41,  1.61s/it, done=0, won=0][A
+Game 7:  50%|█████     | 25/50 [00:55<00:57,  2.29s/it, done=0, won=0][A
+Game 7:  50%|█████     | 25/50 [00:59<00:57,  2.29s/it, done=0, won=0][A
+Game 7:  52%|█████▏    | 26/50 [00:59<01:07,  2.83s/it, done=0, won=0][A
+Game 7:  52%|█████▏    | 26/50 [01:01<01:07,  2.83s/it, done=0, won=0][A
+Game 7:  54%|█████▍    | 27/50 [01:01<01:03,  2.75s/it, done=0, won=0][A
+Game 7:  54%|█████▍    | 27/50 [01:03<01:03,  2.75s/it, done=0, won=0][A
+Game 7:  56%|█████▌    | 28/50 [01:03<00:54,  2.46s/it, done=0, won=0][A
+Game 7:  56%|█████▌    | 28/50 [01:07<00:54,  2.46s/it, done=0, won=0][A
+Game 7:  58%|█████▊    | 29/50 [01:07<00:57,  2.76s/it, done=0, won=0][A
+Game 7:  58%|█████▊    | 29/50 [01:09<00:57,  2.76s/it, done=0, won=0][A
+Game 7:  60%|██████    | 30/50 [01:09<00:51,  2.56s/it, done=0, won=0][A
+Game 7:  60%|██████    | 30/50 [01:13<00:51,  2.56s/it, done=0, won=0][A
+Game 7:  62%|██████▏   | 31/50 [01:13<00:58,  3.06s/it, done=0, won=0][A
+Game 7:  62%|██████▏   | 31/50 [01:15<00:58,  3.06s/it, done=0, won=0][A
+Game 7:  64%|██████▍   | 32/50 [01:15<00:47,  2.61s/it, done=0, won=0][A
+Game 7:  64%|██████▍   | 32/50 [01:16<00:47,  2.61s/it, done=0, won=0][A
+Game 7:  66%|██████▌   | 33/50 [01:16<00:38,  2.24s/it, done=0, won=0][A
+Game 7:  66%|██████▌   | 33/50 [01:19<00:38,  2.24s/it, done=0, won=0][A
+Game 7:  68%|██████▊   | 34/50 [01:19<00:38,  2.43s/it, done=0, won=0][A
+Game 7:  68%|██████▊   | 34/50 [01:20<00:38,  2.43s/it, done=0, won=0][A
+Game 7:  70%|███████   | 35/50 [01:20<00:31,  2.11s/it, done=0, won=0][A
+Game 7:  70%|███████   | 35/50 [01:22<00:31,  2.11s/it, done=0, won=0][A
+Game 7:  72%|███████▏  | 36/50 [01:22<00:26,  1.88s/it, done=0, won=0][A
+Game 7:  72%|███████▏  | 36/50 [01:26<00:26,  1.88s/it, done=0, won=0][A
+Game 7:  74%|███████▍  | 37/50 [01:26<00:34,  2.63s/it, done=0, won=0][A
+Game 7:  74%|███████▍  | 37/50 [01:29<00:34,  2.63s/it, done=0, won=0][A
+Game 7:  76%|███████▌  | 38/50 [01:29<00:33,  2.83s/it, done=0, won=0][A
+Game 7:  76%|███████▌  | 38/50 [01:31<00:33,  2.83s/it, done=0, won=0][A
+Game 7:  78%|███████▊  | 39/50 [01:31<00:27,  2.47s/it, done=0, won=0][A
+Game 7:  78%|███████▊  | 39/50 [01:32<00:27,  2.47s/it, done=0, won=0][A
+Game 7:  80%|████████  | 40/50 [01:32<00:21,  2.17s/it, done=0, won=0][A
+Game 7:  80%|████████  | 40/50 [01:34<00:21,  2.17s/it, done=0, won=0][A
+Game 7:  82%|████████▏ | 41/50 [01:34<00:16,  1.88s/it, done=0, won=0][A
+Game 7:  82%|████████▏ | 41/50 [01:38<00:16,  1.88s/it, done=0, won=0][A
+Game 7:  84%|████████▍ | 42/50 [01:38<00:20,  2.53s/it, done=0, won=0][A
+Game 7:  84%|████████▍ | 42/50 [01:40<00:20,  2.53s/it, done=0, won=0][A
+Game 7:  86%|████████▌ | 43/50 [01:40<00:17,  2.54s/it, done=0, won=0][A
+Game 7:  86%|████████▌ | 43/50 [01:41<00:17,  2.54s/it, done=0, won=0][A
+Game 7:  88%|████████▊ | 44/50 [01:41<00:12,  2.14s/it, done=0, won=0][A
+Game 7:  88%|████████▊ | 44/50 [01:45<00:12,  2.14s/it, done=0, won=0][A
+Game 7:  90%|█████████ | 45/50 [01:45<00:13,  2.60s/it, done=0, won=0][A
+Game 7:  90%|█████████ | 45/50 [01:46<00:13,  2.60s/it, done=0, won=0][A
+Game 7:  92%|█████████▏| 46/50 [01:46<00:09,  2.25s/it, done=0, won=0][A
+Game 7:  92%|█████████▏| 46/50 [01:50<00:09,  2.25s/it, done=0, won=0][A
+Game 7:  94%|█████████▍| 47/50 [01:50<00:07,  2.59s/it, done=0, won=0][A
+Game 7:  94%|█████████▍| 47/50 [01:51<00:07,  2.59s/it, done=0, won=0][A
+Game 7:  96%|█████████▌| 48/50 [01:51<00:04,  2.24s/it, done=0, won=0][A
+Game 7:  96%|█████████▌| 48/50 [01:55<00:04,  2.24s/it, done=0, won=0][A
+Game 7:  98%|█████████▊| 49/50 [01:55<00:02,  2.60s/it, done=0, won=0][A
+Game 7:  98%|█████████▊| 49/50 [01:56<00:02,  2.60s/it, done=1, won=0][A2026-04-08 18:44:14,972 - Episode 7 finished at step 49 | won=False
+
+                                                                      [AALFWorld eval episodes:  15%|█▌        | 3/20 [06:10<35:17, 124.54s/it, offset=7]ALFWorld eval episodes:  15%|█▌        | 3/20 [06:10<35:17, 124.54s/it, offset=8]2026-04-08 18:44:14,972 - Episode 4/20 | dataset index=8
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3272.45it/s][A100%|██████████| 494/494 [00:00<00:00, 3089.93it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=8)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 8:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 8:   0%|          | 0/50 [00:00<?, ?it/s, done=0, won=0][A
+Game 8:   2%|▏         | 1/50 [00:00<00:48,  1.00it/s, done=0, won=0][A
+Game 8:   2%|▏         | 1/50 [00:04<00:48,  1.00it/s, done=0, won=0][A
+Game 8:   4%|▍         | 2/50 [00:04<01:51,  2.32s/it, done=0, won=0][A
+Game 8:   4%|▍         | 2/50 [00:07<01:51,  2.32s/it, done=0, won=0][A
+Game 8:   6%|▌         | 3/50 [00:07<02:16,  2.89s/it, done=0, won=0][A
+Game 8:   6%|▌         | 3/50 [00:09<02:16,  2.89s/it, done=0, won=0][A
+Game 8:   8%|▊         | 4/50 [00:09<01:51,  2.43s/it, done=0, won=0][A
+Game 8:   8%|▊         | 4/50 [00:10<01:51,  2.43s/it, done=0, won=0][A
+Game 8:  10%|█         | 5/50 [00:10<01:28,  1.97s/it, done=0, won=0][A
+Game 8:  10%|█         | 5/50 [00:13<01:28,  1.97s/it, done=0, won=0][A
+Game 8:  12%|█▏        | 6/50 [00:13<01:33,  2.12s/it, done=0, won=0][A
+Game 8:  12%|█▏        | 6/50 [00:14<01:33,  2.12s/it, done=0, won=0][A
+Game 8:  14%|█▍        | 7/50 [00:14<01:21,  1.90s/it, done=0, won=0][A
+Game 8:  14%|█▍        | 7/50 [00:15<01:21,  1.90s/it, done=0, won=0][A
+Game 8:  16%|█▌        | 8/50 [00:15<01:11,  1.70s/it, done=0, won=0][A
+Game 8:  16%|█▌        | 8/50 [00:17<01:11,  1.70s/it, done=0, won=0][A
+Game 8:  18%|█▊        | 9/50 [00:17<01:08,  1.66s/it, done=0, won=0][A
+Game 8:  18%|█▊        | 9/50 [00:20<01:08,  1.66s/it, done=0, won=0][A
+Game 8:  20%|██        | 10/50 [00:20<01:20,  2.00s/it, done=0, won=0][A
+Game 8:  20%|██        | 10/50 [00:22<01:20,  2.00s/it, done=0, won=0][A
+Game 8:  22%|██▏       | 11/50 [00:22<01:27,  2.23s/it, done=0, won=0][A
+Game 8:  22%|██▏       | 11/50 [00:25<01:27,  2.23s/it, done=0, won=0][A
+Game 8:  24%|██▍       | 12/50 [00:25<01:26,  2.27s/it, done=0, won=0][A
+Game 8:  24%|██▍       | 12/50 [00:28<01:26,  2.27s/it, done=0, won=0][A
+Game 8:  26%|██▌       | 13/50 [00:28<01:35,  2.58s/it, done=0, won=0][A
+Game 8:  26%|██▌       | 13/50 [00:29<01:35,  2.58s/it, done=0, won=0][A
+Game 8:  28%|██▊       | 14/50 [00:29<01:17,  2.15s/it, done=0, won=0][A
+Game 8:  28%|██▊       | 14/50 [00:32<01:17,  2.15s/it, done=0, won=0][A
+Game 8:  30%|███       | 15/50 [00:32<01:21,  2.33s/it, done=0, won=0][A
+Game 8:  30%|███       | 15/50 [00:35<01:21,  2.33s/it, done=0, won=0][A
+Game 8:  32%|███▏      | 16/50 [00:35<01:21,  2.39s/it, done=0, won=0][A
+Game 8:  32%|███▏      | 16/50 [00:36<01:21,  2.39s/it, done=0, won=0][A
+Game 8:  34%|███▍      | 17/50 [00:36<01:14,  2.24s/it, done=0, won=0][A
+Game 8:  34%|███▍      | 17/50 [00:38<01:14,  2.24s/it, done=0, won=0][A
+Game 8:  36%|███▌      | 18/50 [00:38<01:02,  1.96s/it, done=0, won=0][A
+Game 8:  36%|███▌      | 18/50 [00:39<01:02,  1.96s/it, done=0, won=0][A
+Game 8:  38%|███▊      | 19/50 [00:39<00:55,  1.80s/it, done=0, won=0][A
+Game 8:  38%|███▊      | 19/50 [00:41<00:55,  1.80s/it, done=0, won=0][A
+Game 8:  40%|████      | 20/50 [00:41<00:51,  1.70s/it, done=0, won=0][A
+Game 8:  40%|████      | 20/50 [00:43<00:51,  1.70s/it, done=0, won=0][A
+Game 8:  42%|████▏     | 21/50 [00:43<00:53,  1.86s/it, done=0, won=0][A
+Game 8:  42%|████▏     | 21/50 [00:44<00:53,  1.86s/it, done=0, won=0][A
+Game 8:  44%|████▍     | 22/50 [00:44<00:46,  1.65s/it, done=0, won=0][A
+Game 8:  44%|████▍     | 22/50 [00:46<00:46,  1.65s/it, done=0, won=0][A
+Game 8:  46%|████▌     | 23/50 [00:46<00:46,  1.73s/it, done=0, won=0][A
+Game 8:  46%|████▌     | 23/50 [00:49<00:46,  1.73s/it, done=0, won=0][A
+Game 8:  48%|████▊     | 24/50 [00:49<00:57,  2.20s/it, done=0, won=0][A
+Game 8:  48%|████▊     | 24/50 [00:52<00:57,  2.20s/it, done=0, won=0][A
+Game 8:  50%|█████     | 25/50 [00:52<00:57,  2.30s/it, done=0, won=0][A
+Game 8:  50%|█████     | 25/50 [00:54<00:57,  2.30s/it, done=0, won=0][A
+Game 8:  52%|█████▏    | 26/50 [00:54<00:56,  2.34s/it, done=0, won=0][A
+Game 8:  52%|█████▏    | 26/50 [00:55<00:56,  2.34s/it, done=0, won=0][A
+Game 8:  54%|█████▍    | 27/50 [00:55<00:45,  1.99s/it, done=0, won=0][A
+Game 8:  54%|█████▍    | 27/50 [00:58<00:45,  1.99s/it, done=0, won=0][A
+Game 8:  56%|█████▌    | 28/50 [00:58<00:46,  2.13s/it, done=0, won=0][A
+Game 8:  56%|█████▌    | 28/50 [00:59<00:46,  2.13s/it, done=0, won=0][A
+Game 8:  58%|█████▊    | 29/50 [00:59<00:40,  1.92s/it, done=0, won=0][A
+Game 8:  58%|█████▊    | 29/50 [01:00<00:40,  1.92s/it, done=0, won=0][A
+Game 8:  60%|██████    | 30/50 [01:00<00:34,  1.70s/it, done=0, won=0][A
+Game 8:  60%|██████    | 30/50 [01:03<00:34,  1.70s/it, done=0, won=0][A
+Game 8:  62%|██████▏   | 31/50 [01:03<00:37,  1.98s/it, done=0, won=0][A
+Game 8:  62%|██████▏   | 31/50 [01:04<00:37,  1.98s/it, done=0, won=0][A
+Game 8:  64%|██████▍   | 32/50 [01:04<00:31,  1.73s/it, done=0, won=0][A
+Game 8:  64%|██████▍   | 32/50 [01:06<00:31,  1.73s/it, done=0, won=0][A
+Game 8:  66%|██████▌   | 33/50 [01:06<00:27,  1.63s/it, done=0, won=0][A
+Game 8:  66%|██████▌   | 33/50 [01:07<00:27,  1.63s/it, done=0, won=0][A
+Game 8:  68%|██████▊   | 34/50 [01:07<00:25,  1.56s/it, done=0, won=0][A
+Game 8:  68%|██████▊   | 34/50 [01:09<00:25,  1.56s/it, done=0, won=0][A
+Game 8:  70%|███████   | 35/50 [01:09<00:27,  1.82s/it, done=0, won=0][A
+Game 8:  70%|███████   | 35/50 [01:11<00:27,  1.82s/it, done=0, won=0][A
+Game 8:  72%|███████▏  | 36/50 [01:11<00:23,  1.65s/it, done=0, won=0][A
+Game 8:  72%|███████▏  | 36/50 [01:13<00:23,  1.65s/it, done=0, won=0][A
+Game 8:  74%|███████▍  | 37/50 [01:13<00:24,  1.86s/it, done=0, won=0][A
+Game 8:  74%|███████▍  | 37/50 [01:14<00:24,  1.86s/it, done=0, won=0][A
+Game 8:  76%|███████▌  | 38/50 [01:14<00:20,  1.68s/it, done=0, won=0][A
+Game 8:  76%|███████▌  | 38/50 [01:16<00:20,  1.68s/it, done=0, won=0][A
+Game 8:  78%|███████▊  | 39/50 [01:16<00:17,  1.60s/it, done=0, won=0][A
+Game 8:  78%|███████▊  | 39/50 [01:17<00:17,  1.60s/it, done=0, won=0][A
+Game 8:  80%|████████  | 40/50 [01:17<00:14,  1.47s/it, done=0, won=0][A
+Game 8:  80%|████████  | 40/50 [01:18<00:14,  1.47s/it, done=0, won=0][A
+Game 8:  82%|████████▏ | 41/50 [01:18<00:13,  1.46s/it, done=0, won=0][A
+Game 8:  82%|████████▏ | 41/50 [01:19<00:13,  1.46s/it, done=0, won=0][A
+Game 8:  84%|████████▍ | 42/50 [01:19<00:10,  1.37s/it, done=0, won=0][A
+Game 8:  84%|████████▍ | 42/50 [01:21<00:10,  1.37s/it, done=0, won=0][A
+Game 8:  86%|████████▌ | 43/50 [01:21<00:08,  1.28s/it, done=0, won=0][A
+Game 8:  86%|████████▌ | 43/50 [01:22<00:08,  1.28s/it, done=0, won=0][A
+Game 8:  88%|████████▊ | 44/50 [01:22<00:07,  1.28s/it, done=0, won=0][A
+Game 8:  88%|████████▊ | 44/50 [01:23<00:07,  1.28s/it, done=0, won=0][A
+Game 8:  90%|█████████ | 45/50 [01:23<00:06,  1.24s/it, done=0, won=0][A
+Game 8:  90%|█████████ | 45/50 [01:25<00:06,  1.24s/it, done=0, won=0][A
+Game 8:  92%|█████████▏| 46/50 [01:25<00:05,  1.34s/it, done=0, won=0][A
+Game 8:  92%|█████████▏| 46/50 [01:26<00:05,  1.34s/it, done=0, won=0][A
+Game 8:  94%|█████████▍| 47/50 [01:26<00:03,  1.27s/it, done=0, won=0][A
+Game 8:  94%|█████████▍| 47/50 [01:27<00:03,  1.27s/it, done=0, won=0][A
+Game 8:  96%|█████████▌| 48/50 [01:27<00:02,  1.28s/it, done=0, won=0][A
+Game 8:  96%|█████████▌| 48/50 [01:28<00:02,  1.28s/it, done=0, won=0][A
+Game 8:  98%|█████████▊| 49/50 [01:28<00:01,  1.32s/it, done=0, won=0][A
+Game 8:  98%|█████████▊| 49/50 [01:30<00:01,  1.32s/it, done=1, won=0][A2026-04-08 18:45:51,732 - Episode 8 finished at step 49 | won=False
+
+                                                                      [AALFWorld eval episodes:  20%|██        | 4/20 [07:47<30:17, 113.57s/it, offset=8]ALFWorld eval episodes:  20%|██        | 4/20 [07:47<30:17, 113.57s/it, offset=9]2026-04-08 18:45:51,733 - Episode 5/20 | dataset index=9
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3249.13it/s][A100%|██████████| 494/494 [00:00<00:00, 3078.88it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=9)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 9:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 9:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 9:   2%|▏         | 1/50 [00:01<00:49,  1.01s/it, done=0, won=0][A
+Game 9:   2%|▏         | 1/50 [00:02<00:49,  1.01s/it, done=0, won=0][A
+Game 9:   4%|▍         | 2/50 [00:02<01:07,  1.40s/it, done=0, won=0][A
+Game 9:   4%|▍         | 2/50 [00:05<01:07,  1.40s/it, done=0, won=0][A
+Game 9:   6%|▌         | 3/50 [00:05<01:40,  2.13s/it, done=0, won=0][A
+Game 9:   6%|▌         | 3/50 [00:07<01:40,  2.13s/it, done=0, won=0][A
+Game 9:   8%|▊         | 4/50 [00:07<01:36,  2.10s/it, done=0, won=0][A
+Game 9:   8%|▊         | 4/50 [00:09<01:36,  2.10s/it, done=0, won=0][A
+Game 9:  10%|█         | 5/50 [00:09<01:29,  1.99s/it, done=0, won=0][A
+Game 9:  10%|█         | 5/50 [00:11<01:29,  1.99s/it, done=0, won=0][A
+Game 9:  12%|█▏        | 6/50 [00:11<01:20,  1.83s/it, done=0, won=0][A
+Game 9:  12%|█▏        | 6/50 [00:13<01:20,  1.83s/it, done=0, won=0][A
+Game 9:  14%|█▍        | 7/50 [00:13<01:26,  2.01s/it, done=0, won=0][A
+Game 9:  14%|█▍        | 7/50 [00:15<01:26,  2.01s/it, done=0, won=0][A
+Game 9:  16%|█▌        | 8/50 [00:15<01:21,  1.93s/it, done=0, won=0][A
+Game 9:  16%|█▌        | 8/50 [00:16<01:21,  1.93s/it, done=0, won=0][A
+Game 9:  18%|█▊        | 9/50 [00:16<01:15,  1.84s/it, done=0, won=0][A
+Game 9:  18%|█▊        | 9/50 [00:18<01:15,  1.84s/it, done=0, won=0][A
+Game 9:  20%|██        | 10/50 [00:18<01:06,  1.65s/it, done=0, won=0][A
+Game 9:  20%|██        | 10/50 [00:19<01:06,  1.65s/it, done=0, won=0][A
+Game 9:  22%|██▏       | 11/50 [00:19<01:07,  1.73s/it, done=0, won=0][A
+Game 9:  22%|██▏       | 11/50 [00:21<01:07,  1.73s/it, done=0, won=0][A
+Game 9:  24%|██▍       | 12/50 [00:21<01:04,  1.70s/it, done=0, won=0][A
+Game 9:  24%|██▍       | 12/50 [00:22<01:04,  1.70s/it, done=0, won=0][A
+Game 9:  26%|██▌       | 13/50 [00:22<00:55,  1.50s/it, done=0, won=0][A
+Game 9:  26%|██▌       | 13/50 [00:24<00:55,  1.50s/it, done=0, won=0][A
+Game 9:  28%|██▊       | 14/50 [00:24<01:02,  1.72s/it, done=0, won=0][A
+Game 9:  28%|██▊       | 14/50 [00:26<01:02,  1.72s/it, done=0, won=0][A
+Game 9:  30%|███       | 15/50 [00:26<00:57,  1.63s/it, done=0, won=0][A
+Game 9:  30%|███       | 15/50 [00:27<00:57,  1.63s/it, done=0, won=0][A
+Game 9:  32%|███▏      | 16/50 [00:27<00:52,  1.54s/it, done=0, won=0][A
+Game 9:  32%|███▏      | 16/50 [00:29<00:52,  1.54s/it, done=0, won=0][A
+Game 9:  34%|███▍      | 17/50 [00:29<00:52,  1.58s/it, done=0, won=0][A
+Game 9:  34%|███▍      | 17/50 [00:30<00:52,  1.58s/it, done=0, won=0][A
+Game 9:  36%|███▌      | 18/50 [00:30<00:47,  1.49s/it, done=0, won=0][A
+Game 9:  36%|███▌      | 18/50 [00:31<00:47,  1.49s/it, done=0, won=0][A
+Game 9:  38%|███▊      | 19/50 [00:31<00:44,  1.42s/it, done=0, won=0][A
+Game 9:  38%|███▊      | 19/50 [00:32<00:44,  1.42s/it, done=0, won=0][A
+Game 9:  40%|████      | 20/50 [00:32<00:39,  1.31s/it, done=0, won=0][A
+Game 9:  40%|████      | 20/50 [00:34<00:39,  1.31s/it, done=0, won=0][A
+Game 9:  42%|████▏     | 21/50 [00:34<00:40,  1.38s/it, done=0, won=0][A
+Game 9:  42%|████▏     | 21/50 [00:35<00:40,  1.38s/it, done=0, won=0][A
+Game 9:  44%|████▍     | 22/50 [00:35<00:38,  1.37s/it, done=0, won=0][A
+Game 9:  44%|████▍     | 22/50 [00:39<00:38,  1.37s/it, done=0, won=0][A
+Game 9:  46%|████▌     | 23/50 [00:39<00:56,  2.09s/it, done=0, won=0][A
+Game 9:  46%|████▌     | 23/50 [00:41<00:56,  2.09s/it, done=0, won=0][A
+Game 9:  48%|████▊     | 24/50 [00:41<00:49,  1.91s/it, done=0, won=0][A
+Game 9:  48%|████▊     | 24/50 [00:43<00:49,  1.91s/it, done=0, won=0][A
+Game 9:  50%|█████     | 25/50 [00:43<00:50,  2.01s/it, done=0, won=0][A
+Game 9:  50%|█████     | 25/50 [00:44<00:50,  2.01s/it, done=0, won=0][A
+Game 9:  52%|█████▏    | 26/50 [00:44<00:44,  1.85s/it, done=0, won=0][A
+Game 9:  52%|█████▏    | 26/50 [00:46<00:44,  1.85s/it, done=0, won=0][A
+Game 9:  54%|█████▍    | 27/50 [00:46<00:41,  1.81s/it, done=0, won=0][A
+Game 9:  54%|█████▍    | 27/50 [00:48<00:41,  1.81s/it, done=0, won=0][A
+Game 9:  56%|█████▌    | 28/50 [00:48<00:41,  1.87s/it, done=0, won=0][A
+Game 9:  56%|█████▌    | 28/50 [00:49<00:41,  1.87s/it, done=0, won=0][A
+Game 9:  58%|█████▊    | 29/50 [00:49<00:34,  1.65s/it, done=0, won=0][A
+Game 9:  58%|█████▊    | 29/50 [00:50<00:34,  1.65s/it, done=0, won=0][A
+Game 9:  60%|██████    | 30/50 [00:50<00:30,  1.55s/it, done=0, won=0][A
+Game 9:  60%|██████    | 30/50 [00:52<00:30,  1.55s/it, done=0, won=0][A
+Game 9:  62%|██████▏   | 31/50 [00:52<00:31,  1.64s/it, done=0, won=0][A
+Game 9:  62%|██████▏   | 31/50 [00:53<00:31,  1.64s/it, done=0, won=0][A
+Game 9:  64%|██████▍   | 32/50 [00:53<00:26,  1.48s/it, done=0, won=0][A
+Game 9:  64%|██████▍   | 32/50 [00:54<00:26,  1.48s/it, done=0, won=0][A
+Game 9:  66%|██████▌   | 33/50 [00:54<00:22,  1.34s/it, done=0, won=0][A
+Game 9:  66%|██████▌   | 33/50 [00:56<00:22,  1.34s/it, done=0, won=0][A
+Game 9:  68%|██████▊   | 34/50 [00:56<00:21,  1.33s/it, done=0, won=0][A
+Game 9:  68%|██████▊   | 34/50 [00:57<00:21,  1.33s/it, done=0, won=0][A
+Game 9:  70%|███████   | 35/50 [00:57<00:19,  1.32s/it, done=0, won=0][A
+Game 9:  70%|███████   | 35/50 [00:58<00:19,  1.32s/it, done=0, won=0][A
+Game 9:  72%|███████▏  | 36/50 [00:58<00:18,  1.31s/it, done=0, won=0][A
+Game 9:  72%|███████▏  | 36/50 [00:59<00:18,  1.31s/it, done=0, won=0][A
+Game 9:  74%|███████▍  | 37/50 [00:59<00:16,  1.27s/it, done=0, won=0][A
+Game 9:  74%|███████▍  | 37/50 [01:02<00:16,  1.27s/it, done=0, won=0][A
+Game 9:  76%|███████▌  | 38/50 [01:02<00:19,  1.59s/it, done=0, won=0][A
+Game 9:  76%|███████▌  | 38/50 [01:03<00:19,  1.59s/it, done=0, won=0][A
+Game 9:  78%|███████▊  | 39/50 [01:03<00:16,  1.50s/it, done=0, won=0][A
+Game 9:  78%|███████▊  | 39/50 [01:04<00:16,  1.50s/it, done=0, won=0][A
+Game 9:  80%|████████  | 40/50 [01:04<00:14,  1.44s/it, done=0, won=0][A
+Game 9:  80%|████████  | 40/50 [01:05<00:14,  1.44s/it, done=0, won=0][A
+Game 9:  82%|████████▏ | 41/50 [01:05<00:11,  1.33s/it, done=0, won=0][A
+Game 9:  82%|████████▏ | 41/50 [01:07<00:11,  1.33s/it, done=0, won=0][A
+Game 9:  84%|████████▍ | 42/50 [01:07<00:10,  1.26s/it, done=0, won=0][A
+Game 9:  84%|████████▍ | 42/50 [01:08<00:10,  1.26s/it, done=0, won=0][A
+Game 9:  86%|████████▌ | 43/50 [01:08<00:08,  1.23s/it, done=0, won=0][A
+Game 9:  86%|████████▌ | 43/50 [01:09<00:08,  1.23s/it, done=0, won=0][A
+Game 9:  88%|████████▊ | 44/50 [01:09<00:07,  1.23s/it, done=0, won=0][A
+Game 9:  88%|████████▊ | 44/50 [01:10<00:07,  1.23s/it, done=0, won=0][A
+Game 9:  90%|█████████ | 45/50 [01:10<00:06,  1.29s/it, done=0, won=0][A
+Game 9:  90%|█████████ | 45/50 [01:13<00:06,  1.29s/it, done=0, won=0][A
+Game 9:  92%|█████████▏| 46/50 [01:13<00:06,  1.68s/it, done=0, won=0][A
+Game 9:  92%|█████████▏| 46/50 [01:14<00:06,  1.68s/it, done=0, won=0][A
+Game 9:  94%|█████████▍| 47/50 [01:14<00:04,  1.53s/it, done=0, won=0][A
+Game 9:  94%|█████████▍| 47/50 [01:15<00:04,  1.53s/it, done=0, won=0][A
+Game 9:  96%|█████████▌| 48/50 [01:15<00:02,  1.43s/it, done=0, won=0][A
+Game 9:  96%|█████████▌| 48/50 [01:18<00:02,  1.43s/it, done=0, won=0][A
+Game 9:  98%|█████████▊| 49/50 [01:18<00:01,  1.69s/it, done=0, won=0][A
+Game 9:  98%|█████████▊| 49/50 [01:19<00:01,  1.69s/it, done=1, won=0][A2026-04-08 18:47:18,180 - Episode 9 finished at step 49 | won=False
+
+                                                                      [AALFWorld eval episodes:  25%|██▌       | 5/20 [09:13<25:56, 103.79s/it, offset=9]ALFWorld eval episodes:  25%|██▌       | 5/20 [09:13<25:56, 103.79s/it, offset=10]2026-04-08 18:47:18,180 - Episode 6/20 | dataset index=10
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3240.26it/s][A100%|██████████| 494/494 [00:00<00:00, 1305.12it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=10)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 10:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 10:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 10:   2%|▏         | 1/50 [00:01<01:13,  1.50s/it, done=0, won=0][A
+Game 10:   2%|▏         | 1/50 [00:02<01:13,  1.50s/it, done=0, won=0][A
+Game 10:   4%|▍         | 2/50 [00:02<01:05,  1.36s/it, done=0, won=0][A
+Game 10:   4%|▍         | 2/50 [00:04<01:05,  1.36s/it, done=0, won=0][A
+Game 10:   6%|▌         | 3/50 [00:04<01:08,  1.46s/it, done=0, won=0][A
+Game 10:   6%|▌         | 3/50 [00:05<01:08,  1.46s/it, done=1, won=1][A2026-04-08 18:47:31,079 - Episode 10 finished at step 3 | won=True
+
+                                                                      [AALFWorld eval episodes:  30%|███       | 6/20 [09:26<17:00, 72.89s/it, offset=10] ALFWorld eval episodes:  30%|███       | 6/20 [09:26<17:00, 72.89s/it, offset=11]2026-04-08 18:47:31,079 - Episode 7/20 | dataset index=11
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3263.04it/s][A100%|██████████| 494/494 [00:00<00:00, 3078.49it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=11)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 11:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 11:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 11:   2%|▏         | 1/50 [00:01<00:59,  1.21s/it, done=0, won=0][A
+Game 11:   2%|▏         | 1/50 [00:05<00:59,  1.21s/it, done=0, won=0][A
+Game 11:   4%|▍         | 2/50 [00:05<02:24,  3.01s/it, done=0, won=0][A
+Game 11:   4%|▍         | 2/50 [00:06<02:24,  3.01s/it, done=0, won=0][A
+Game 11:   6%|▌         | 3/50 [00:06<01:49,  2.33s/it, done=0, won=0][A
+Game 11:   6%|▌         | 3/50 [00:10<01:49,  2.33s/it, done=0, won=0][A
+Game 11:   8%|▊         | 4/50 [00:10<02:03,  2.68s/it, done=0, won=0][A
+Game 11:   8%|▊         | 4/50 [00:13<02:03,  2.68s/it, done=0, won=0][A
+Game 11:  10%|█         | 5/50 [00:13<02:13,  2.96s/it, done=0, won=0][A
+Game 11:  10%|█         | 5/50 [00:16<02:13,  2.96s/it, done=0, won=0][A
+Game 11:  12%|█▏        | 6/50 [00:16<02:06,  2.89s/it, done=0, won=0][A
+Game 11:  12%|█▏        | 6/50 [00:18<02:06,  2.89s/it, done=0, won=0][A
+Game 11:  14%|█▍        | 7/50 [00:18<01:46,  2.48s/it, done=0, won=0][A
+Game 11:  14%|█▍        | 7/50 [00:19<01:46,  2.48s/it, done=0, won=0][A
+Game 11:  16%|█▌        | 8/50 [00:19<01:34,  2.25s/it, done=0, won=0][A
+Game 11:  16%|█▌        | 8/50 [00:23<01:34,  2.25s/it, done=0, won=0][A
+Game 11:  18%|█▊        | 9/50 [00:23<01:54,  2.78s/it, done=0, won=0][A
+Game 11:  18%|█▊        | 9/50 [00:25<01:54,  2.78s/it, done=0, won=0][A
+Game 11:  20%|██        | 10/50 [00:25<01:33,  2.34s/it, done=0, won=0][A
+Game 11:  20%|██        | 10/50 [00:27<01:33,  2.34s/it, done=0, won=0][A
+Game 11:  22%|██▏       | 11/50 [00:27<01:25,  2.20s/it, done=0, won=0][A
+Game 11:  22%|██▏       | 11/50 [00:28<01:25,  2.20s/it, done=0, won=0][A
+Game 11:  24%|██▍       | 12/50 [00:28<01:15,  2.00s/it, done=0, won=0][A
+Game 11:  24%|██▍       | 12/50 [00:32<01:15,  2.00s/it, done=0, won=0][A
+Game 11:  26%|██▌       | 13/50 [00:32<01:38,  2.67s/it, done=0, won=0][A
+Game 11:  26%|██▌       | 13/50 [00:33<01:38,  2.67s/it, done=0, won=0][A
+Game 11:  28%|██▊       | 14/50 [00:33<01:20,  2.23s/it, done=0, won=0][A
+Game 11:  28%|██▊       | 14/50 [00:36<01:20,  2.23s/it, done=0, won=0][A
+Game 11:  30%|███       | 15/50 [00:36<01:25,  2.44s/it, done=0, won=0][A
+Game 11:  30%|███       | 15/50 [00:40<01:25,  2.44s/it, done=0, won=0][A
+Game 11:  32%|███▏      | 16/50 [00:40<01:38,  2.91s/it, done=0, won=0][A
+Game 11:  32%|███▏      | 16/50 [00:44<01:38,  2.91s/it, done=0, won=0][A
+Game 11:  34%|███▍      | 17/50 [00:44<01:42,  3.10s/it, done=0, won=0][A
+Game 11:  34%|███▍      | 17/50 [00:47<01:42,  3.10s/it, done=0, won=0][A
+Game 11:  36%|███▌      | 18/50 [00:47<01:39,  3.11s/it, done=0, won=0][A
+Game 11:  36%|███▌      | 18/50 [00:49<01:39,  3.11s/it, done=0, won=0][A
+Game 11:  38%|███▊      | 19/50 [00:49<01:22,  2.66s/it, done=0, won=0][A
+Game 11:  38%|███▊      | 19/50 [00:53<01:22,  2.66s/it, done=0, won=0][A
+Game 11:  40%|████      | 20/50 [00:53<01:31,  3.04s/it, done=0, won=0][A
+Game 11:  40%|████      | 20/50 [00:56<01:31,  3.04s/it, done=0, won=0][A
+Game 11:  42%|████▏     | 21/50 [00:56<01:29,  3.08s/it, done=0, won=0][A
+Game 11:  42%|████▏     | 21/50 [00:58<01:29,  3.08s/it, done=0, won=0][A
+Game 11:  44%|████▍     | 22/50 [00:58<01:20,  2.88s/it, done=0, won=0][A
+Game 11:  44%|████▍     | 22/50 [01:00<01:20,  2.88s/it, done=0, won=0][A
+Game 11:  46%|████▌     | 23/50 [01:00<01:05,  2.41s/it, done=0, won=0][A
+Game 11:  46%|████▌     | 23/50 [01:01<01:05,  2.41s/it, done=0, won=0][A
+Game 11:  48%|████▊     | 24/50 [01:01<00:57,  2.22s/it, done=0, won=0][A
+Game 11:  48%|████▊     | 24/50 [01:05<00:57,  2.22s/it, done=0, won=0][A
+Game 11:  50%|█████     | 25/50 [01:05<01:07,  2.71s/it, done=0, won=0][A
+Game 11:  50%|█████     | 25/50 [01:07<01:07,  2.71s/it, done=0, won=0][A
+Game 11:  52%|█████▏    | 26/50 [01:07<00:59,  2.47s/it, done=0, won=0][A
+Game 11:  52%|█████▏    | 26/50 [01:09<00:59,  2.47s/it, done=0, won=0][A
+Game 11:  54%|█████▍    | 27/50 [01:09<00:54,  2.36s/it, done=0, won=0][A
+Game 11:  54%|█████▍    | 27/50 [01:11<00:54,  2.36s/it, done=0, won=0][A
+Game 11:  56%|█████▌    | 28/50 [01:11<00:45,  2.06s/it, done=0, won=0][A
+Game 11:  56%|█████▌    | 28/50 [01:13<00:45,  2.06s/it, done=0, won=0][A
+Game 11:  58%|█████▊    | 29/50 [01:13<00:46,  2.20s/it, done=0, won=0][A
+Game 11:  58%|█████▊    | 29/50 [01:16<00:46,  2.20s/it, done=0, won=0][A
+Game 11:  60%|██████    | 30/50 [01:16<00:50,  2.52s/it, done=0, won=0][A
+Game 11:  60%|██████    | 30/50 [01:18<00:50,  2.52s/it, done=0, won=0][A
+Game 11:  62%|██████▏   | 31/50 [01:18<00:42,  2.24s/it, done=0, won=0][A
+Game 11:  62%|██████▏   | 31/50 [01:22<00:42,  2.24s/it, done=0, won=0][A
+Game 11:  64%|██████▍   | 32/50 [01:22<00:47,  2.65s/it, done=0, won=0][A
+Game 11:  64%|██████▍   | 32/50 [01:23<00:47,  2.65s/it, done=0, won=0][A
+Game 11:  66%|██████▌   | 33/50 [01:23<00:38,  2.26s/it, done=0, won=0][A
+Game 11:  66%|██████▌   | 33/50 [01:24<00:38,  2.26s/it, done=0, won=0][A
+Game 11:  68%|██████▊   | 34/50 [01:24<00:31,  1.97s/it, done=0, won=0][A
+Game 11:  68%|██████▊   | 34/50 [01:25<00:31,  1.97s/it, done=0, won=0][A
+Game 11:  70%|███████   | 35/50 [01:25<00:26,  1.75s/it, done=0, won=0][A
+Game 11:  70%|███████   | 35/50 [01:30<00:26,  1.75s/it, done=0, won=0][A
+Game 11:  72%|███████▏  | 36/50 [01:30<00:34,  2.47s/it, done=0, won=0][A
+Game 11:  72%|███████▏  | 36/50 [01:31<00:34,  2.47s/it, done=0, won=0][A
+Game 11:  74%|███████▍  | 37/50 [01:31<00:26,  2.07s/it, done=0, won=0][A
+Game 11:  74%|███████▍  | 37/50 [01:33<00:26,  2.07s/it, done=0, won=0][A
+Game 11:  76%|███████▌  | 38/50 [01:33<00:25,  2.12s/it, done=0, won=0][A
+Game 11:  76%|███████▌  | 38/50 [01:37<00:25,  2.12s/it, done=0, won=0][A
+Game 11:  78%|███████▊  | 39/50 [01:37<00:28,  2.59s/it, done=0, won=0][A
+Game 11:  78%|███████▊  | 39/50 [01:38<00:28,  2.59s/it, done=0, won=0][A
+Game 11:  80%|████████  | 40/50 [01:38<00:22,  2.22s/it, done=0, won=0][A
+Game 11:  80%|████████  | 40/50 [01:43<00:22,  2.22s/it, done=0, won=0][A
+Game 11:  82%|████████▏ | 41/50 [01:43<00:27,  3.01s/it, done=0, won=0][A
+Game 11:  82%|████████▏ | 41/50 [01:47<00:27,  3.01s/it, done=0, won=0][A
+Game 11:  84%|████████▍ | 42/50 [01:47<00:26,  3.30s/it, done=0, won=0][A
+Game 11:  84%|████████▍ | 42/50 [01:48<00:26,  3.30s/it, done=0, won=0][A
+Game 11:  86%|████████▌ | 43/50 [01:48<00:19,  2.71s/it, done=0, won=0][A
+Game 11:  86%|████████▌ | 43/50 [01:50<00:19,  2.71s/it, done=0, won=0][A
+Game 11:  88%|████████▊ | 44/50 [01:50<00:14,  2.37s/it, done=0, won=0][A
+Game 11:  88%|████████▊ | 44/50 [01:53<00:14,  2.37s/it, done=0, won=0][A
+Game 11:  90%|█████████ | 45/50 [01:53<00:13,  2.70s/it, done=0, won=0][A
+Game 11:  90%|█████████ | 45/50 [01:54<00:13,  2.70s/it, done=0, won=0][A
+Game 11:  92%|█████████▏| 46/50 [01:54<00:09,  2.26s/it, done=0, won=0][A
+Game 11:  92%|█████████▏| 46/50 [01:56<00:09,  2.26s/it, done=0, won=0][A
+Game 11:  94%|█████████▍| 47/50 [01:56<00:06,  2.01s/it, done=0, won=0][A
+Game 11:  94%|█████████▍| 47/50 [01:58<00:06,  2.01s/it, done=0, won=0][A
+Game 11:  96%|█████████▌| 48/50 [01:58<00:03,  1.97s/it, done=0, won=0][A
+Game 11:  96%|█████████▌| 48/50 [01:59<00:03,  1.97s/it, done=0, won=0][A
+Game 11:  98%|█████████▊| 49/50 [01:59<00:01,  1.77s/it, done=0, won=0][A
+Game 11:  98%|█████████▊| 49/50 [02:00<00:01,  1.77s/it, done=1, won=0][A2026-04-08 18:49:42,276 - Episode 11 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  35%|███▌      | 7/20 [11:37<19:55, 91.95s/it, offset=11]ALFWorld eval episodes:  35%|███▌      | 7/20 [11:37<19:55, 91.95s/it, offset=12]2026-04-08 18:49:42,277 - Episode 8/20 | dataset index=12
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3242.80it/s][A100%|██████████| 494/494 [00:00<00:00, 3048.98it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=12)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 12:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 12:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 12:   2%|▏         | 1/50 [00:01<00:50,  1.04s/it, done=0, won=0][A
+Game 12:   2%|▏         | 1/50 [00:03<00:50,  1.04s/it, done=0, won=0][A
+Game 12:   4%|▍         | 2/50 [00:03<01:25,  1.79s/it, done=0, won=0][A
+Game 12:   4%|▍         | 2/50 [00:06<01:25,  1.79s/it, done=0, won=0][A
+Game 12:   6%|▌         | 3/50 [00:06<01:53,  2.42s/it, done=0, won=0][A
+Game 12:   6%|▌         | 3/50 [00:09<01:53,  2.42s/it, done=0, won=0][A
+Game 12:   8%|▊         | 4/50 [00:09<01:52,  2.45s/it, done=0, won=0][A
+Game 12:   8%|▊         | 4/50 [00:11<01:52,  2.45s/it, done=0, won=0][A
+Game 12:  10%|█         | 5/50 [00:11<01:53,  2.51s/it, done=0, won=0][A
+Game 12:  10%|█         | 5/50 [00:14<01:53,  2.51s/it, done=0, won=0][A
+Game 12:  12%|█▏        | 6/50 [00:14<01:57,  2.67s/it, done=0, won=0][A
+Game 12:  12%|█▏        | 6/50 [00:17<01:57,  2.67s/it, done=0, won=0][A
+Game 12:  14%|█▍        | 7/50 [00:17<01:57,  2.74s/it, done=0, won=0][A
+Game 12:  14%|█▍        | 7/50 [00:21<01:57,  2.74s/it, done=0, won=0][A
+Game 12:  16%|█▌        | 8/50 [00:21<02:12,  3.15s/it, done=0, won=0][A
+Game 12:  16%|█▌        | 8/50 [00:24<02:12,  3.15s/it, done=0, won=0][A
+Game 12:  18%|█▊        | 9/50 [00:24<02:06,  3.08s/it, done=0, won=0][A
+Game 12:  18%|█▊        | 9/50 [00:26<02:06,  3.08s/it, done=0, won=0][A
+Game 12:  20%|██        | 10/50 [00:26<01:54,  2.86s/it, done=0, won=0][A
+Game 12:  20%|██        | 10/50 [00:29<01:54,  2.86s/it, done=0, won=0][A
+Game 12:  22%|██▏       | 11/50 [00:29<01:49,  2.81s/it, done=0, won=0][A
+Game 12:  22%|██▏       | 11/50 [00:31<01:49,  2.81s/it, done=0, won=0][A
+Game 12:  24%|██▍       | 12/50 [00:31<01:32,  2.42s/it, done=0, won=0][A
+Game 12:  24%|██▍       | 12/50 [00:33<01:32,  2.42s/it, done=0, won=0][A
+Game 12:  26%|██▌       | 13/50 [00:33<01:33,  2.52s/it, done=0, won=0][A
+Game 12:  26%|██▌       | 13/50 [00:36<01:33,  2.52s/it, done=0, won=0][A
+Game 12:  28%|██▊       | 14/50 [00:36<01:37,  2.70s/it, done=0, won=0][A
+Game 12:  28%|██▊       | 14/50 [00:39<01:37,  2.70s/it, done=0, won=0][A
+Game 12:  30%|███       | 15/50 [00:39<01:30,  2.59s/it, done=0, won=0][A
+Game 12:  30%|███       | 15/50 [00:40<01:30,  2.59s/it, done=0, won=0][A
+Game 12:  32%|███▏      | 16/50 [00:40<01:15,  2.22s/it, done=0, won=0][A
+Game 12:  32%|███▏      | 16/50 [00:42<01:15,  2.22s/it, done=0, won=0][A
+Game 12:  34%|███▍      | 17/50 [00:42<01:08,  2.08s/it, done=0, won=0][A
+Game 12:  34%|███▍      | 17/50 [00:43<01:08,  2.08s/it, done=0, won=0][A
+Game 12:  36%|███▌      | 18/50 [00:43<01:01,  1.93s/it, done=0, won=0][A
+Game 12:  36%|███▌      | 18/50 [00:45<01:01,  1.93s/it, done=0, won=0][A
+Game 12:  38%|███▊      | 19/50 [00:45<00:53,  1.73s/it, done=0, won=0][A
+Game 12:  38%|███▊      | 19/50 [00:47<00:53,  1.73s/it, done=0, won=0][A
+Game 12:  40%|████      | 20/50 [00:47<00:58,  1.95s/it, done=0, won=0][A
+Game 12:  40%|████      | 20/50 [00:49<00:58,  1.95s/it, done=0, won=0][A
+Game 12:  42%|████▏     | 21/50 [00:49<00:59,  2.04s/it, done=0, won=0][A
+Game 12:  42%|████▏     | 21/50 [00:51<00:59,  2.04s/it, done=0, won=0][A
+Game 12:  44%|████▍     | 22/50 [00:51<00:52,  1.86s/it, done=0, won=0][A
+Game 12:  44%|████▍     | 22/50 [00:54<00:52,  1.86s/it, done=0, won=0][A
+Game 12:  46%|████▌     | 23/50 [00:54<00:59,  2.20s/it, done=0, won=0][A
+Game 12:  46%|████▌     | 23/50 [00:55<00:59,  2.20s/it, done=0, won=0][A
+Game 12:  48%|████▊     | 24/50 [00:55<00:52,  2.00s/it, done=0, won=0][A
+Game 12:  48%|████▊     | 24/50 [00:57<00:52,  2.00s/it, done=0, won=0][A
+Game 12:  50%|█████     | 25/50 [00:57<00:44,  1.78s/it, done=0, won=0][A
+Game 12:  50%|█████     | 25/50 [00:59<00:44,  1.78s/it, done=0, won=0][A
+Game 12:  52%|█████▏    | 26/50 [00:59<00:44,  1.87s/it, done=0, won=0][A
+Game 12:  52%|█████▏    | 26/50 [01:01<00:44,  1.87s/it, done=0, won=0][A
+Game 12:  54%|█████▍    | 27/50 [01:01<00:44,  1.96s/it, done=0, won=0][A
+Game 12:  54%|█████▍    | 27/50 [01:04<00:44,  1.96s/it, done=0, won=0][A
+Game 12:  56%|█████▌    | 28/50 [01:04<00:50,  2.30s/it, done=0, won=0][A
+Game 12:  56%|█████▌    | 28/50 [01:07<00:50,  2.30s/it, done=0, won=0][A
+Game 12:  58%|█████▊    | 29/50 [01:07<00:52,  2.51s/it, done=0, won=0][A
+Game 12:  58%|█████▊    | 29/50 [01:10<00:52,  2.51s/it, done=0, won=0][A
+Game 12:  60%|██████    | 30/50 [01:10<00:54,  2.73s/it, done=0, won=0][A
+Game 12:  60%|██████    | 30/50 [01:13<00:54,  2.73s/it, done=0, won=0][A
+Game 12:  62%|██████▏   | 31/50 [01:13<00:51,  2.73s/it, done=0, won=0][A
+Game 12:  62%|██████▏   | 31/50 [01:15<00:51,  2.73s/it, done=0, won=0][A
+Game 12:  64%|██████▍   | 32/50 [01:15<00:45,  2.51s/it, done=0, won=0][A
+Game 12:  64%|██████▍   | 32/50 [01:16<00:45,  2.51s/it, done=0, won=0][A
+Game 12:  66%|██████▌   | 33/50 [01:16<00:36,  2.14s/it, done=0, won=0][A
+Game 12:  66%|██████▌   | 33/50 [01:18<00:36,  2.14s/it, done=0, won=0][A
+Game 12:  68%|██████▊   | 34/50 [01:18<00:30,  1.91s/it, done=0, won=0][A
+Game 12:  68%|██████▊   | 34/50 [01:20<00:30,  1.91s/it, done=0, won=0][A
+Game 12:  70%|███████   | 35/50 [01:20<00:28,  1.93s/it, done=0, won=0][A
+Game 12:  70%|███████   | 35/50 [01:22<00:28,  1.93s/it, done=0, won=0][A
+Game 12:  72%|███████▏  | 36/50 [01:22<00:29,  2.13s/it, done=0, won=0][A
+Game 12:  72%|███████▏  | 36/50 [01:24<00:29,  2.13s/it, done=0, won=0][A
+Game 12:  74%|███████▍  | 37/50 [01:24<00:24,  1.92s/it, done=0, won=0][A
+Game 12:  74%|███████▍  | 37/50 [01:27<00:24,  1.92s/it, done=0, won=0][A
+Game 12:  76%|███████▌  | 38/50 [01:27<00:26,  2.21s/it, done=0, won=0][A
+Game 12:  76%|███████▌  | 38/50 [01:29<00:26,  2.21s/it, done=0, won=0][A
+Game 12:  78%|███████▊  | 39/50 [01:29<00:24,  2.25s/it, done=0, won=0][A
+Game 12:  78%|███████▊  | 39/50 [01:30<00:24,  2.25s/it, done=0, won=0][A
+Game 12:  80%|████████  | 40/50 [01:30<00:19,  1.95s/it, done=0, won=0][A
+Game 12:  80%|████████  | 40/50 [01:31<00:19,  1.95s/it, done=0, won=0][A
+Game 12:  82%|████████▏ | 41/50 [01:31<00:15,  1.76s/it, done=0, won=0][A
+Game 12:  82%|████████▏ | 41/50 [01:33<00:15,  1.76s/it, done=0, won=0][A
+Game 12:  84%|████████▍ | 42/50 [01:33<00:13,  1.72s/it, done=0, won=0][A
+Game 12:  84%|████████▍ | 42/50 [01:35<00:13,  1.72s/it, done=0, won=0][A
+Game 12:  86%|████████▌ | 43/50 [01:35<00:12,  1.73s/it, done=0, won=0][A
+Game 12:  86%|████████▌ | 43/50 [01:36<00:12,  1.73s/it, done=0, won=0][A
+Game 12:  88%|████████▊ | 44/50 [01:36<00:09,  1.65s/it, done=0, won=0][A
+Game 12:  88%|████████▊ | 44/50 [01:38<00:09,  1.65s/it, done=0, won=0][A
+Game 12:  90%|█████████ | 45/50 [01:38<00:07,  1.57s/it, done=0, won=0][A
+Game 12:  90%|█████████ | 45/50 [01:39<00:07,  1.57s/it, done=0, won=0][A
+Game 12:  92%|█████████▏| 46/50 [01:39<00:06,  1.59s/it, done=0, won=0][A
+Game 12:  92%|█████████▏| 46/50 [01:42<00:06,  1.59s/it, done=0, won=0][A
+Game 12:  94%|█████████▍| 47/50 [01:42<00:05,  1.87s/it, done=0, won=0][A
+Game 12:  94%|█████████▍| 47/50 [01:44<00:05,  1.87s/it, done=0, won=0][A
+Game 12:  96%|█████████▌| 48/50 [01:44<00:03,  1.93s/it, done=0, won=0][A
+Game 12:  96%|█████████▌| 48/50 [01:46<00:03,  1.93s/it, done=0, won=0][A
+Game 12:  98%|█████████▊| 49/50 [01:46<00:02,  2.00s/it, done=0, won=0][A
+Game 12:  98%|█████████▊| 49/50 [01:48<00:02,  2.00s/it, done=1, won=0][A2026-04-08 18:51:37,896 - Episode 12 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  40%|████      | 8/20 [13:33<19:53, 99.49s/it, offset=12]ALFWorld eval episodes:  40%|████      | 8/20 [13:33<19:53, 99.49s/it, offset=13]2026-04-08 18:51:37,897 - Episode 9/20 | dataset index=13
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3238.52it/s][A100%|██████████| 494/494 [00:00<00:00, 3037.81it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=13)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 13:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 13:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 13:   2%|▏         | 1/50 [00:01<00:53,  1.10s/it, done=0, won=0][A
+Game 13:   2%|▏         | 1/50 [00:03<00:53,  1.10s/it, done=0, won=0][A
+Game 13:   4%|▍         | 2/50 [00:03<01:41,  2.11s/it, done=0, won=0][A
+Game 13:   4%|▍         | 2/50 [00:06<01:41,  2.11s/it, done=0, won=0][A
+Game 13:   6%|▌         | 3/50 [00:06<01:59,  2.54s/it, done=0, won=0][A
+Game 13:   6%|▌         | 3/50 [00:08<01:59,  2.54s/it, done=0, won=0][A
+Game 13:   8%|▊         | 4/50 [00:08<01:45,  2.29s/it, done=0, won=0][A
+Game 13:   8%|▊         | 4/50 [00:11<01:45,  2.29s/it, done=0, won=0][A
+Game 13:  10%|█         | 5/50 [00:11<01:50,  2.45s/it, done=0, won=0][A
+Game 13:  10%|█         | 5/50 [00:14<01:50,  2.45s/it, done=0, won=0][A
+Game 13:  12%|█▏        | 6/50 [00:14<01:55,  2.64s/it, done=0, won=0][A
+Game 13:  12%|█▏        | 6/50 [00:17<01:55,  2.64s/it, done=0, won=0][A
+Game 13:  14%|█▍        | 7/50 [00:17<01:51,  2.60s/it, done=0, won=0][A
+Game 13:  14%|█▍        | 7/50 [00:19<01:51,  2.60s/it, done=0, won=0][A
+Game 13:  16%|█▌        | 8/50 [00:19<01:51,  2.64s/it, done=0, won=0][A
+Game 13:  16%|█▌        | 8/50 [00:21<01:51,  2.64s/it, done=0, won=0][A
+Game 13:  18%|█▊        | 9/50 [00:21<01:37,  2.37s/it, done=0, won=0][A
+Game 13:  18%|█▊        | 9/50 [00:23<01:37,  2.37s/it, done=0, won=0][A
+Game 13:  20%|██        | 10/50 [00:23<01:25,  2.15s/it, done=0, won=0][A
+Game 13:  20%|██        | 10/50 [00:26<01:25,  2.15s/it, done=0, won=0][A
+Game 13:  22%|██▏       | 11/50 [00:26<01:33,  2.38s/it, done=0, won=0][A
+Game 13:  22%|██▏       | 11/50 [00:27<01:33,  2.38s/it, done=0, won=0][A
+Game 13:  24%|██▍       | 12/50 [00:27<01:16,  2.01s/it, done=0, won=0][A
+Game 13:  24%|██▍       | 12/50 [00:29<01:16,  2.01s/it, done=0, won=0][A
+Game 13:  26%|██▌       | 13/50 [00:29<01:19,  2.15s/it, done=0, won=0][A
+Game 13:  26%|██▌       | 13/50 [00:32<01:19,  2.15s/it, done=0, won=0][A
+Game 13:  28%|██▊       | 14/50 [00:32<01:21,  2.27s/it, done=0, won=0][A
+Game 13:  28%|██▊       | 14/50 [00:35<01:21,  2.27s/it, done=0, won=0][A
+Game 13:  30%|███       | 15/50 [00:35<01:23,  2.39s/it, done=0, won=0][A
+Game 13:  30%|███       | 15/50 [00:37<01:23,  2.39s/it, done=0, won=0][A
+Game 13:  32%|███▏      | 16/50 [00:37<01:23,  2.45s/it, done=0, won=0][A
+Game 13:  32%|███▏      | 16/50 [00:38<01:23,  2.45s/it, done=0, won=0][A
+Game 13:  34%|███▍      | 17/50 [00:38<01:06,  2.03s/it, done=0, won=0][A
+Game 13:  34%|███▍      | 17/50 [00:41<01:06,  2.03s/it, done=0, won=0][A
+Game 13:  36%|███▌      | 18/50 [00:41<01:11,  2.22s/it, done=0, won=0][A
+Game 13:  36%|███▌      | 18/50 [00:44<01:11,  2.22s/it, done=0, won=0][A
+Game 13:  38%|███▊      | 19/50 [00:44<01:15,  2.44s/it, done=0, won=0][A
+Game 13:  38%|███▊      | 19/50 [00:47<01:15,  2.44s/it, done=0, won=0][A
+Game 13:  40%|████      | 20/50 [00:47<01:18,  2.62s/it, done=0, won=0][A
+Game 13:  40%|████      | 20/50 [00:50<01:18,  2.62s/it, done=0, won=0][A
+Game 13:  42%|████▏     | 21/50 [00:50<01:17,  2.68s/it, done=0, won=0][A
+Game 13:  42%|████▏     | 21/50 [00:53<01:17,  2.68s/it, done=0, won=0][A
+Game 13:  44%|████▍     | 22/50 [00:53<01:16,  2.74s/it, done=0, won=0][A
+Game 13:  44%|████▍     | 22/50 [00:55<01:16,  2.74s/it, done=0, won=0][A
+Game 13:  46%|████▌     | 23/50 [00:55<01:12,  2.68s/it, done=0, won=0][A
+Game 13:  46%|████▌     | 23/50 [00:58<01:12,  2.68s/it, done=0, won=0][A
+Game 13:  48%|████▊     | 24/50 [00:58<01:10,  2.70s/it, done=0, won=0][A
+Game 13:  48%|████▊     | 24/50 [00:59<01:10,  2.70s/it, done=0, won=0][A
+Game 13:  50%|█████     | 25/50 [00:59<00:59,  2.39s/it, done=0, won=0][A
+Game 13:  50%|█████     | 25/50 [01:03<00:59,  2.39s/it, done=0, won=0][A
+Game 13:  52%|█████▏    | 26/50 [01:03<01:03,  2.63s/it, done=0, won=0][A
+Game 13:  52%|█████▏    | 26/50 [01:06<01:03,  2.63s/it, done=0, won=0][A
+Game 13:  54%|█████▍    | 27/50 [01:06<01:03,  2.78s/it, done=0, won=0][A
+Game 13:  54%|█████▍    | 27/50 [01:08<01:03,  2.78s/it, done=0, won=0][A
+Game 13:  56%|█████▌    | 28/50 [01:08<01:00,  2.74s/it, done=0, won=0][A
+Game 13:  56%|█████▌    | 28/50 [01:11<01:00,  2.74s/it, done=0, won=0][A
+Game 13:  58%|█████▊    | 29/50 [01:11<00:56,  2.70s/it, done=0, won=0][A
+Game 13:  58%|█████▊    | 29/50 [01:12<00:56,  2.70s/it, done=0, won=0][A
+Game 13:  60%|██████    | 30/50 [01:12<00:45,  2.26s/it, done=0, won=0][A
+Game 13:  60%|██████    | 30/50 [01:15<00:45,  2.26s/it, done=0, won=0][A
+Game 13:  62%|██████▏   | 31/50 [01:15<00:45,  2.37s/it, done=0, won=0][A
+Game 13:  62%|██████▏   | 31/50 [01:17<00:45,  2.37s/it, done=0, won=0][A
+Game 13:  64%|██████▍   | 32/50 [01:17<00:39,  2.18s/it, done=0, won=0][A
+Game 13:  64%|██████▍   | 32/50 [01:19<00:39,  2.18s/it, done=0, won=0][A
+Game 13:  66%|██████▌   | 33/50 [01:19<00:39,  2.30s/it, done=0, won=0][A
+Game 13:  66%|██████▌   | 33/50 [01:22<00:39,  2.30s/it, done=0, won=0][A
+Game 13:  68%|██████▊   | 34/50 [01:22<00:41,  2.57s/it, done=0, won=0][A
+Game 13:  68%|██████▊   | 34/50 [01:25<00:41,  2.57s/it, done=0, won=0][A
+Game 13:  70%|███████   | 35/50 [01:25<00:39,  2.61s/it, done=0, won=0][A
+Game 13:  70%|███████   | 35/50 [01:28<00:39,  2.61s/it, done=0, won=0][A
+Game 13:  72%|███████▏  | 36/50 [01:28<00:37,  2.66s/it, done=0, won=0][A
+Game 13:  72%|███████▏  | 36/50 [01:31<00:37,  2.66s/it, done=0, won=0][A
+Game 13:  74%|███████▍  | 37/50 [01:31<00:34,  2.68s/it, done=0, won=0][A
+Game 13:  74%|███████▍  | 37/50 [01:34<00:34,  2.68s/it, done=0, won=0][A
+Game 13:  76%|███████▌  | 38/50 [01:34<00:33,  2.76s/it, done=0, won=0][A
+Game 13:  76%|███████▌  | 38/50 [01:36<00:33,  2.76s/it, done=0, won=0][A
+Game 13:  78%|███████▊  | 39/50 [01:36<00:30,  2.74s/it, done=0, won=0][A
+Game 13:  78%|███████▊  | 39/50 [01:38<00:30,  2.74s/it, done=0, won=0][A
+Game 13:  80%|████████  | 40/50 [01:38<00:23,  2.37s/it, done=0, won=0][A
+Game 13:  80%|████████  | 40/50 [01:40<00:23,  2.37s/it, done=0, won=0][A
+Game 13:  82%|████████▏ | 41/50 [01:40<00:19,  2.21s/it, done=0, won=0][A
+Game 13:  82%|████████▏ | 41/50 [01:42<00:19,  2.21s/it, done=0, won=0][A
+Game 13:  84%|████████▍ | 42/50 [01:42<00:18,  2.33s/it, done=0, won=0][A
+Game 13:  84%|████████▍ | 42/50 [01:45<00:18,  2.33s/it, done=0, won=0][A
+Game 13:  86%|████████▌ | 43/50 [01:45<00:16,  2.43s/it, done=0, won=0][A
+Game 13:  86%|████████▌ | 43/50 [01:48<00:16,  2.43s/it, done=0, won=0][A
+Game 13:  88%|████████▊ | 44/50 [01:48<00:15,  2.54s/it, done=0, won=0][A
+Game 13:  88%|████████▊ | 44/50 [01:51<00:15,  2.54s/it, done=0, won=0][A
+Game 13:  90%|█████████ | 45/50 [01:51<00:13,  2.78s/it, done=0, won=0][A
+Game 13:  90%|█████████ | 45/50 [01:54<00:13,  2.78s/it, done=0, won=0][A
+Game 13:  92%|█████████▏| 46/50 [01:54<00:11,  2.85s/it, done=0, won=0][A
+Game 13:  92%|█████████▏| 46/50 [01:56<00:11,  2.85s/it, done=0, won=0][A
+Game 13:  94%|█████████▍| 47/50 [01:56<00:07,  2.44s/it, done=0, won=0][A
+Game 13:  94%|█████████▍| 47/50 [01:58<00:07,  2.44s/it, done=0, won=0][A
+Game 13:  96%|█████████▌| 48/50 [01:58<00:04,  2.30s/it, done=0, won=0][A
+Game 13:  96%|█████████▌| 48/50 [02:00<00:04,  2.30s/it, done=0, won=0][A
+Game 13:  98%|█████████▊| 49/50 [02:00<00:02,  2.38s/it, done=0, won=0][A
+Game 13:  98%|█████████▊| 49/50 [02:02<00:02,  2.38s/it, done=1, won=0][A2026-04-08 18:53:51,050 - Episode 13 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  45%|████▌     | 9/20 [15:46<20:10, 110.01s/it, offset=13]ALFWorld eval episodes:  45%|████▌     | 9/20 [15:46<20:10, 110.01s/it, offset=14]2026-04-08 18:53:51,051 - Episode 10/20 | dataset index=14
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3235.70it/s][A100%|██████████| 494/494 [00:00<00:00, 1395.95it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=14)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 14:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 14:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 14:   2%|▏         | 1/50 [00:01<00:49,  1.01s/it, done=0, won=0][A
+Game 14:   2%|▏         | 1/50 [00:03<00:49,  1.01s/it, done=0, won=0][A
+Game 14:   4%|▍         | 2/50 [00:03<01:24,  1.77s/it, done=0, won=0][A
+Game 14:   4%|▍         | 2/50 [00:05<01:24,  1.77s/it, done=0, won=0][A
+Game 14:   6%|▌         | 3/50 [00:05<01:34,  2.02s/it, done=0, won=0][A
+Game 14:   6%|▌         | 3/50 [00:06<01:34,  2.02s/it, done=0, won=0][A
+Game 14:   8%|▊         | 4/50 [00:06<01:17,  1.69s/it, done=0, won=0][A
+Game 14:   8%|▊         | 4/50 [00:07<01:17,  1.69s/it, done=0, won=0][A
+Game 14:  10%|█         | 5/50 [00:07<01:04,  1.44s/it, done=0, won=0][A
+Game 14:  10%|█         | 5/50 [00:10<01:04,  1.44s/it, done=0, won=0][A
+Game 14:  12%|█▏        | 6/50 [00:10<01:20,  1.84s/it, done=0, won=0][A
+Game 14:  12%|█▏        | 6/50 [00:11<01:20,  1.84s/it, done=0, won=0][A
+Game 14:  14%|█▍        | 7/50 [00:11<01:11,  1.66s/it, done=0, won=0][A
+Game 14:  14%|█▍        | 7/50 [00:12<01:11,  1.66s/it, done=0, won=0][A
+Game 14:  16%|█▌        | 8/50 [00:12<01:01,  1.47s/it, done=0, won=0][A
+Game 14:  16%|█▌        | 8/50 [00:14<01:01,  1.47s/it, done=0, won=0][A
+Game 14:  18%|█▊        | 9/50 [00:14<01:09,  1.69s/it, done=0, won=0][A
+Game 14:  18%|█▊        | 9/50 [00:16<01:09,  1.69s/it, done=0, won=0][A
+Game 14:  20%|██        | 10/50 [00:16<01:03,  1.58s/it, done=0, won=0][A
+Game 14:  20%|██        | 10/50 [00:18<01:03,  1.58s/it, done=0, won=0][A
+Game 14:  22%|██▏       | 11/50 [00:18<01:07,  1.74s/it, done=0, won=0][A
+Game 14:  22%|██▏       | 11/50 [00:19<01:07,  1.74s/it, done=0, won=0][A
+Game 14:  24%|██▍       | 12/50 [00:19<00:59,  1.56s/it, done=0, won=0][A
+Game 14:  24%|██▍       | 12/50 [00:21<00:59,  1.56s/it, done=0, won=0][A
+Game 14:  26%|██▌       | 13/50 [00:21<00:58,  1.59s/it, done=0, won=0][A
+Game 14:  26%|██▌       | 13/50 [00:22<00:58,  1.59s/it, done=0, won=0][A
+Game 14:  28%|██▊       | 14/50 [00:22<00:59,  1.64s/it, done=0, won=0][A
+Game 14:  28%|██▊       | 14/50 [00:23<00:59,  1.64s/it, done=0, won=0][A
+Game 14:  30%|███       | 15/50 [00:23<00:49,  1.42s/it, done=0, won=0][A
+Game 14:  30%|███       | 15/50 [00:25<00:49,  1.42s/it, done=0, won=0][A
+Game 14:  32%|███▏      | 16/50 [00:25<00:45,  1.34s/it, done=0, won=0][A
+Game 14:  32%|███▏      | 16/50 [00:26<00:45,  1.34s/it, done=0, won=0][A
+Game 14:  34%|███▍      | 17/50 [00:26<00:44,  1.35s/it, done=0, won=0][A
+Game 14:  34%|███▍      | 17/50 [00:28<00:44,  1.35s/it, done=0, won=0][A
+Game 14:  36%|███▌      | 18/50 [00:28<00:53,  1.66s/it, done=0, won=0][A
+Game 14:  36%|███▌      | 18/50 [00:30<00:53,  1.66s/it, done=0, won=0][A
+Game 14:  38%|███▊      | 19/50 [00:30<00:53,  1.73s/it, done=0, won=0][A
+Game 14:  38%|███▊      | 19/50 [00:31<00:53,  1.73s/it, done=0, won=0][A
+Game 14:  40%|████      | 20/50 [00:31<00:47,  1.59s/it, done=0, won=0][A
+Game 14:  40%|████      | 20/50 [00:34<00:47,  1.59s/it, done=0, won=0][A
+Game 14:  42%|████▏     | 21/50 [00:34<00:52,  1.79s/it, done=0, won=0][A
+Game 14:  42%|████▏     | 21/50 [00:35<00:52,  1.79s/it, done=0, won=0][A
+Game 14:  44%|████▍     | 22/50 [00:35<00:48,  1.73s/it, done=0, won=0][A
+Game 14:  44%|████▍     | 22/50 [00:37<00:48,  1.73s/it, done=0, won=0][A
+Game 14:  46%|████▌     | 23/50 [00:37<00:46,  1.71s/it, done=0, won=0][A
+Game 14:  46%|████▌     | 23/50 [00:40<00:46,  1.71s/it, done=0, won=0][A
+Game 14:  48%|████▊     | 24/50 [00:40<00:56,  2.16s/it, done=0, won=0][A
+Game 14:  48%|████▊     | 24/50 [00:41<00:56,  2.16s/it, done=0, won=0][A
+Game 14:  50%|█████     | 25/50 [00:41<00:47,  1.90s/it, done=0, won=0][A
+Game 14:  50%|█████     | 25/50 [00:43<00:47,  1.90s/it, done=0, won=0][A
+Game 14:  52%|█████▏    | 26/50 [00:43<00:41,  1.73s/it, done=0, won=0][A
+Game 14:  52%|█████▏    | 26/50 [00:44<00:41,  1.73s/it, done=0, won=0][A
+Game 14:  54%|█████▍    | 27/50 [00:44<00:36,  1.57s/it, done=0, won=0][A
+Game 14:  54%|█████▍    | 27/50 [00:46<00:36,  1.57s/it, done=0, won=0][A
+Game 14:  56%|█████▌    | 28/50 [00:46<00:36,  1.68s/it, done=0, won=0][A
+Game 14:  56%|█████▌    | 28/50 [00:47<00:36,  1.68s/it, done=0, won=0][A
+Game 14:  58%|█████▊    | 29/50 [00:47<00:31,  1.51s/it, done=0, won=0][A
+Game 14:  58%|█████▊    | 29/50 [00:49<00:31,  1.51s/it, done=0, won=0][A
+Game 14:  60%|██████    | 30/50 [00:49<00:33,  1.68s/it, done=0, won=0][A
+Game 14:  60%|██████    | 30/50 [00:50<00:33,  1.68s/it, done=0, won=0][A
+Game 14:  62%|██████▏   | 31/50 [00:50<00:28,  1.51s/it, done=0, won=0][A
+Game 14:  62%|██████▏   | 31/50 [00:52<00:28,  1.51s/it, done=0, won=0][A
+Game 14:  64%|██████▍   | 32/50 [00:52<00:26,  1.45s/it, done=0, won=0][A
+Game 14:  64%|██████▍   | 32/50 [00:53<00:26,  1.45s/it, done=0, won=0][A
+Game 14:  66%|██████▌   | 33/50 [00:53<00:22,  1.31s/it, done=0, won=0][A
+Game 14:  66%|██████▌   | 33/50 [00:54<00:22,  1.31s/it, done=0, won=0][A
+Game 14:  68%|██████▊   | 34/50 [00:54<00:20,  1.28s/it, done=0, won=0][A
+Game 14:  68%|██████▊   | 34/50 [00:55<00:20,  1.28s/it, done=0, won=0][A
+Game 14:  70%|███████   | 35/50 [00:55<00:19,  1.28s/it, done=0, won=0][A
+Game 14:  70%|███████   | 35/50 [00:56<00:19,  1.28s/it, done=0, won=0][A
+Game 14:  72%|███████▏  | 36/50 [00:56<00:18,  1.31s/it, done=0, won=0][A
+Game 14:  72%|███████▏  | 36/50 [00:58<00:18,  1.31s/it, done=0, won=0][A
+Game 14:  74%|███████▍  | 37/50 [00:58<00:19,  1.47s/it, done=0, won=0][A
+Game 14:  74%|███████▍  | 37/50 [00:59<00:19,  1.47s/it, done=0, won=0][A
+Game 14:  76%|███████▌  | 38/50 [00:59<00:15,  1.32s/it, done=0, won=0][A
+Game 14:  76%|███████▌  | 38/50 [01:01<00:15,  1.32s/it, done=0, won=0][A
+Game 14:  78%|███████▊  | 39/50 [01:01<00:17,  1.55s/it, done=0, won=0][A
+Game 14:  78%|███████▊  | 39/50 [01:03<00:17,  1.55s/it, done=0, won=0][A
+Game 14:  80%|████████  | 40/50 [01:03<00:14,  1.50s/it, done=0, won=0][A
+Game 14:  80%|████████  | 40/50 [01:04<00:14,  1.50s/it, done=0, won=0][A
+Game 14:  82%|████████▏ | 41/50 [01:04<00:11,  1.33s/it, done=0, won=0][A
+Game 14:  82%|████████▏ | 41/50 [01:05<00:11,  1.33s/it, done=0, won=0][A
+Game 14:  84%|████████▍ | 42/50 [01:05<00:09,  1.24s/it, done=0, won=0][A
+Game 14:  84%|████████▍ | 42/50 [01:06<00:09,  1.24s/it, done=0, won=0][A
+Game 14:  86%|████████▌ | 43/50 [01:06<00:08,  1.20s/it, done=0, won=0][A
+Game 14:  86%|████████▌ | 43/50 [01:07<00:08,  1.20s/it, done=0, won=0][A
+Game 14:  88%|████████▊ | 44/50 [01:07<00:07,  1.20s/it, done=0, won=0][A
+Game 14:  88%|████████▊ | 44/50 [01:09<00:07,  1.20s/it, done=0, won=0][A
+Game 14:  90%|█████████ | 45/50 [01:09<00:07,  1.49s/it, done=0, won=0][A
+Game 14:  90%|█████████ | 45/50 [01:11<00:07,  1.49s/it, done=0, won=0][A
+Game 14:  92%|█████████▏| 46/50 [01:11<00:06,  1.70s/it, done=0, won=0][A
+Game 14:  92%|█████████▏| 46/50 [01:12<00:06,  1.70s/it, done=0, won=0][A
+Game 14:  94%|█████████▍| 47/50 [01:12<00:04,  1.55s/it, done=0, won=0][A
+Game 14:  94%|█████████▍| 47/50 [01:14<00:04,  1.55s/it, done=0, won=0][A
+Game 14:  96%|█████████▌| 48/50 [01:14<00:02,  1.46s/it, done=0, won=0][A
+Game 14:  96%|█████████▌| 48/50 [01:17<00:02,  1.46s/it, done=0, won=0][A
+Game 14:  98%|█████████▊| 49/50 [01:17<00:02,  2.09s/it, done=0, won=0][A
+Game 14:  98%|█████████▊| 49/50 [01:20<00:02,  2.09s/it, done=1, won=0][A2026-04-08 18:55:18,228 - Episode 14 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  50%|█████     | 10/20 [17:13<17:09, 102.96s/it, offset=14]ALFWorld eval episodes:  50%|█████     | 10/20 [17:13<17:09, 102.96s/it, offset=15]2026-04-08 18:55:18,229 - Episode 11/20 | dataset index=15
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3249.29it/s][A100%|██████████| 494/494 [00:00<00:00, 3078.26it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=15)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 15:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 15:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 15:   2%|▏         | 1/50 [00:01<00:55,  1.12s/it, done=0, won=0][A
+Game 15:   2%|▏         | 1/50 [00:02<00:55,  1.12s/it, done=0, won=0][A
+Game 15:   4%|▍         | 2/50 [00:02<00:55,  1.15s/it, done=0, won=0][A
+Game 15:   4%|▍         | 2/50 [00:06<00:55,  1.15s/it, done=0, won=0][A
+Game 15:   6%|▌         | 3/50 [00:06<01:56,  2.47s/it, done=0, won=0][A
+Game 15:   6%|▌         | 3/50 [00:07<01:56,  2.47s/it, done=0, won=0][A
+Game 15:   8%|▊         | 4/50 [00:07<01:27,  1.91s/it, done=0, won=0][A
+Game 15:   8%|▊         | 4/50 [00:09<01:27,  1.91s/it, done=0, won=0][A
+Game 15:  10%|█         | 5/50 [00:09<01:24,  1.88s/it, done=0, won=0][A
+Game 15:  10%|█         | 5/50 [00:12<01:24,  1.88s/it, done=0, won=0][A
+Game 15:  12%|█▏        | 6/50 [00:12<01:50,  2.50s/it, done=0, won=0][A
+Game 15:  12%|█▏        | 6/50 [00:14<01:50,  2.50s/it, done=0, won=0][A
+Game 15:  14%|█▍        | 7/50 [00:14<01:36,  2.23s/it, done=0, won=0][A
+Game 15:  14%|█▍        | 7/50 [00:18<01:36,  2.23s/it, done=0, won=0][A
+Game 15:  16%|█▌        | 8/50 [00:18<01:58,  2.83s/it, done=0, won=0][A
+Game 15:  16%|█▌        | 8/50 [00:22<01:58,  2.83s/it, done=0, won=0][A
+Game 15:  18%|█▊        | 9/50 [00:22<02:05,  3.05s/it, done=0, won=0][A
+Game 15:  18%|█▊        | 9/50 [00:23<02:05,  3.05s/it, done=0, won=0][A
+Game 15:  20%|██        | 10/50 [00:23<01:38,  2.46s/it, done=0, won=0][A
+Game 15:  20%|██        | 10/50 [00:26<01:38,  2.46s/it, done=0, won=0][A
+Game 15:  22%|██▏       | 11/50 [00:26<01:39,  2.56s/it, done=0, won=0][A
+Game 15:  22%|██▏       | 11/50 [00:27<01:39,  2.56s/it, done=0, won=0][A
+Game 15:  24%|██▍       | 12/50 [00:27<01:23,  2.20s/it, done=0, won=0][A
+Game 15:  24%|██▍       | 12/50 [00:31<01:23,  2.20s/it, done=0, won=0][A
+Game 15:  26%|██▌       | 13/50 [00:31<01:40,  2.71s/it, done=0, won=0][A
+Game 15:  26%|██▌       | 13/50 [00:32<01:40,  2.71s/it, done=0, won=0][A
+Game 15:  28%|██▊       | 14/50 [00:32<01:18,  2.19s/it, done=0, won=0][A
+Game 15:  28%|██▊       | 14/50 [00:33<01:18,  2.19s/it, done=0, won=0][A
+Game 15:  30%|███       | 15/50 [00:33<01:06,  1.91s/it, done=0, won=0][A
+Game 15:  30%|███       | 15/50 [00:34<01:06,  1.91s/it, done=0, won=0][A
+Game 15:  32%|███▏      | 16/50 [00:34<00:56,  1.67s/it, done=0, won=0][A
+Game 15:  32%|███▏      | 16/50 [00:35<00:56,  1.67s/it, done=0, won=0][A
+Game 15:  34%|███▍      | 17/50 [00:35<00:49,  1.50s/it, done=0, won=0][A
+Game 15:  34%|███▍      | 17/50 [00:37<00:49,  1.50s/it, done=0, won=0][A
+Game 15:  36%|███▌      | 18/50 [00:37<00:47,  1.49s/it, done=0, won=0][A
+Game 15:  36%|███▌      | 18/50 [00:40<00:47,  1.49s/it, done=0, won=0][A
+Game 15:  38%|███▊      | 19/50 [00:40<01:06,  2.13s/it, done=0, won=0][A
+Game 15:  38%|███▊      | 19/50 [00:44<01:06,  2.13s/it, done=0, won=0][A
+Game 15:  40%|████      | 20/50 [00:44<01:17,  2.60s/it, done=0, won=0][A
+Game 15:  40%|████      | 20/50 [00:46<01:17,  2.60s/it, done=0, won=0][A
+Game 15:  42%|████▏     | 21/50 [00:46<01:05,  2.28s/it, done=0, won=0][A
+Game 15:  42%|████▏     | 21/50 [00:49<01:05,  2.28s/it, done=0, won=0][A
+Game 15:  44%|████▍     | 22/50 [00:49<01:14,  2.64s/it, done=0, won=0][A
+Game 15:  44%|████▍     | 22/50 [00:50<01:14,  2.64s/it, done=0, won=0][A
+Game 15:  46%|████▌     | 23/50 [00:50<00:59,  2.22s/it, done=0, won=0][A
+Game 15:  46%|████▌     | 23/50 [00:54<00:59,  2.22s/it, done=0, won=0][A
+Game 15:  48%|████▊     | 24/50 [00:54<01:12,  2.77s/it, done=0, won=0][A
+Game 15:  48%|████▊     | 24/50 [00:59<01:12,  2.77s/it, done=0, won=0][A
+Game 15:  50%|█████     | 25/50 [00:59<01:25,  3.41s/it, done=0, won=0][A
+Game 15:  50%|█████     | 25/50 [01:01<01:25,  3.41s/it, done=0, won=0][A
+Game 15:  52%|█████▏    | 26/50 [01:01<01:06,  2.76s/it, done=0, won=0][A
+Game 15:  52%|█████▏    | 26/50 [01:02<01:06,  2.76s/it, done=0, won=0][A
+Game 15:  54%|█████▍    | 27/50 [01:02<00:51,  2.25s/it, done=0, won=0][A
+Game 15:  54%|█████▍    | 27/50 [01:03<00:51,  2.25s/it, done=0, won=0][A
+Game 15:  56%|█████▌    | 28/50 [01:03<00:42,  1.94s/it, done=0, won=0][A
+Game 15:  56%|█████▌    | 28/50 [01:06<00:42,  1.94s/it, done=0, won=0][A
+Game 15:  58%|█████▊    | 29/50 [01:06<00:50,  2.39s/it, done=0, won=0][A
+Game 15:  58%|█████▊    | 29/50 [01:10<00:50,  2.39s/it, done=0, won=0][A
+Game 15:  60%|██████    | 30/50 [01:10<00:54,  2.71s/it, done=0, won=0][A
+Game 15:  60%|██████    | 30/50 [01:11<00:54,  2.71s/it, done=0, won=0][A
+Game 15:  62%|██████▏   | 31/50 [01:11<00:44,  2.32s/it, done=0, won=0][A
+Game 15:  62%|██████▏   | 31/50 [01:12<00:44,  2.32s/it, done=0, won=0][A
+Game 15:  64%|██████▍   | 32/50 [01:12<00:35,  1.99s/it, done=0, won=0][A
+Game 15:  64%|██████▍   | 32/50 [01:14<00:35,  1.99s/it, done=0, won=0][A
+Game 15:  66%|██████▌   | 33/50 [01:14<00:29,  1.74s/it, done=0, won=0][A
+Game 15:  66%|██████▌   | 33/50 [01:15<00:29,  1.74s/it, done=0, won=0][A
+Game 15:  68%|██████▊   | 34/50 [01:15<00:25,  1.59s/it, done=0, won=0][A
+Game 15:  68%|██████▊   | 34/50 [01:18<00:25,  1.59s/it, done=0, won=0][A
+Game 15:  70%|███████   | 35/50 [01:18<00:33,  2.20s/it, done=0, won=0][A
+Game 15:  70%|███████   | 35/50 [01:20<00:33,  2.20s/it, done=0, won=0][A
+Game 15:  72%|███████▏  | 36/50 [01:20<00:26,  1.88s/it, done=0, won=0][A
+Game 15:  72%|███████▏  | 36/50 [01:21<00:26,  1.88s/it, done=0, won=0][A
+Game 15:  74%|███████▍  | 37/50 [01:21<00:24,  1.85s/it, done=0, won=0][A
+Game 15:  74%|███████▍  | 37/50 [01:23<00:24,  1.85s/it, done=0, won=0][A
+Game 15:  76%|███████▌  | 38/50 [01:23<00:22,  1.84s/it, done=0, won=0][A
+Game 15:  76%|███████▌  | 38/50 [01:27<00:22,  1.84s/it, done=0, won=0][A
+Game 15:  78%|███████▊  | 39/50 [01:27<00:25,  2.33s/it, done=0, won=0][A
+Game 15:  78%|███████▊  | 39/50 [01:30<00:25,  2.33s/it, done=0, won=0][A
+Game 15:  80%|████████  | 40/50 [01:30<00:26,  2.70s/it, done=0, won=0][A
+Game 15:  80%|████████  | 40/50 [01:31<00:26,  2.70s/it, done=0, won=0][A
+Game 15:  82%|████████▏ | 41/50 [01:31<00:20,  2.27s/it, done=0, won=0][A
+Game 15:  82%|████████▏ | 41/50 [01:35<00:20,  2.27s/it, done=0, won=0][A
+Game 15:  84%|████████▍ | 42/50 [01:35<00:20,  2.52s/it, done=0, won=0][A
+Game 15:  84%|████████▍ | 42/50 [01:36<00:20,  2.52s/it, done=0, won=0][A
+Game 15:  86%|████████▌ | 43/50 [01:36<00:14,  2.14s/it, done=0, won=0][A
+Game 15:  86%|████████▌ | 43/50 [01:37<00:14,  2.14s/it, done=0, won=0][A
+Game 15:  88%|████████▊ | 44/50 [01:37<00:11,  1.85s/it, done=0, won=0][A
+Game 15:  88%|████████▊ | 44/50 [01:39<00:11,  1.85s/it, done=0, won=0][A
+Game 15:  90%|█████████ | 45/50 [01:39<00:09,  1.94s/it, done=0, won=0][A
+Game 15:  90%|█████████ | 45/50 [01:42<00:09,  1.94s/it, done=0, won=0][A
+Game 15:  92%|█████████▏| 46/50 [01:42<00:08,  2.25s/it, done=0, won=0][A
+Game 15:  92%|█████████▏| 46/50 [01:44<00:08,  2.25s/it, done=0, won=0][A
+Game 15:  94%|█████████▍| 47/50 [01:44<00:05,  2.00s/it, done=0, won=0][A
+Game 15:  94%|█████████▍| 47/50 [01:45<00:05,  2.00s/it, done=0, won=0][A
+Game 15:  96%|█████████▌| 48/50 [01:45<00:03,  1.89s/it, done=0, won=0][A
+Game 15:  96%|█████████▌| 48/50 [01:47<00:03,  1.89s/it, done=0, won=0][A
+Game 15:  98%|█████████▊| 49/50 [01:47<00:01,  1.82s/it, done=0, won=0][A
+Game 15:  98%|█████████▊| 49/50 [01:48<00:01,  1.82s/it, done=1, won=0][A2026-04-08 18:57:17,380 - Episode 15 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  55%|█████▌    | 11/20 [19:12<16:11, 107.92s/it, offset=15]ALFWorld eval episodes:  55%|█████▌    | 11/20 [19:12<16:11, 107.92s/it, offset=16]2026-04-08 18:57:17,381 - Episode 12/20 | dataset index=16
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3259.41it/s][A100%|██████████| 494/494 [00:00<00:00, 3077.95it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=16)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 16:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 16:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 16:   2%|▏         | 1/50 [00:01<00:59,  1.21s/it, done=0, won=0][A
+Game 16:   2%|▏         | 1/50 [00:02<00:59,  1.21s/it, done=0, won=0][A
+Game 16:   4%|▍         | 2/50 [00:02<01:01,  1.28s/it, done=0, won=0][A
+Game 16:   4%|▍         | 2/50 [00:05<01:01,  1.28s/it, done=0, won=0][A
+Game 16:   6%|▌         | 3/50 [00:05<01:27,  1.86s/it, done=0, won=0][A
+Game 16:   6%|▌         | 3/50 [00:06<01:27,  1.86s/it, done=0, won=0][A
+Game 16:   8%|▊         | 4/50 [00:06<01:11,  1.55s/it, done=0, won=0][A
+Game 16:   8%|▊         | 4/50 [00:07<01:11,  1.55s/it, done=0, won=0][A
+Game 16:  10%|█         | 5/50 [00:07<01:01,  1.36s/it, done=0, won=0][A
+Game 16:  10%|█         | 5/50 [00:08<01:01,  1.36s/it, done=0, won=0][A
+Game 16:  12%|█▏        | 6/50 [00:08<01:04,  1.46s/it, done=0, won=0][A
+Game 16:  12%|█▏        | 6/50 [00:10<01:04,  1.46s/it, done=0, won=0][A
+Game 16:  14%|█▍        | 7/50 [00:10<01:01,  1.42s/it, done=0, won=0][A
+Game 16:  14%|█▍        | 7/50 [00:12<01:01,  1.42s/it, done=0, won=0][A
+Game 16:  16%|█▌        | 8/50 [00:12<01:17,  1.85s/it, done=0, won=0][A
+Game 16:  16%|█▌        | 8/50 [00:15<01:17,  1.85s/it, done=0, won=0][A
+Game 16:  18%|█▊        | 9/50 [00:15<01:19,  1.93s/it, done=0, won=0][A
+Game 16:  18%|█▊        | 9/50 [00:16<01:19,  1.93s/it, done=0, won=0][A
+Game 16:  20%|██        | 10/50 [00:16<01:10,  1.75s/it, done=0, won=0][A
+Game 16:  20%|██        | 10/50 [00:17<01:10,  1.75s/it, done=0, won=0][A
+Game 16:  22%|██▏       | 11/50 [00:17<01:00,  1.55s/it, done=0, won=0][A
+Game 16:  22%|██▏       | 11/50 [00:18<01:00,  1.55s/it, done=0, won=0][A
+Game 16:  24%|██▍       | 12/50 [00:18<00:55,  1.47s/it, done=0, won=0][A
+Game 16:  24%|██▍       | 12/50 [00:19<00:55,  1.47s/it, done=0, won=0][A
+Game 16:  26%|██▌       | 13/50 [00:19<00:50,  1.36s/it, done=0, won=0][A
+Game 16:  26%|██▌       | 13/50 [00:22<00:50,  1.36s/it, done=0, won=0][A
+Game 16:  28%|██▊       | 14/50 [00:22<00:57,  1.60s/it, done=0, won=0][A
+Game 16:  28%|██▊       | 14/50 [00:23<00:57,  1.60s/it, done=0, won=0][A
+Game 16:  30%|███       | 15/50 [00:23<00:52,  1.50s/it, done=0, won=0][A
+Game 16:  30%|███       | 15/50 [00:24<00:52,  1.50s/it, done=0, won=0][A
+Game 16:  32%|███▏      | 16/50 [00:24<00:47,  1.40s/it, done=0, won=0][A
+Game 16:  32%|███▏      | 16/50 [00:25<00:47,  1.40s/it, done=0, won=0][A
+Game 16:  34%|███▍      | 17/50 [00:25<00:44,  1.34s/it, done=0, won=0][A
+Game 16:  34%|███▍      | 17/50 [00:27<00:44,  1.34s/it, done=0, won=0][A
+Game 16:  36%|███▌      | 18/50 [00:27<00:44,  1.40s/it, done=0, won=0][A
+Game 16:  36%|███▌      | 18/50 [00:29<00:44,  1.40s/it, done=0, won=0][A
+Game 16:  38%|███▊      | 19/50 [00:29<00:49,  1.61s/it, done=0, won=0][A
+Game 16:  38%|███▊      | 19/50 [00:30<00:49,  1.61s/it, done=0, won=0][A
+Game 16:  40%|████      | 20/50 [00:30<00:47,  1.57s/it, done=0, won=0][A
+Game 16:  40%|████      | 20/50 [00:32<00:47,  1.57s/it, done=0, won=0][A
+Game 16:  42%|████▏     | 21/50 [00:32<00:44,  1.53s/it, done=0, won=0][A
+Game 16:  42%|████▏     | 21/50 [00:33<00:44,  1.53s/it, done=0, won=0][A
+Game 16:  44%|████▍     | 22/50 [00:33<00:38,  1.37s/it, done=0, won=0][A
+Game 16:  44%|████▍     | 22/50 [00:34<00:38,  1.37s/it, done=0, won=0][A
+Game 16:  46%|████▌     | 23/50 [00:34<00:35,  1.31s/it, done=0, won=0][A
+Game 16:  46%|████▌     | 23/50 [00:36<00:35,  1.31s/it, done=0, won=0][A
+Game 16:  48%|████▊     | 24/50 [00:36<00:37,  1.44s/it, done=0, won=0][A
+Game 16:  48%|████▊     | 24/50 [00:37<00:37,  1.44s/it, done=0, won=0][A
+Game 16:  50%|█████     | 25/50 [00:37<00:34,  1.40s/it, done=0, won=0][A
+Game 16:  50%|█████     | 25/50 [00:40<00:34,  1.40s/it, done=0, won=0][A
+Game 16:  52%|█████▏    | 26/50 [00:40<00:45,  1.91s/it, done=0, won=0][A
+Game 16:  52%|█████▏    | 26/50 [00:43<00:45,  1.91s/it, done=0, won=0][A
+Game 16:  54%|█████▍    | 27/50 [00:43<00:50,  2.19s/it, done=0, won=0][A
+Game 16:  54%|█████▍    | 27/50 [00:44<00:50,  2.19s/it, done=0, won=0][A
+Game 16:  56%|█████▌    | 28/50 [00:44<00:41,  1.88s/it, done=0, won=0][A
+Game 16:  56%|█████▌    | 28/50 [00:46<00:41,  1.88s/it, done=0, won=0][A
+Game 16:  58%|█████▊    | 29/50 [00:46<00:40,  1.91s/it, done=0, won=0][A
+Game 16:  58%|█████▊    | 29/50 [00:48<00:40,  1.91s/it, done=0, won=0][A
+Game 16:  60%|██████    | 30/50 [00:48<00:40,  2.05s/it, done=0, won=0][A
+Game 16:  60%|██████    | 30/50 [00:50<00:40,  2.05s/it, done=0, won=0][A
+Game 16:  62%|██████▏   | 31/50 [00:50<00:38,  2.00s/it, done=0, won=0][A
+Game 16:  62%|██████▏   | 31/50 [00:52<00:38,  2.00s/it, done=0, won=0][A
+Game 16:  64%|██████▍   | 32/50 [00:52<00:32,  1.81s/it, done=0, won=0][A
+Game 16:  64%|██████▍   | 32/50 [00:54<00:32,  1.81s/it, done=0, won=0][A
+Game 16:  66%|██████▌   | 33/50 [00:54<00:35,  2.07s/it, done=0, won=0][A
+Game 16:  66%|██████▌   | 33/50 [00:56<00:35,  2.07s/it, done=0, won=0][A
+Game 16:  68%|██████▊   | 34/50 [00:56<00:33,  2.08s/it, done=0, won=0][A
+Game 16:  68%|██████▊   | 34/50 [00:58<00:33,  2.08s/it, done=0, won=0][A
+Game 16:  70%|███████   | 35/50 [00:58<00:27,  1.81s/it, done=0, won=0][A
+Game 16:  70%|███████   | 35/50 [00:59<00:27,  1.81s/it, done=0, won=0][A
+Game 16:  72%|███████▏  | 36/50 [00:59<00:23,  1.67s/it, done=0, won=0][A
+Game 16:  72%|███████▏  | 36/50 [01:00<00:23,  1.67s/it, done=0, won=0][A
+Game 16:  74%|███████▍  | 37/50 [01:00<00:20,  1.56s/it, done=0, won=0][A
+Game 16:  74%|███████▍  | 37/50 [01:02<00:20,  1.56s/it, done=0, won=0][A
+Game 16:  76%|███████▌  | 38/50 [01:02<00:18,  1.58s/it, done=0, won=0][A
+Game 16:  76%|███████▌  | 38/50 [01:03<00:18,  1.58s/it, done=0, won=0][A
+Game 16:  78%|███████▊  | 39/50 [01:03<00:16,  1.50s/it, done=0, won=0][A
+Game 16:  78%|███████▊  | 39/50 [01:04<00:16,  1.50s/it, done=0, won=0][A
+Game 16:  80%|████████  | 40/50 [01:04<00:14,  1.41s/it, done=0, won=0][A
+Game 16:  80%|████████  | 40/50 [01:06<00:14,  1.41s/it, done=0, won=0][A
+Game 16:  82%|████████▏ | 41/50 [01:06<00:12,  1.38s/it, done=0, won=0][A
+Game 16:  82%|████████▏ | 41/50 [01:07<00:12,  1.38s/it, done=0, won=0][A
+Game 16:  84%|████████▍ | 42/50 [01:07<00:10,  1.34s/it, done=0, won=0][A
+Game 16:  84%|████████▍ | 42/50 [01:08<00:10,  1.34s/it, done=0, won=0][A
+Game 16:  86%|████████▌ | 43/50 [01:08<00:08,  1.28s/it, done=0, won=0][A
+Game 16:  86%|████████▌ | 43/50 [01:10<00:08,  1.28s/it, done=0, won=0][A
+Game 16:  88%|████████▊ | 44/50 [01:10<00:08,  1.38s/it, done=0, won=0][A
+Game 16:  88%|████████▊ | 44/50 [01:12<00:08,  1.38s/it, done=0, won=0][A
+Game 16:  90%|█████████ | 45/50 [01:12<00:08,  1.69s/it, done=0, won=0][A
+Game 16:  90%|█████████ | 45/50 [01:16<00:08,  1.69s/it, done=0, won=0][A
+Game 16:  92%|█████████▏| 46/50 [01:16<00:09,  2.48s/it, done=0, won=0][A
+Game 16:  92%|█████████▏| 46/50 [01:18<00:09,  2.48s/it, done=0, won=0][A
+Game 16:  94%|█████████▍| 47/50 [01:18<00:06,  2.07s/it, done=0, won=0][A
+Game 16:  94%|█████████▍| 47/50 [01:19<00:06,  2.07s/it, done=0, won=0][A
+Game 16:  96%|█████████▌| 48/50 [01:19<00:03,  1.84s/it, done=0, won=0][A
+Game 16:  96%|█████████▌| 48/50 [01:20<00:03,  1.84s/it, done=0, won=0][A
+Game 16:  98%|█████████▊| 49/50 [01:20<00:01,  1.63s/it, done=0, won=0][A
+Game 16:  98%|█████████▊| 49/50 [01:21<00:01,  1.63s/it, done=1, won=0][A2026-04-08 18:58:45,566 - Episode 16 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  60%|██████    | 12/20 [20:40<13:35, 101.91s/it, offset=16]ALFWorld eval episodes:  60%|██████    | 12/20 [20:40<13:35, 101.91s/it, offset=17]2026-04-08 18:58:45,566 - Episode 13/20 | dataset index=17
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3250.41it/s][A100%|██████████| 494/494 [00:00<00:00, 3080.84it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=17)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 17:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 17:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 17:   2%|▏         | 1/50 [00:01<01:01,  1.26s/it, done=0, won=0][A
+Game 17:   2%|▏         | 1/50 [00:03<01:01,  1.26s/it, done=0, won=0][A
+Game 17:   4%|▍         | 2/50 [00:03<01:33,  1.96s/it, done=0, won=0][A
+Game 17:   4%|▍         | 2/50 [00:05<01:33,  1.96s/it, done=0, won=0][A
+Game 17:   6%|▌         | 3/50 [00:05<01:29,  1.90s/it, done=0, won=0][A
+Game 17:   6%|▌         | 3/50 [00:07<01:29,  1.90s/it, done=0, won=0][A
+Game 17:   8%|▊         | 4/50 [00:07<01:36,  2.09s/it, done=0, won=0][A
+Game 17:   8%|▊         | 4/50 [00:09<01:36,  2.09s/it, done=0, won=0][A
+Game 17:  10%|█         | 5/50 [00:09<01:28,  1.96s/it, done=0, won=0][A
+Game 17:  10%|█         | 5/50 [00:12<01:28,  1.96s/it, done=0, won=0][A
+Game 17:  12%|█▏        | 6/50 [00:12<01:36,  2.20s/it, done=0, won=0][A
+Game 17:  12%|█▏        | 6/50 [00:14<01:36,  2.20s/it, done=0, won=0][A
+Game 17:  14%|█▍        | 7/50 [00:14<01:31,  2.13s/it, done=0, won=0][A
+Game 17:  14%|█▍        | 7/50 [00:15<01:31,  2.13s/it, done=0, won=0][A
+Game 17:  16%|█▌        | 8/50 [00:15<01:17,  1.85s/it, done=0, won=0][A
+Game 17:  16%|█▌        | 8/50 [00:18<01:17,  1.85s/it, done=0, won=0][A
+Game 17:  18%|█▊        | 9/50 [00:18<01:35,  2.33s/it, done=0, won=0][A
+Game 17:  18%|█▊        | 9/50 [00:20<01:35,  2.33s/it, done=0, won=0][A
+Game 17:  20%|██        | 10/50 [00:20<01:20,  2.01s/it, done=0, won=0][A
+Game 17:  20%|██        | 10/50 [00:23<01:20,  2.01s/it, done=0, won=0][A
+Game 17:  22%|██▏       | 11/50 [00:23<01:28,  2.26s/it, done=0, won=0][A
+Game 17:  22%|██▏       | 11/50 [00:24<01:28,  2.26s/it, done=0, won=0][A
+Game 17:  24%|██▍       | 12/50 [00:24<01:14,  1.97s/it, done=0, won=0][A
+Game 17:  24%|██▍       | 12/50 [00:26<01:14,  1.97s/it, done=0, won=0][A
+Game 17:  26%|██▌       | 13/50 [00:26<01:15,  2.05s/it, done=0, won=0][A
+Game 17:  26%|██▌       | 13/50 [00:28<01:15,  2.05s/it, done=0, won=0][A
+Game 17:  28%|██▊       | 14/50 [00:28<01:07,  1.86s/it, done=0, won=0][A
+Game 17:  28%|██▊       | 14/50 [00:29<01:07,  1.86s/it, done=0, won=0][A
+Game 17:  30%|███       | 15/50 [00:29<00:57,  1.64s/it, done=0, won=0][A
+Game 17:  30%|███       | 15/50 [00:30<00:57,  1.64s/it, done=0, won=0][A
+Game 17:  32%|███▏      | 16/50 [00:30<00:50,  1.48s/it, done=0, won=0][A
+Game 17:  32%|███▏      | 16/50 [00:31<00:50,  1.48s/it, done=0, won=0][A
+Game 17:  34%|███▍      | 17/50 [00:31<00:47,  1.44s/it, done=0, won=0][A
+Game 17:  34%|███▍      | 17/50 [00:34<00:47,  1.44s/it, done=0, won=0][A
+Game 17:  36%|███▌      | 18/50 [00:34<00:59,  1.87s/it, done=0, won=0][A
+Game 17:  36%|███▌      | 18/50 [00:37<00:59,  1.87s/it, done=0, won=0][A
+Game 17:  38%|███▊      | 19/50 [00:37<01:07,  2.19s/it, done=0, won=0][A
+Game 17:  38%|███▊      | 19/50 [00:38<01:07,  2.19s/it, done=0, won=0][A
+Game 17:  40%|████      | 20/50 [00:38<00:58,  1.94s/it, done=0, won=0][A
+Game 17:  40%|████      | 20/50 [00:40<00:58,  1.94s/it, done=0, won=0][A
+Game 17:  42%|████▏     | 21/50 [00:40<00:52,  1.83s/it, done=0, won=0][A
+Game 17:  42%|████▏     | 21/50 [00:42<00:52,  1.83s/it, done=0, won=0][A
+Game 17:  44%|████▍     | 22/50 [00:42<00:52,  1.88s/it, done=0, won=0][A
+Game 17:  44%|████▍     | 22/50 [00:44<00:52,  1.88s/it, done=0, won=0][A
+Game 17:  46%|████▌     | 23/50 [00:44<00:49,  1.84s/it, done=0, won=0][A
+Game 17:  46%|████▌     | 23/50 [00:46<00:49,  1.84s/it, done=0, won=0][A
+Game 17:  48%|████▊     | 24/50 [00:46<00:54,  2.11s/it, done=0, won=0][A
+Game 17:  48%|████▊     | 24/50 [00:47<00:54,  2.11s/it, done=0, won=0][A
+Game 17:  50%|█████     | 25/50 [00:47<00:45,  1.82s/it, done=0, won=0][A
+Game 17:  50%|█████     | 25/50 [00:49<00:45,  1.82s/it, done=0, won=0][A
+Game 17:  52%|█████▏    | 26/50 [00:49<00:41,  1.74s/it, done=0, won=0][A
+Game 17:  52%|█████▏    | 26/50 [00:50<00:41,  1.74s/it, done=0, won=0][A
+Game 17:  54%|█████▍    | 27/50 [00:50<00:36,  1.59s/it, done=0, won=0][A
+Game 17:  54%|█████▍    | 27/50 [00:53<00:36,  1.59s/it, done=0, won=0][A
+Game 17:  56%|█████▌    | 28/50 [00:53<00:43,  1.99s/it, done=0, won=0][A
+Game 17:  56%|█████▌    | 28/50 [00:56<00:43,  1.99s/it, done=0, won=0][A
+Game 17:  58%|█████▊    | 29/50 [00:56<00:47,  2.24s/it, done=0, won=0][A
+Game 17:  58%|█████▊    | 29/50 [00:57<00:47,  2.24s/it, done=0, won=0][A
+Game 17:  60%|██████    | 30/50 [00:57<00:39,  1.97s/it, done=0, won=0][A
+Game 17:  60%|██████    | 30/50 [00:59<00:39,  1.97s/it, done=0, won=0][A
+Game 17:  62%|██████▏   | 31/50 [00:59<00:33,  1.77s/it, done=0, won=0][A
+Game 17:  62%|██████▏   | 31/50 [01:00<00:33,  1.77s/it, done=0, won=0][A
+Game 17:  64%|██████▍   | 32/50 [01:00<00:28,  1.58s/it, done=0, won=0][A
+Game 17:  64%|██████▍   | 32/50 [01:01<00:28,  1.58s/it, done=0, won=0][A
+Game 17:  66%|██████▌   | 33/50 [01:01<00:27,  1.60s/it, done=0, won=0][A
+Game 17:  66%|██████▌   | 33/50 [01:03<00:27,  1.60s/it, done=0, won=0][A
+Game 17:  68%|██████▊   | 34/50 [01:03<00:26,  1.67s/it, done=0, won=0][A
+Game 17:  68%|██████▊   | 34/50 [01:06<00:26,  1.67s/it, done=0, won=0][A
+Game 17:  70%|███████   | 35/50 [01:06<00:30,  2.01s/it, done=0, won=0][A
+Game 17:  70%|███████   | 35/50 [01:07<00:30,  2.01s/it, done=0, won=0][A
+Game 17:  72%|███████▏  | 36/50 [01:07<00:25,  1.79s/it, done=0, won=0][A
+Game 17:  72%|███████▏  | 36/50 [01:09<00:25,  1.79s/it, done=0, won=0][A
+Game 17:  74%|███████▍  | 37/50 [01:09<00:23,  1.84s/it, done=0, won=0][A
+Game 17:  74%|███████▍  | 37/50 [01:12<00:23,  1.84s/it, done=0, won=0][A
+Game 17:  76%|███████▌  | 38/50 [01:12<00:26,  2.20s/it, done=0, won=0][A
+Game 17:  76%|███████▌  | 38/50 [01:14<00:26,  2.20s/it, done=0, won=0][A
+Game 17:  78%|███████▊  | 39/50 [01:14<00:21,  1.92s/it, done=0, won=0][A
+Game 17:  78%|███████▊  | 39/50 [01:15<00:21,  1.92s/it, done=0, won=0][A
+Game 17:  80%|████████  | 40/50 [01:15<00:16,  1.67s/it, done=0, won=0][A
+Game 17:  80%|████████  | 40/50 [01:17<00:16,  1.67s/it, done=0, won=0][A
+Game 17:  82%|████████▏ | 41/50 [01:17<00:17,  1.99s/it, done=0, won=0][A
+Game 17:  82%|████████▏ | 41/50 [01:20<00:17,  1.99s/it, done=0, won=0][A
+Game 17:  84%|████████▍ | 42/50 [01:20<00:18,  2.27s/it, done=0, won=0][A
+Game 17:  84%|████████▍ | 42/50 [01:23<00:18,  2.27s/it, done=0, won=0][A
+Game 17:  86%|████████▌ | 43/50 [01:23<00:16,  2.33s/it, done=0, won=0][A
+Game 17:  86%|████████▌ | 43/50 [01:25<00:16,  2.33s/it, done=0, won=0][A
+Game 17:  88%|████████▊ | 44/50 [01:25<00:12,  2.15s/it, done=0, won=0][A
+Game 17:  88%|████████▊ | 44/50 [01:27<00:12,  2.15s/it, done=0, won=0][A
+Game 17:  90%|█████████ | 45/50 [01:27<00:11,  2.24s/it, done=0, won=0][A
+Game 17:  90%|█████████ | 45/50 [01:29<00:11,  2.24s/it, done=0, won=0][A
+Game 17:  92%|█████████▏| 46/50 [01:29<00:08,  2.18s/it, done=0, won=0][A
+Game 17:  92%|█████████▏| 46/50 [01:31<00:08,  2.18s/it, done=0, won=0][A
+Game 17:  94%|█████████▍| 47/50 [01:31<00:05,  2.00s/it, done=0, won=0][A
+Game 17:  94%|█████████▍| 47/50 [01:32<00:05,  2.00s/it, done=0, won=0][A
+Game 17:  96%|█████████▌| 48/50 [01:32<00:03,  1.82s/it, done=0, won=0][A
+Game 17:  96%|█████████▌| 48/50 [01:33<00:03,  1.82s/it, done=0, won=0][A
+Game 17:  98%|█████████▊| 49/50 [01:33<00:01,  1.61s/it, done=0, won=0][A
+Game 17:  98%|█████████▊| 49/50 [01:34<00:01,  1.61s/it, done=1, won=0][A2026-04-08 19:00:27,651 - Episode 17 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  65%|██████▌   | 13/20 [22:23<11:53, 101.97s/it, offset=17]ALFWorld eval episodes:  65%|██████▌   | 13/20 [22:23<11:53, 101.97s/it, offset=18]2026-04-08 19:00:27,652 - Episode 14/20 | dataset index=18
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▌   | 326/494 [00:00<00:00, 3254.76it/s][A100%|██████████| 494/494 [00:00<00:00, 3023.89it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=18)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 18:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 18:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 18:   2%|▏         | 1/50 [00:01<00:49,  1.01s/it, done=0, won=0][A
+Game 18:   2%|▏         | 1/50 [00:02<00:49,  1.01s/it, done=0, won=0][A
+Game 18:   4%|▍         | 2/50 [00:02<00:57,  1.20s/it, done=0, won=0][A
+Game 18:   4%|▍         | 2/50 [00:03<00:57,  1.20s/it, done=0, won=0][A
+Game 18:   6%|▌         | 3/50 [00:03<01:05,  1.39s/it, done=0, won=0][A
+Game 18:   6%|▌         | 3/50 [00:05<01:05,  1.39s/it, done=0, won=0][A
+Game 18:   8%|▊         | 4/50 [00:05<01:01,  1.34s/it, done=0, won=0][A
+Game 18:   8%|▊         | 4/50 [00:08<01:01,  1.34s/it, done=0, won=0][A
+Game 18:  10%|█         | 5/50 [00:08<01:27,  1.96s/it, done=0, won=0][A
+Game 18:  10%|█         | 5/50 [00:09<01:27,  1.96s/it, done=0, won=0][A
+Game 18:  12%|█▏        | 6/50 [00:09<01:15,  1.71s/it, done=0, won=0][A
+Game 18:  12%|█▏        | 6/50 [00:12<01:15,  1.71s/it, done=0, won=0][A
+Game 18:  14%|█▍        | 7/50 [00:12<01:32,  2.16s/it, done=0, won=0][A
+Game 18:  14%|█▍        | 7/50 [00:15<01:32,  2.16s/it, done=0, won=0][A
+Game 18:  16%|█▌        | 8/50 [00:15<01:44,  2.50s/it, done=0, won=0][A
+Game 18:  16%|█▌        | 8/50 [00:19<01:44,  2.50s/it, done=0, won=0][A
+Game 18:  18%|█▊        | 9/50 [00:19<02:01,  2.97s/it, done=0, won=0][A
+Game 18:  18%|█▊        | 9/50 [00:21<02:01,  2.97s/it, done=0, won=0][A
+Game 18:  20%|██        | 10/50 [00:21<01:38,  2.45s/it, done=0, won=0][A
+Game 18:  20%|██        | 10/50 [00:24<01:38,  2.45s/it, done=0, won=0][A
+Game 18:  22%|██▏       | 11/50 [00:24<01:47,  2.75s/it, done=0, won=0][A
+Game 18:  22%|██▏       | 11/50 [00:26<01:47,  2.75s/it, done=0, won=0][A
+Game 18:  24%|██▍       | 12/50 [00:26<01:36,  2.55s/it, done=0, won=0][A
+Game 18:  24%|██▍       | 12/50 [00:28<01:36,  2.55s/it, done=0, won=0][A
+Game 18:  26%|██▌       | 13/50 [00:28<01:23,  2.25s/it, done=0, won=0][A
+Game 18:  26%|██▌       | 13/50 [00:29<01:23,  2.25s/it, done=0, won=0][A
+Game 18:  28%|██▊       | 14/50 [00:29<01:12,  2.03s/it, done=0, won=0][A
+Game 18:  28%|██▊       | 14/50 [00:31<01:12,  2.03s/it, done=0, won=0][A
+Game 18:  30%|███       | 15/50 [00:31<01:12,  2.06s/it, done=0, won=0][A
+Game 18:  30%|███       | 15/50 [00:33<01:12,  2.06s/it, done=0, won=0][A
+Game 18:  32%|███▏      | 16/50 [00:33<01:09,  2.05s/it, done=0, won=0][A
+Game 18:  32%|███▏      | 16/50 [00:36<01:09,  2.05s/it, done=0, won=0][A
+Game 18:  34%|███▍      | 17/50 [00:36<01:15,  2.28s/it, done=0, won=0][A
+Game 18:  34%|███▍      | 17/50 [00:39<01:15,  2.28s/it, done=0, won=0][A
+Game 18:  36%|███▌      | 18/50 [00:39<01:21,  2.56s/it, done=0, won=0][A
+Game 18:  36%|███▌      | 18/50 [00:42<01:21,  2.56s/it, done=0, won=0][A
+Game 18:  38%|███▊      | 19/50 [00:42<01:24,  2.72s/it, done=0, won=0][A
+Game 18:  38%|███▊      | 19/50 [00:46<01:24,  2.72s/it, done=0, won=0][A
+Game 18:  40%|████      | 20/50 [00:46<01:24,  2.81s/it, done=0, won=0][A
+Game 18:  40%|████      | 20/50 [00:47<01:24,  2.81s/it, done=0, won=0][A
+Game 18:  42%|████▏     | 21/50 [00:47<01:08,  2.35s/it, done=0, won=0][A
+Game 18:  42%|████▏     | 21/50 [00:48<01:08,  2.35s/it, done=0, won=0][A
+Game 18:  44%|████▍     | 22/50 [00:48<00:58,  2.09s/it, done=0, won=0][A
+Game 18:  44%|████▍     | 22/50 [00:50<00:58,  2.09s/it, done=0, won=0][A
+Game 18:  46%|████▌     | 23/50 [00:50<00:54,  2.00s/it, done=0, won=0][A
+Game 18:  46%|████▌     | 23/50 [00:52<00:54,  2.00s/it, done=0, won=0][A
+Game 18:  48%|████▊     | 24/50 [00:52<00:51,  1.99s/it, done=0, won=0][A
+Game 18:  48%|████▊     | 24/50 [00:54<00:51,  1.99s/it, done=0, won=0][A
+Game 18:  50%|█████     | 25/50 [00:54<00:51,  2.06s/it, done=0, won=0][A
+Game 18:  50%|█████     | 25/50 [00:56<00:51,  2.06s/it, done=0, won=0][A
+Game 18:  52%|█████▏    | 26/50 [00:56<00:47,  1.99s/it, done=0, won=0][A
+Game 18:  52%|█████▏    | 26/50 [00:58<00:47,  1.99s/it, done=0, won=0][A
+Game 18:  54%|█████▍    | 27/50 [00:58<00:48,  2.09s/it, done=0, won=0][A
+Game 18:  54%|█████▍    | 27/50 [01:01<00:48,  2.09s/it, done=0, won=0][A
+Game 18:  56%|█████▌    | 28/50 [01:01<00:51,  2.32s/it, done=0, won=0][A
+Game 18:  56%|█████▌    | 28/50 [01:03<00:51,  2.32s/it, done=0, won=0][A
+Game 18:  58%|█████▊    | 29/50 [01:03<00:47,  2.28s/it, done=0, won=0][A
+Game 18:  58%|█████▊    | 29/50 [01:05<00:47,  2.28s/it, done=0, won=0][A
+Game 18:  60%|██████    | 30/50 [01:05<00:43,  2.18s/it, done=0, won=0][A
+Game 18:  60%|██████    | 30/50 [01:08<00:43,  2.18s/it, done=0, won=0][A
+Game 18:  62%|██████▏   | 31/50 [01:08<00:44,  2.36s/it, done=0, won=0][A
+Game 18:  62%|██████▏   | 31/50 [01:11<00:44,  2.36s/it, done=0, won=0][A
+Game 18:  64%|██████▍   | 32/50 [01:11<00:44,  2.49s/it, done=0, won=0][A
+Game 18:  64%|██████▍   | 32/50 [01:15<00:44,  2.49s/it, done=0, won=0][A
+Game 18:  66%|██████▌   | 33/50 [01:15<00:48,  2.86s/it, done=0, won=0][A
+Game 18:  66%|██████▌   | 33/50 [01:17<00:48,  2.86s/it, done=0, won=0][A
+Game 18:  68%|██████▊   | 34/50 [01:17<00:44,  2.76s/it, done=0, won=0][A
+Game 18:  68%|██████▊   | 34/50 [01:19<00:44,  2.76s/it, done=0, won=0][A
+Game 18:  70%|███████   | 35/50 [01:19<00:37,  2.50s/it, done=0, won=0][A
+Game 18:  70%|███████   | 35/50 [01:22<00:37,  2.50s/it, done=0, won=0][A
+Game 18:  72%|███████▏  | 36/50 [01:22<00:36,  2.62s/it, done=0, won=0][A
+Game 18:  72%|███████▏  | 36/50 [01:24<00:36,  2.62s/it, done=0, won=0][A
+Game 18:  74%|███████▍  | 37/50 [01:24<00:32,  2.53s/it, done=0, won=0][A
+Game 18:  74%|███████▍  | 37/50 [01:26<00:32,  2.53s/it, done=0, won=0][A
+Game 18:  76%|███████▌  | 38/50 [01:26<00:26,  2.19s/it, done=0, won=0][A
+Game 18:  76%|███████▌  | 38/50 [01:28<00:26,  2.19s/it, done=0, won=0][A
+Game 18:  78%|███████▊  | 39/50 [01:28<00:25,  2.30s/it, done=0, won=0][A
+Game 18:  78%|███████▊  | 39/50 [01:31<00:25,  2.30s/it, done=0, won=0][A
+Game 18:  80%|████████  | 40/50 [01:31<00:24,  2.43s/it, done=0, won=0][A
+Game 18:  80%|████████  | 40/50 [01:34<00:24,  2.43s/it, done=0, won=0][A
+Game 18:  82%|████████▏ | 41/50 [01:34<00:22,  2.55s/it, done=0, won=0][A
+Game 18:  82%|████████▏ | 41/50 [01:35<00:22,  2.55s/it, done=0, won=0][A
+Game 18:  84%|████████▍ | 42/50 [01:35<00:17,  2.22s/it, done=0, won=0][A
+Game 18:  84%|████████▍ | 42/50 [01:38<00:17,  2.22s/it, done=0, won=0][A
+Game 18:  86%|████████▌ | 43/50 [01:38<00:16,  2.37s/it, done=0, won=0][A
+Game 18:  86%|████████▌ | 43/50 [01:40<00:16,  2.37s/it, done=0, won=0][A
+Game 18:  88%|████████▊ | 44/50 [01:40<00:12,  2.16s/it, done=0, won=0][A
+Game 18:  88%|████████▊ | 44/50 [01:42<00:12,  2.16s/it, done=0, won=0][A
+Game 18:  90%|█████████ | 45/50 [01:42<00:11,  2.20s/it, done=0, won=0][A
+Game 18:  90%|█████████ | 45/50 [01:44<00:11,  2.20s/it, done=0, won=0][A
+Game 18:  92%|█████████▏| 46/50 [01:44<00:08,  2.10s/it, done=0, won=0][A
+Game 18:  92%|█████████▏| 46/50 [01:46<00:08,  2.10s/it, done=0, won=0][A
+Game 18:  94%|█████████▍| 47/50 [01:46<00:06,  2.04s/it, done=0, won=0][A
+Game 18:  94%|█████████▍| 47/50 [01:48<00:06,  2.04s/it, done=0, won=0][A
+Game 18:  96%|█████████▌| 48/50 [01:48<00:04,  2.25s/it, done=0, won=0][A
+Game 18:  96%|█████████▌| 48/50 [01:50<00:04,  2.25s/it, done=0, won=0][A
+Game 18:  98%|█████████▊| 49/50 [01:50<00:02,  2.10s/it, done=0, won=0][A
+Game 18:  98%|█████████▊| 49/50 [01:53<00:02,  2.10s/it, done=1, won=0][A2026-04-08 19:02:27,776 - Episode 18 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  70%|███████   | 14/20 [24:23<10:44, 107.45s/it, offset=18]ALFWorld eval episodes:  70%|███████   | 14/20 [24:23<10:44, 107.45s/it, offset=19]2026-04-08 19:02:27,777 - Episode 15/20 | dataset index=19
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 49%|████▉     | 241/494 [00:00<00:00, 737.81it/s][A100%|██████████| 494/494 [00:00<00:00, 1194.60it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=19)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 19:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 19:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 19:   2%|▏         | 1/50 [00:01<01:21,  1.66s/it, done=0, won=0][A
+Game 19:   2%|▏         | 1/50 [00:04<01:21,  1.66s/it, done=0, won=0][A
+Game 19:   4%|▍         | 2/50 [00:04<01:42,  2.14s/it, done=0, won=0][A
+Game 19:   4%|▍         | 2/50 [00:10<01:42,  2.14s/it, done=0, won=0][A
+Game 19:   6%|▌         | 3/50 [00:10<03:00,  3.84s/it, done=0, won=0][A
+Game 19:   6%|▌         | 3/50 [00:11<03:00,  3.84s/it, done=0, won=0][A
+Game 19:   8%|▊         | 4/50 [00:11<02:08,  2.80s/it, done=0, won=0][A
+Game 19:   8%|▊         | 4/50 [00:12<02:08,  2.80s/it, done=0, won=0][A
+Game 19:  10%|█         | 5/50 [00:12<01:47,  2.40s/it, done=0, won=0][A
+Game 19:  10%|█         | 5/50 [00:17<01:47,  2.40s/it, done=0, won=0][A
+Game 19:  12%|█▏        | 6/50 [00:17<02:16,  3.09s/it, done=0, won=0][A
+Game 19:  12%|█▏        | 6/50 [00:20<02:16,  3.09s/it, done=0, won=0][A
+Game 19:  14%|█▍        | 7/50 [00:20<02:19,  3.25s/it, done=0, won=0][A
+Game 19:  14%|█▍        | 7/50 [00:22<02:19,  3.25s/it, done=0, won=0][A
+Game 19:  16%|█▌        | 8/50 [00:22<01:48,  2.57s/it, done=0, won=0][A
+Game 19:  16%|█▌        | 8/50 [00:23<01:48,  2.57s/it, done=0, won=0][A
+Game 19:  18%|█▊        | 9/50 [00:23<01:29,  2.18s/it, done=0, won=0][A
+Game 19:  18%|█▊        | 9/50 [00:25<01:29,  2.18s/it, done=0, won=0][A
+Game 19:  20%|██        | 10/50 [00:25<01:22,  2.05s/it, done=0, won=0][A
+Game 19:  20%|██        | 10/50 [00:26<01:22,  2.05s/it, done=0, won=0][A
+Game 19:  22%|██▏       | 11/50 [00:26<01:17,  2.00s/it, done=0, won=0][A
+Game 19:  22%|██▏       | 11/50 [00:30<01:17,  2.00s/it, done=0, won=0][A
+Game 19:  24%|██▍       | 12/50 [00:30<01:31,  2.42s/it, done=0, won=0][A
+Game 19:  24%|██▍       | 12/50 [00:33<01:31,  2.42s/it, done=0, won=0][A
+Game 19:  26%|██▌       | 13/50 [00:33<01:39,  2.68s/it, done=0, won=0][A
+Game 19:  26%|██▌       | 13/50 [00:34<01:39,  2.68s/it, done=0, won=0][A
+Game 19:  28%|██▊       | 14/50 [00:34<01:21,  2.28s/it, done=0, won=0][A
+Game 19:  28%|██▊       | 14/50 [00:38<01:21,  2.28s/it, done=0, won=0][A
+Game 19:  30%|███       | 15/50 [00:38<01:37,  2.78s/it, done=0, won=0][A
+Game 19:  30%|███       | 15/50 [00:41<01:37,  2.78s/it, done=0, won=0][A
+Game 19:  32%|███▏      | 16/50 [00:41<01:30,  2.67s/it, done=0, won=0][A
+Game 19:  32%|███▏      | 16/50 [00:42<01:30,  2.67s/it, done=0, won=0][A
+Game 19:  34%|███▍      | 17/50 [00:42<01:14,  2.25s/it, done=0, won=0][A
+Game 19:  34%|███▍      | 17/50 [00:43<01:14,  2.25s/it, done=0, won=0][A
+Game 19:  36%|███▌      | 18/50 [00:43<01:03,  1.99s/it, done=0, won=0][A
+Game 19:  36%|███▌      | 18/50 [00:45<01:03,  1.99s/it, done=0, won=0][A
+Game 19:  38%|███▊      | 19/50 [00:45<00:55,  1.80s/it, done=0, won=0][A
+Game 19:  38%|███▊      | 19/50 [00:48<00:55,  1.80s/it, done=0, won=0][A
+Game 19:  40%|████      | 20/50 [00:48<01:08,  2.27s/it, done=0, won=0][A
+Game 19:  40%|████      | 20/50 [00:50<01:08,  2.27s/it, done=0, won=0][A
+Game 19:  42%|████▏     | 21/50 [00:50<01:05,  2.24s/it, done=0, won=0][A
+Game 19:  42%|████▏     | 21/50 [00:54<01:05,  2.24s/it, done=0, won=0][A
+Game 19:  44%|████▍     | 22/50 [00:54<01:16,  2.75s/it, done=0, won=0][A
+Game 19:  44%|████▍     | 22/50 [00:56<01:16,  2.75s/it, done=0, won=0][A
+Game 19:  46%|████▌     | 23/50 [00:56<01:01,  2.29s/it, done=0, won=0][A
+Game 19:  46%|████▌     | 23/50 [00:57<01:01,  2.29s/it, done=0, won=0][A
+Game 19:  48%|████▊     | 24/50 [00:57<00:50,  1.93s/it, done=0, won=0][A
+Game 19:  48%|████▊     | 24/50 [00:58<00:50,  1.93s/it, done=0, won=0][A
+Game 19:  50%|█████     | 25/50 [00:58<00:44,  1.77s/it, done=0, won=0][A
+Game 19:  50%|█████     | 25/50 [00:59<00:44,  1.77s/it, done=0, won=0][A
+Game 19:  52%|█████▏    | 26/50 [00:59<00:37,  1.58s/it, done=0, won=0][A
+Game 19:  52%|█████▏    | 26/50 [01:00<00:37,  1.58s/it, done=0, won=0][A
+Game 19:  54%|█████▍    | 27/50 [01:00<00:33,  1.45s/it, done=0, won=0][A
+Game 19:  54%|█████▍    | 27/50 [01:02<00:33,  1.45s/it, done=0, won=0][A
+Game 19:  56%|█████▌    | 28/50 [01:02<00:32,  1.47s/it, done=0, won=0][A
+Game 19:  56%|█████▌    | 28/50 [01:05<00:32,  1.47s/it, done=0, won=0][A
+Game 19:  58%|█████▊    | 29/50 [01:05<00:41,  1.96s/it, done=0, won=0][A
+Game 19:  58%|█████▊    | 29/50 [01:08<00:41,  1.96s/it, done=0, won=0][A
+Game 19:  60%|██████    | 30/50 [01:08<00:48,  2.43s/it, done=0, won=0][A
+Game 19:  60%|██████    | 30/50 [01:10<00:48,  2.43s/it, done=0, won=0][A
+Game 19:  62%|██████▏   | 31/50 [01:10<00:40,  2.12s/it, done=0, won=0][A
+Game 19:  62%|██████▏   | 31/50 [01:11<00:40,  2.12s/it, done=0, won=0][A
+Game 19:  64%|██████▍   | 32/50 [01:11<00:33,  1.85s/it, done=0, won=0][A
+Game 19:  64%|██████▍   | 32/50 [01:12<00:33,  1.85s/it, done=0, won=0][A
+Game 19:  66%|██████▌   | 33/50 [01:12<00:28,  1.70s/it, done=0, won=0][A
+Game 19:  66%|██████▌   | 33/50 [01:16<00:28,  1.70s/it, done=0, won=0][A
+Game 19:  68%|██████▊   | 34/50 [01:16<00:37,  2.33s/it, done=0, won=0][A
+Game 19:  68%|██████▊   | 34/50 [01:20<00:37,  2.33s/it, done=0, won=0][A
+Game 19:  70%|███████   | 35/50 [01:20<00:40,  2.71s/it, done=0, won=0][A
+Game 19:  70%|███████   | 35/50 [01:23<00:40,  2.71s/it, done=0, won=0][A
+Game 19:  72%|███████▏  | 36/50 [01:23<00:37,  2.70s/it, done=0, won=0][A
+Game 19:  72%|███████▏  | 36/50 [01:25<00:37,  2.70s/it, done=0, won=0][A
+Game 19:  74%|███████▍  | 37/50 [01:25<00:33,  2.61s/it, done=0, won=0][A
+Game 19:  74%|███████▍  | 37/50 [01:26<00:33,  2.61s/it, done=0, won=0][A
+Game 19:  76%|███████▌  | 38/50 [01:26<00:27,  2.28s/it, done=0, won=0][A
+Game 19:  76%|███████▌  | 38/50 [01:31<00:27,  2.28s/it, done=0, won=0][A
+Game 19:  78%|███████▊  | 39/50 [01:31<00:33,  3.05s/it, done=0, won=0][A
+Game 19:  78%|███████▊  | 39/50 [01:34<00:33,  3.05s/it, done=0, won=0][A
+Game 19:  80%|████████  | 40/50 [01:34<00:30,  3.00s/it, done=0, won=0][A
+Game 19:  80%|████████  | 40/50 [01:36<00:30,  3.00s/it, done=0, won=0][A
+Game 19:  82%|████████▏ | 41/50 [01:36<00:23,  2.64s/it, done=0, won=0][A
+Game 19:  82%|████████▏ | 41/50 [01:38<00:23,  2.64s/it, done=0, won=0][A
+Game 19:  84%|████████▍ | 42/50 [01:38<00:18,  2.36s/it, done=0, won=0][A
+Game 19:  84%|████████▍ | 42/50 [01:41<00:18,  2.36s/it, done=0, won=0][A
+Game 19:  86%|████████▌ | 43/50 [01:41<00:18,  2.69s/it, done=0, won=0][A
+Game 19:  86%|████████▌ | 43/50 [01:43<00:18,  2.69s/it, done=0, won=0][A
+Game 19:  88%|████████▊ | 44/50 [01:43<00:14,  2.41s/it, done=0, won=0][A
+Game 19:  88%|████████▊ | 44/50 [01:47<00:14,  2.41s/it, done=0, won=0][A
+Game 19:  90%|█████████ | 45/50 [01:47<00:14,  2.88s/it, done=0, won=0][A
+Game 19:  90%|█████████ | 45/50 [01:48<00:14,  2.88s/it, done=0, won=0][A
+Game 19:  92%|█████████▏| 46/50 [01:48<00:09,  2.49s/it, done=0, won=0][A
+Game 19:  92%|█████████▏| 46/50 [01:51<00:09,  2.49s/it, done=0, won=0][A
+Game 19:  94%|█████████▍| 47/50 [01:51<00:07,  2.39s/it, done=0, won=0][A
+Game 19:  94%|█████████▍| 47/50 [01:52<00:07,  2.39s/it, done=0, won=0][A
+Game 19:  96%|█████████▌| 48/50 [01:52<00:04,  2.18s/it, done=0, won=0][A
+Game 19:  96%|█████████▌| 48/50 [01:53<00:04,  2.18s/it, done=0, won=0][A
+Game 19:  98%|█████████▊| 49/50 [01:53<00:01,  1.87s/it, done=0, won=0][A
+Game 19:  98%|█████████▊| 49/50 [01:57<00:01,  1.87s/it, done=1, won=0][A2026-04-08 19:04:33,436 - Episode 19 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  75%|███████▌  | 15/20 [26:28<09:24, 112.94s/it, offset=19]ALFWorld eval episodes:  75%|███████▌  | 15/20 [26:28<09:24, 112.94s/it, offset=20]2026-04-08 19:04:33,436 - Episode 16/20 | dataset index=20
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▋   | 328/494 [00:00<00:00, 3251.11it/s][A100%|██████████| 494/494 [00:00<00:00, 3078.92it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=20)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 20:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 20:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 20:   2%|▏         | 1/50 [00:01<01:04,  1.31s/it, done=0, won=0][A
+Game 20:   2%|▏         | 1/50 [00:02<01:04,  1.31s/it, done=0, won=0][A
+Game 20:   4%|▍         | 2/50 [00:02<01:00,  1.26s/it, done=0, won=0][A
+Game 20:   4%|▍         | 2/50 [00:04<01:00,  1.26s/it, done=0, won=0][A
+Game 20:   6%|▌         | 3/50 [00:04<01:06,  1.41s/it, done=0, won=0][A
+Game 20:   6%|▌         | 3/50 [00:06<01:06,  1.41s/it, done=0, won=0][A
+Game 20:   8%|▊         | 4/50 [00:06<01:19,  1.72s/it, done=0, won=0][A
+Game 20:   8%|▊         | 4/50 [00:08<01:19,  1.72s/it, done=0, won=0][A
+Game 20:  10%|█         | 5/50 [00:08<01:24,  1.88s/it, done=0, won=0][A
+Game 20:  10%|█         | 5/50 [00:09<01:24,  1.88s/it, done=0, won=0][A
+Game 20:  12%|█▏        | 6/50 [00:09<01:12,  1.66s/it, done=0, won=0][A
+Game 20:  12%|█▏        | 6/50 [00:12<01:12,  1.66s/it, done=0, won=0][A
+Game 20:  14%|█▍        | 7/50 [00:12<01:21,  1.90s/it, done=0, won=0][A
+Game 20:  14%|█▍        | 7/50 [00:13<01:21,  1.90s/it, done=0, won=0][A
+Game 20:  16%|█▌        | 8/50 [00:13<01:11,  1.69s/it, done=0, won=0][A
+Game 20:  16%|█▌        | 8/50 [00:14<01:11,  1.69s/it, done=0, won=0][A
+Game 20:  18%|█▊        | 9/50 [00:14<01:05,  1.60s/it, done=0, won=0][A
+Game 20:  18%|█▊        | 9/50 [00:17<01:05,  1.60s/it, done=0, won=0][A
+Game 20:  20%|██        | 10/50 [00:17<01:13,  1.83s/it, done=0, won=0][A
+Game 20:  20%|██        | 10/50 [00:18<01:13,  1.83s/it, done=0, won=0][A
+Game 20:  22%|██▏       | 11/50 [00:18<01:08,  1.77s/it, done=0, won=0][A
+Game 20:  22%|██▏       | 11/50 [00:21<01:08,  1.77s/it, done=0, won=0][A
+Game 20:  24%|██▍       | 12/50 [00:21<01:18,  2.06s/it, done=0, won=0][A
+Game 20:  24%|██▍       | 12/50 [00:22<01:18,  2.06s/it, done=0, won=0][A
+Game 20:  26%|██▌       | 13/50 [00:22<01:07,  1.82s/it, done=0, won=0][A
+Game 20:  26%|██▌       | 13/50 [00:23<01:07,  1.82s/it, done=0, won=0][A
+Game 20:  28%|██▊       | 14/50 [00:23<00:59,  1.65s/it, done=0, won=0][A
+Game 20:  28%|██▊       | 14/50 [00:25<00:59,  1.65s/it, done=0, won=0][A
+Game 20:  30%|███       | 15/50 [00:25<00:55,  1.58s/it, done=0, won=0][A
+Game 20:  30%|███       | 15/50 [00:27<00:55,  1.58s/it, done=0, won=0][A
+Game 20:  32%|███▏      | 16/50 [00:27<01:02,  1.82s/it, done=0, won=0][A
+Game 20:  32%|███▏      | 16/50 [00:28<01:02,  1.82s/it, done=0, won=0][A
+Game 20:  34%|███▍      | 17/50 [00:28<00:53,  1.62s/it, done=0, won=0][A
+Game 20:  34%|███▍      | 17/50 [00:30<00:53,  1.62s/it, done=0, won=0][A
+Game 20:  36%|███▌      | 18/50 [00:30<00:47,  1.49s/it, done=0, won=0][A
+Game 20:  36%|███▌      | 18/50 [00:32<00:47,  1.49s/it, done=0, won=0][A
+Game 20:  38%|███▊      | 19/50 [00:32<00:50,  1.62s/it, done=0, won=0][A
+Game 20:  38%|███▊      | 19/50 [00:34<00:50,  1.62s/it, done=0, won=0][A
+Game 20:  40%|████      | 20/50 [00:34<00:56,  1.89s/it, done=0, won=0][A
+Game 20:  40%|████      | 20/50 [00:35<00:56,  1.89s/it, done=0, won=0][A
+Game 20:  42%|████▏     | 21/50 [00:35<00:47,  1.65s/it, done=0, won=0][A
+Game 20:  42%|████▏     | 21/50 [00:36<00:47,  1.65s/it, done=0, won=0][A
+Game 20:  44%|████▍     | 22/50 [00:36<00:42,  1.52s/it, done=0, won=0][A
+Game 20:  44%|████▍     | 22/50 [00:38<00:42,  1.52s/it, done=0, won=0][A
+Game 20:  46%|████▌     | 23/50 [00:38<00:39,  1.45s/it, done=0, won=0][A
+Game 20:  46%|████▌     | 23/50 [00:39<00:39,  1.45s/it, done=0, won=0][A
+Game 20:  48%|████▊     | 24/50 [00:39<00:34,  1.33s/it, done=0, won=0][A
+Game 20:  48%|████▊     | 24/50 [00:41<00:34,  1.33s/it, done=0, won=0][A
+Game 20:  50%|█████     | 25/50 [00:41<00:43,  1.74s/it, done=0, won=0][A
+Game 20:  50%|█████     | 25/50 [00:44<00:43,  1.74s/it, done=0, won=0][A
+Game 20:  52%|█████▏    | 26/50 [00:44<00:44,  1.86s/it, done=0, won=0][A
+Game 20:  52%|█████▏    | 26/50 [00:45<00:44,  1.86s/it, done=0, won=0][A
+Game 20:  54%|█████▍    | 27/50 [00:45<00:38,  1.69s/it, done=0, won=0][A
+Game 20:  54%|█████▍    | 27/50 [00:47<00:38,  1.69s/it, done=0, won=0][A
+Game 20:  56%|█████▌    | 28/50 [00:47<00:39,  1.78s/it, done=0, won=0][A
+Game 20:  56%|█████▌    | 28/50 [00:49<00:39,  1.78s/it, done=0, won=0][A
+Game 20:  58%|█████▊    | 29/50 [00:49<00:40,  1.91s/it, done=0, won=0][A
+Game 20:  58%|█████▊    | 29/50 [00:51<00:40,  1.91s/it, done=0, won=0][A
+Game 20:  60%|██████    | 30/50 [00:51<00:37,  1.88s/it, done=0, won=0][A
+Game 20:  60%|██████    | 30/50 [00:53<00:37,  1.88s/it, done=0, won=0][A
+Game 20:  62%|██████▏   | 31/50 [00:53<00:37,  1.99s/it, done=0, won=0][A
+Game 20:  62%|██████▏   | 31/50 [00:56<00:37,  1.99s/it, done=0, won=0][A
+Game 20:  64%|██████▍   | 32/50 [00:56<00:40,  2.25s/it, done=0, won=0][A
+Game 20:  64%|██████▍   | 32/50 [00:57<00:40,  2.25s/it, done=0, won=0][A
+Game 20:  66%|██████▌   | 33/50 [00:57<00:32,  1.93s/it, done=0, won=0][A
+Game 20:  66%|██████▌   | 33/50 [00:58<00:32,  1.93s/it, done=0, won=0][A
+Game 20:  68%|██████▊   | 34/50 [00:58<00:26,  1.68s/it, done=0, won=0][A
+Game 20:  68%|██████▊   | 34/50 [01:00<00:26,  1.68s/it, done=0, won=0][A
+Game 20:  70%|███████   | 35/50 [01:00<00:24,  1.61s/it, done=0, won=0][A
+Game 20:  70%|███████   | 35/50 [01:01<00:24,  1.61s/it, done=0, won=0][A
+Game 20:  72%|███████▏  | 36/50 [01:01<00:21,  1.55s/it, done=0, won=0][A
+Game 20:  72%|███████▏  | 36/50 [01:03<00:21,  1.55s/it, done=0, won=0][A
+Game 20:  74%|███████▍  | 37/50 [01:03<00:23,  1.79s/it, done=0, won=0][A
+Game 20:  74%|███████▍  | 37/50 [01:05<00:23,  1.79s/it, done=0, won=0][A
+Game 20:  76%|███████▌  | 38/50 [01:05<00:20,  1.68s/it, done=0, won=0][A
+Game 20:  76%|███████▌  | 38/50 [01:07<00:20,  1.68s/it, done=0, won=0][A
+Game 20:  78%|███████▊  | 39/50 [01:07<00:20,  1.83s/it, done=0, won=0][A
+Game 20:  78%|███████▊  | 39/50 [01:09<00:20,  1.83s/it, done=0, won=0][A
+Game 20:  80%|████████  | 40/50 [01:09<00:17,  1.75s/it, done=0, won=0][A
+Game 20:  80%|████████  | 40/50 [01:10<00:17,  1.75s/it, done=0, won=0][A
+Game 20:  82%|████████▏ | 41/50 [01:10<00:14,  1.59s/it, done=0, won=0][A
+Game 20:  82%|████████▏ | 41/50 [01:11<00:14,  1.59s/it, done=0, won=0][A
+Game 20:  84%|████████▍ | 42/50 [01:11<00:12,  1.58s/it, done=0, won=0][A
+Game 20:  84%|████████▍ | 42/50 [01:12<00:12,  1.58s/it, done=0, won=0][A
+Game 20:  86%|████████▌ | 43/50 [01:12<00:10,  1.44s/it, done=0, won=0][A
+Game 20:  86%|████████▌ | 43/50 [01:15<00:10,  1.44s/it, done=0, won=0][A
+Game 20:  88%|████████▊ | 44/50 [01:15<00:10,  1.73s/it, done=0, won=0][A
+Game 20:  88%|████████▊ | 44/50 [01:16<00:10,  1.73s/it, done=0, won=0][A
+Game 20:  90%|█████████ | 45/50 [01:16<00:07,  1.52s/it, done=0, won=0][A
+Game 20:  90%|█████████ | 45/50 [01:17<00:07,  1.52s/it, done=0, won=0][A
+Game 20:  92%|█████████▏| 46/50 [01:17<00:05,  1.36s/it, done=0, won=0][A
+Game 20:  92%|█████████▏| 46/50 [01:18<00:05,  1.36s/it, done=0, won=0][A
+Game 20:  94%|█████████▍| 47/50 [01:18<00:03,  1.31s/it, done=0, won=0][A
+Game 20:  94%|█████████▍| 47/50 [01:20<00:03,  1.31s/it, done=0, won=0][A
+Game 20:  96%|█████████▌| 48/50 [01:20<00:03,  1.55s/it, done=0, won=0][A
+Game 20:  96%|█████████▌| 48/50 [01:22<00:03,  1.55s/it, done=0, won=0][A
+Game 20:  98%|█████████▊| 49/50 [01:22<00:01,  1.54s/it, done=0, won=0][A
+Game 20:  98%|█████████▊| 49/50 [01:23<00:01,  1.54s/it, done=1, won=0][A2026-04-08 19:06:03,533 - Episode 20 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  80%|████████  | 16/20 [27:58<07:04, 106.06s/it, offset=20]ALFWorld eval episodes:  80%|████████  | 16/20 [27:58<07:04, 106.06s/it, offset=21]2026-04-08 19:06:03,533 - Episode 17/20 | dataset index=21
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▌   | 326/494 [00:00<00:00, 3254.73it/s][A100%|██████████| 494/494 [00:00<00:00, 3043.40it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=21)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 21:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 21:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 21:   2%|▏         | 1/50 [00:01<00:50,  1.04s/it, done=0, won=0][A
+Game 21:   2%|▏         | 1/50 [00:02<00:50,  1.04s/it, done=0, won=0][A
+Game 21:   4%|▍         | 2/50 [00:02<00:53,  1.11s/it, done=0, won=0][A
+Game 21:   4%|▍         | 2/50 [00:03<00:53,  1.11s/it, done=0, won=0][A
+Game 21:   6%|▌         | 3/50 [00:03<00:54,  1.15s/it, done=0, won=0][A
+Game 21:   6%|▌         | 3/50 [00:05<00:54,  1.15s/it, done=0, won=0][A
+Game 21:   8%|▊         | 4/50 [00:05<01:12,  1.58s/it, done=0, won=0][A
+Game 21:   8%|▊         | 4/50 [00:08<01:12,  1.58s/it, done=0, won=0][A
+Game 21:  10%|█         | 5/50 [00:08<01:34,  2.10s/it, done=0, won=0][A
+Game 21:  10%|█         | 5/50 [00:10<01:34,  2.10s/it, done=0, won=0][A
+Game 21:  12%|█▏        | 6/50 [00:10<01:30,  2.06s/it, done=0, won=0][A
+Game 21:  12%|█▏        | 6/50 [00:11<01:30,  2.06s/it, done=0, won=0][A
+Game 21:  14%|█▍        | 7/50 [00:11<01:18,  1.81s/it, done=0, won=0][A
+Game 21:  14%|█▍        | 7/50 [00:13<01:18,  1.81s/it, done=0, won=0][A
+Game 21:  16%|█▌        | 8/50 [00:13<01:09,  1.66s/it, done=0, won=0][A
+Game 21:  16%|█▌        | 8/50 [00:16<01:09,  1.66s/it, done=0, won=0][A
+Game 21:  18%|█▊        | 9/50 [00:16<01:22,  2.01s/it, done=0, won=0][A
+Game 21:  18%|█▊        | 9/50 [00:18<01:22,  2.01s/it, done=0, won=0][A
+Game 21:  20%|██        | 10/50 [00:18<01:26,  2.15s/it, done=0, won=0][A
+Game 21:  20%|██        | 10/50 [00:21<01:26,  2.15s/it, done=0, won=0][A
+Game 21:  22%|██▏       | 11/50 [00:21<01:32,  2.37s/it, done=0, won=0][A
+Game 21:  22%|██▏       | 11/50 [00:23<01:32,  2.37s/it, done=0, won=0][A
+Game 21:  24%|██▍       | 12/50 [00:23<01:23,  2.19s/it, done=0, won=0][A
+Game 21:  24%|██▍       | 12/50 [00:25<01:23,  2.19s/it, done=0, won=0][A
+Game 21:  26%|██▌       | 13/50 [00:25<01:24,  2.27s/it, done=0, won=0][A
+Game 21:  26%|██▌       | 13/50 [00:27<01:24,  2.27s/it, done=0, won=0][A
+Game 21:  28%|██▊       | 14/50 [00:27<01:16,  2.14s/it, done=0, won=0][A
+Game 21:  28%|██▊       | 14/50 [00:29<01:16,  2.14s/it, done=0, won=0][A
+Game 21:  30%|███       | 15/50 [00:29<01:11,  2.03s/it, done=0, won=0][A
+Game 21:  30%|███       | 15/50 [00:33<01:11,  2.03s/it, done=0, won=0][A
+Game 21:  32%|███▏      | 16/50 [00:33<01:29,  2.63s/it, done=0, won=0][A
+Game 21:  32%|███▏      | 16/50 [00:34<01:29,  2.63s/it, done=0, won=0][A
+Game 21:  34%|███▍      | 17/50 [00:34<01:14,  2.26s/it, done=0, won=0][A
+Game 21:  34%|███▍      | 17/50 [00:36<01:14,  2.26s/it, done=0, won=0][A
+Game 21:  36%|███▌      | 18/50 [00:36<01:05,  2.05s/it, done=0, won=0][A
+Game 21:  36%|███▌      | 18/50 [00:39<01:05,  2.05s/it, done=0, won=0][A
+Game 21:  38%|███▊      | 19/50 [00:39<01:18,  2.54s/it, done=0, won=0][A
+Game 21:  38%|███▊      | 19/50 [00:43<01:18,  2.54s/it, done=0, won=0][A
+Game 21:  40%|████      | 20/50 [00:43<01:24,  2.81s/it, done=0, won=0][A
+Game 21:  40%|████      | 20/50 [00:44<01:24,  2.81s/it, done=0, won=0][A
+Game 21:  42%|████▏     | 21/50 [00:44<01:09,  2.39s/it, done=0, won=0][A
+Game 21:  42%|████▏     | 21/50 [00:48<01:09,  2.39s/it, done=0, won=0][A
+Game 21:  44%|████▍     | 22/50 [00:48<01:20,  2.87s/it, done=0, won=0][A
+Game 21:  44%|████▍     | 22/50 [00:50<01:20,  2.87s/it, done=0, won=0][A
+Game 21:  46%|████▌     | 23/50 [00:50<01:10,  2.60s/it, done=0, won=0][A
+Game 21:  46%|████▌     | 23/50 [00:52<01:10,  2.60s/it, done=0, won=0][A
+Game 21:  48%|████▊     | 24/50 [00:52<00:57,  2.22s/it, done=0, won=0][A
+Game 21:  48%|████▊     | 24/50 [00:53<00:57,  2.22s/it, done=0, won=0][A
+Game 21:  50%|█████     | 25/50 [00:53<00:46,  1.88s/it, done=0, won=0][A
+Game 21:  50%|█████     | 25/50 [00:55<00:46,  1.88s/it, done=0, won=0][A
+Game 21:  52%|█████▏    | 26/50 [00:55<00:45,  1.89s/it, done=0, won=0][A
+Game 21:  52%|█████▏    | 26/50 [00:57<00:45,  1.89s/it, done=0, won=0][A
+Game 21:  54%|█████▍    | 27/50 [00:57<00:49,  2.16s/it, done=0, won=0][A
+Game 21:  54%|█████▍    | 27/50 [01:01<00:49,  2.16s/it, done=0, won=0][A
+Game 21:  56%|█████▌    | 28/50 [01:01<00:58,  2.65s/it, done=0, won=0][A
+Game 21:  56%|█████▌    | 28/50 [01:05<00:58,  2.65s/it, done=0, won=0][A
+Game 21:  58%|█████▊    | 29/50 [01:05<01:02,  2.98s/it, done=0, won=0][A
+Game 21:  58%|█████▊    | 29/50 [01:06<01:02,  2.98s/it, done=0, won=0][A
+Game 21:  60%|██████    | 30/50 [01:06<00:48,  2.45s/it, done=0, won=0][A
+Game 21:  60%|██████    | 30/50 [01:08<00:48,  2.45s/it, done=0, won=0][A
+Game 21:  62%|██████▏   | 31/50 [01:08<00:41,  2.19s/it, done=0, won=0][A
+Game 21:  62%|██████▏   | 31/50 [01:12<00:41,  2.19s/it, done=0, won=0][A
+Game 21:  64%|██████▍   | 32/50 [01:12<00:50,  2.82s/it, done=0, won=0][A
+Game 21:  64%|██████▍   | 32/50 [01:16<00:50,  2.82s/it, done=0, won=0][A
+Game 21:  66%|██████▌   | 33/50 [01:16<00:53,  3.14s/it, done=0, won=0][A
+Game 21:  66%|██████▌   | 33/50 [01:18<00:53,  3.14s/it, done=0, won=0][A
+Game 21:  68%|██████▊   | 34/50 [01:18<00:43,  2.73s/it, done=0, won=0][A
+Game 21:  68%|██████▊   | 34/50 [01:19<00:43,  2.73s/it, done=0, won=0][A
+Game 21:  70%|███████   | 35/50 [01:19<00:35,  2.39s/it, done=0, won=0][A
+Game 21:  70%|███████   | 35/50 [01:21<00:35,  2.39s/it, done=0, won=0][A
+Game 21:  72%|███████▏  | 36/50 [01:21<00:30,  2.21s/it, done=0, won=0][A
+Game 21:  72%|███████▏  | 36/50 [01:25<00:30,  2.21s/it, done=0, won=0][A
+Game 21:  74%|███████▍  | 37/50 [01:25<00:34,  2.69s/it, done=0, won=0][A
+Game 21:  74%|███████▍  | 37/50 [01:29<00:34,  2.69s/it, done=0, won=0][A
+Game 21:  76%|███████▌  | 38/50 [01:29<00:36,  3.05s/it, done=0, won=0][A
+Game 21:  76%|███████▌  | 38/50 [01:33<00:36,  3.05s/it, done=0, won=0][A
+Game 21:  78%|███████▊  | 39/50 [01:33<00:36,  3.29s/it, done=0, won=0][A
+Game 21:  78%|███████▊  | 39/50 [01:34<00:36,  3.29s/it, done=0, won=0][A
+Game 21:  80%|████████  | 40/50 [01:34<00:26,  2.68s/it, done=0, won=0][A
+Game 21:  80%|████████  | 40/50 [01:38<00:26,  2.68s/it, done=0, won=0][A
+Game 21:  82%|████████▏ | 41/50 [01:38<00:27,  3.04s/it, done=0, won=0][A
+Game 21:  82%|████████▏ | 41/50 [01:39<00:27,  3.04s/it, done=0, won=0][A
+Game 21:  84%|████████▍ | 42/50 [01:39<00:20,  2.51s/it, done=0, won=0][A
+Game 21:  84%|████████▍ | 42/50 [01:42<00:20,  2.51s/it, done=0, won=0][A
+Game 21:  86%|████████▌ | 43/50 [01:42<00:17,  2.57s/it, done=0, won=0][A
+Game 21:  86%|████████▌ | 43/50 [01:43<00:17,  2.57s/it, done=0, won=0][A
+Game 21:  88%|████████▊ | 44/50 [01:43<00:13,  2.21s/it, done=0, won=0][A
+Game 21:  88%|████████▊ | 44/50 [01:45<00:13,  2.21s/it, done=0, won=0][A
+Game 21:  90%|█████████ | 45/50 [01:45<00:10,  2.01s/it, done=0, won=0][A
+Game 21:  90%|█████████ | 45/50 [01:46<00:10,  2.01s/it, done=0, won=0][A
+Game 21:  92%|█████████▏| 46/50 [01:46<00:07,  1.79s/it, done=0, won=0][A
+Game 21:  92%|█████████▏| 46/50 [01:47<00:07,  1.79s/it, done=0, won=0][A
+Game 21:  94%|█████████▍| 47/50 [01:47<00:04,  1.61s/it, done=0, won=0][A
+Game 21:  94%|█████████▍| 47/50 [01:51<00:04,  1.61s/it, done=0, won=0][A
+Game 21:  96%|█████████▌| 48/50 [01:51<00:04,  2.34s/it, done=0, won=0][A
+Game 21:  96%|█████████▌| 48/50 [01:52<00:04,  2.34s/it, done=0, won=0][A
+Game 21:  98%|█████████▊| 49/50 [01:52<00:02,  2.02s/it, done=0, won=0][A
+Game 21:  98%|█████████▊| 49/50 [01:53<00:02,  2.02s/it, done=1, won=0][A2026-04-08 19:08:06,895 - Episode 21 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  85%|████████▌ | 17/20 [30:02<05:33, 111.27s/it, offset=21]ALFWorld eval episodes:  85%|████████▌ | 17/20 [30:02<05:33, 111.27s/it, offset=22]2026-04-08 19:08:06,895 - Episode 18/20 | dataset index=22
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▌   | 324/494 [00:00<00:00, 3229.96it/s][A100%|██████████| 494/494 [00:00<00:00, 3035.44it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=22)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 22:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 22:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 22:   2%|▏         | 1/50 [00:01<00:49,  1.02s/it, done=0, won=0][A
+Game 22:   2%|▏         | 1/50 [00:03<00:49,  1.02s/it, done=0, won=0][A
+Game 22:   4%|▍         | 2/50 [00:03<01:35,  2.00s/it, done=0, won=0][A
+Game 22:   4%|▍         | 2/50 [00:05<01:35,  2.00s/it, done=0, won=0][A
+Game 22:   6%|▌         | 3/50 [00:05<01:20,  1.70s/it, done=0, won=0][A
+Game 22:   6%|▌         | 3/50 [00:07<01:20,  1.70s/it, done=0, won=0][A
+Game 22:   8%|▊         | 4/50 [00:07<01:36,  2.10s/it, done=0, won=0][A
+Game 22:   8%|▊         | 4/50 [00:10<01:36,  2.10s/it, done=0, won=0][A
+Game 22:  10%|█         | 5/50 [00:10<01:42,  2.27s/it, done=0, won=0][A
+Game 22:  10%|█         | 5/50 [00:13<01:42,  2.27s/it, done=0, won=0][A
+Game 22:  12%|█▏        | 6/50 [00:13<01:46,  2.43s/it, done=0, won=0][A
+Game 22:  12%|█▏        | 6/50 [00:16<01:46,  2.43s/it, done=0, won=0][A
+Game 22:  14%|█▍        | 7/50 [00:16<01:56,  2.70s/it, done=0, won=0][A
+Game 22:  14%|█▍        | 7/50 [00:17<01:56,  2.70s/it, done=0, won=0][A
+Game 22:  16%|█▌        | 8/50 [00:17<01:38,  2.34s/it, done=0, won=0][A
+Game 22:  16%|█▌        | 8/50 [00:21<01:38,  2.34s/it, done=0, won=0][A
+Game 22:  18%|█▊        | 9/50 [00:21<01:48,  2.66s/it, done=0, won=0][A
+Game 22:  18%|█▊        | 9/50 [00:22<01:48,  2.66s/it, done=0, won=0][A
+Game 22:  20%|██        | 10/50 [00:22<01:32,  2.31s/it, done=0, won=0][A
+Game 22:  20%|██        | 10/50 [00:26<01:32,  2.31s/it, done=0, won=0][A
+Game 22:  22%|██▏       | 11/50 [00:26<01:48,  2.78s/it, done=0, won=0][A
+Game 22:  22%|██▏       | 11/50 [00:28<01:48,  2.78s/it, done=0, won=0][A
+Game 22:  24%|██▍       | 12/50 [00:28<01:29,  2.36s/it, done=0, won=0][A
+Game 22:  24%|██▍       | 12/50 [00:29<01:29,  2.36s/it, done=0, won=0][A
+Game 22:  26%|██▌       | 13/50 [00:29<01:15,  2.03s/it, done=0, won=0][A
+Game 22:  26%|██▌       | 13/50 [00:32<01:15,  2.03s/it, done=0, won=0][A
+Game 22:  28%|██▊       | 14/50 [00:32<01:28,  2.47s/it, done=0, won=0][A
+Game 22:  28%|██▊       | 14/50 [00:34<01:28,  2.47s/it, done=0, won=0][A
+Game 22:  30%|███       | 15/50 [00:34<01:17,  2.22s/it, done=0, won=0][A
+Game 22:  30%|███       | 15/50 [00:37<01:17,  2.22s/it, done=0, won=0][A
+Game 22:  32%|███▏      | 16/50 [00:37<01:22,  2.42s/it, done=0, won=0][A
+Game 22:  32%|███▏      | 16/50 [00:40<01:22,  2.42s/it, done=0, won=0][A
+Game 22:  34%|███▍      | 17/50 [00:40<01:27,  2.66s/it, done=0, won=0][A
+Game 22:  34%|███▍      | 17/50 [00:43<01:27,  2.66s/it, done=0, won=0][A
+Game 22:  36%|███▌      | 18/50 [00:43<01:26,  2.71s/it, done=0, won=0][A
+Game 22:  36%|███▌      | 18/50 [00:44<01:26,  2.71s/it, done=0, won=0][A
+Game 22:  38%|███▊      | 19/50 [00:44<01:10,  2.26s/it, done=0, won=0][A
+Game 22:  38%|███▊      | 19/50 [00:45<01:10,  2.26s/it, done=0, won=0][A
+Game 22:  40%|████      | 20/50 [00:45<00:57,  1.92s/it, done=0, won=0][A
+Game 22:  40%|████      | 20/50 [00:47<00:57,  1.92s/it, done=0, won=0][A
+Game 22:  42%|████▏     | 21/50 [00:47<00:57,  1.98s/it, done=0, won=0][A
+Game 22:  42%|████▏     | 21/50 [00:49<00:57,  1.98s/it, done=0, won=0][A
+Game 22:  44%|████▍     | 22/50 [00:49<00:53,  1.91s/it, done=0, won=0][A
+Game 22:  44%|████▍     | 22/50 [00:51<00:53,  1.91s/it, done=0, won=0][A
+Game 22:  46%|████▌     | 23/50 [00:51<00:49,  1.81s/it, done=0, won=0][A
+Game 22:  46%|████▌     | 23/50 [00:54<00:49,  1.81s/it, done=0, won=0][A
+Game 22:  48%|████▊     | 24/50 [00:54<00:59,  2.30s/it, done=0, won=0][A
+Game 22:  48%|████▊     | 24/50 [00:55<00:59,  2.30s/it, done=0, won=0][A
+Game 22:  50%|█████     | 25/50 [00:55<00:48,  1.95s/it, done=0, won=0][A
+Game 22:  50%|█████     | 25/50 [00:56<00:48,  1.95s/it, done=0, won=0][A
+Game 22:  52%|█████▏    | 26/50 [00:56<00:41,  1.74s/it, done=0, won=0][A
+Game 22:  52%|█████▏    | 26/50 [00:59<00:41,  1.74s/it, done=0, won=0][A
+Game 22:  54%|█████▍    | 27/50 [00:59<00:45,  2.00s/it, done=0, won=0][A
+Game 22:  54%|█████▍    | 27/50 [01:00<00:45,  2.00s/it, done=0, won=0][A
+Game 22:  56%|█████▌    | 28/50 [01:00<00:39,  1.78s/it, done=0, won=0][A
+Game 22:  56%|█████▌    | 28/50 [01:03<00:39,  1.78s/it, done=0, won=0][A
+Game 22:  58%|█████▊    | 29/50 [01:03<00:40,  1.94s/it, done=0, won=0][A
+Game 22:  58%|█████▊    | 29/50 [01:04<00:40,  1.94s/it, done=0, won=0][A
+Game 22:  60%|██████    | 30/50 [01:04<00:34,  1.70s/it, done=0, won=0][A
+Game 22:  60%|██████    | 30/50 [01:06<00:34,  1.70s/it, done=0, won=0][A
+Game 22:  62%|██████▏   | 31/50 [01:06<00:37,  1.98s/it, done=0, won=0][A
+Game 22:  62%|██████▏   | 31/50 [01:10<00:37,  1.98s/it, done=0, won=0][A
+Game 22:  64%|██████▍   | 32/50 [01:10<00:42,  2.37s/it, done=0, won=0][A
+Game 22:  64%|██████▍   | 32/50 [01:11<00:42,  2.37s/it, done=0, won=0][A
+Game 22:  66%|██████▌   | 33/50 [01:11<00:35,  2.10s/it, done=0, won=0][A
+Game 22:  66%|██████▌   | 33/50 [01:14<00:35,  2.10s/it, done=0, won=0][A
+Game 22:  68%|██████▊   | 34/50 [01:14<00:38,  2.43s/it, done=0, won=0][A
+Game 22:  68%|██████▊   | 34/50 [01:16<00:38,  2.43s/it, done=0, won=0][A
+Game 22:  70%|███████   | 35/50 [01:16<00:33,  2.23s/it, done=0, won=0][A
+Game 22:  70%|███████   | 35/50 [01:17<00:33,  2.23s/it, done=0, won=0][A
+Game 22:  72%|███████▏  | 36/50 [01:17<00:25,  1.86s/it, done=0, won=0][A
+Game 22:  72%|███████▏  | 36/50 [01:20<00:25,  1.86s/it, done=0, won=0][A
+Game 22:  74%|███████▍  | 37/50 [01:20<00:27,  2.09s/it, done=0, won=0][A
+Game 22:  74%|███████▍  | 37/50 [01:23<00:27,  2.09s/it, done=0, won=0][A
+Game 22:  76%|███████▌  | 38/50 [01:23<00:29,  2.43s/it, done=0, won=0][A
+Game 22:  76%|███████▌  | 38/50 [01:25<00:29,  2.43s/it, done=0, won=0][A
+Game 22:  78%|███████▊  | 39/50 [01:25<00:26,  2.45s/it, done=0, won=0][A
+Game 22:  78%|███████▊  | 39/50 [01:27<00:26,  2.45s/it, done=0, won=0][A
+Game 22:  80%|████████  | 40/50 [01:27<00:21,  2.19s/it, done=0, won=0][A
+Game 22:  80%|████████  | 40/50 [01:29<00:21,  2.19s/it, done=0, won=0][A
+Game 22:  82%|████████▏ | 41/50 [01:29<00:18,  2.07s/it, done=0, won=0][A
+Game 22:  82%|████████▏ | 41/50 [01:30<00:18,  2.07s/it, done=0, won=0][A
+Game 22:  84%|████████▍ | 42/50 [01:30<00:14,  1.81s/it, done=0, won=0][A
+Game 22:  84%|████████▍ | 42/50 [01:32<00:14,  1.81s/it, done=0, won=0][A
+Game 22:  86%|████████▌ | 43/50 [01:32<00:13,  1.98s/it, done=0, won=0][A
+Game 22:  86%|████████▌ | 43/50 [01:34<00:13,  1.98s/it, done=0, won=0][A
+Game 22:  88%|████████▊ | 44/50 [01:34<00:10,  1.80s/it, done=0, won=0][A
+Game 22:  88%|████████▊ | 44/50 [01:35<00:10,  1.80s/it, done=0, won=0][A
+Game 22:  90%|█████████ | 45/50 [01:35<00:08,  1.64s/it, done=0, won=0][A
+Game 22:  90%|█████████ | 45/50 [01:38<00:08,  1.64s/it, done=0, won=0][A
+Game 22:  92%|█████████▏| 46/50 [01:38<00:07,  1.95s/it, done=0, won=0][A
+Game 22:  92%|█████████▏| 46/50 [01:40<00:07,  1.95s/it, done=0, won=0][A
+Game 22:  94%|█████████▍| 47/50 [01:40<00:06,  2.18s/it, done=0, won=0][A
+Game 22:  94%|█████████▍| 47/50 [01:43<00:06,  2.18s/it, done=0, won=0][A
+Game 22:  96%|█████████▌| 48/50 [01:43<00:04,  2.31s/it, done=0, won=0][A
+Game 22:  96%|█████████▌| 48/50 [01:44<00:04,  2.31s/it, done=0, won=0][A
+Game 22:  98%|█████████▊| 49/50 [01:44<00:01,  1.97s/it, done=0, won=0][A
+Game 22:  98%|█████████▊| 49/50 [01:46<00:01,  1.97s/it, done=1, won=0][A2026-04-08 19:10:00,972 - Episode 22 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  90%|█████████ | 18/20 [31:56<03:44, 112.11s/it, offset=22]ALFWorld eval episodes:  90%|█████████ | 18/20 [31:56<03:44, 112.11s/it, offset=23]2026-04-08 19:10:00,972 - Episode 19/20 | dataset index=23
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▌   | 326/494 [00:00<00:00, 3251.85it/s][A100%|██████████| 494/494 [00:00<00:00, 1353.15it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=23)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 23:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 23:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 23:   2%|▏         | 1/50 [00:01<01:05,  1.33s/it, done=0, won=0][A
+Game 23:   2%|▏         | 1/50 [00:03<01:05,  1.33s/it, done=0, won=0][A
+Game 23:   4%|▍         | 2/50 [00:03<01:25,  1.79s/it, done=0, won=0][A
+Game 23:   4%|▍         | 2/50 [00:04<01:25,  1.79s/it, done=0, won=0][A
+Game 23:   6%|▌         | 3/50 [00:04<01:17,  1.64s/it, done=0, won=0][A
+Game 23:   6%|▌         | 3/50 [00:06<01:17,  1.64s/it, done=0, won=0][A
+Game 23:   8%|▊         | 4/50 [00:06<01:14,  1.62s/it, done=0, won=0][A
+Game 23:   8%|▊         | 4/50 [00:07<01:14,  1.62s/it, done=0, won=0][A
+Game 23:  10%|█         | 5/50 [00:07<01:10,  1.56s/it, done=0, won=0][A
+Game 23:  10%|█         | 5/50 [00:10<01:10,  1.56s/it, done=0, won=0][A
+Game 23:  12%|█▏        | 6/50 [00:10<01:28,  2.00s/it, done=0, won=0][A
+Game 23:  12%|█▏        | 6/50 [00:13<01:28,  2.00s/it, done=0, won=0][A
+Game 23:  14%|█▍        | 7/50 [00:13<01:31,  2.12s/it, done=0, won=0][A
+Game 23:  14%|█▍        | 7/50 [00:15<01:31,  2.12s/it, done=0, won=0][A
+Game 23:  16%|█▌        | 8/50 [00:15<01:36,  2.29s/it, done=0, won=0][A
+Game 23:  16%|█▌        | 8/50 [00:17<01:36,  2.29s/it, done=0, won=0][A
+Game 23:  18%|█▊        | 9/50 [00:17<01:25,  2.09s/it, done=0, won=0][A
+Game 23:  18%|█▊        | 9/50 [00:18<01:25,  2.09s/it, done=0, won=0][A
+Game 23:  20%|██        | 10/50 [00:18<01:13,  1.84s/it, done=0, won=0][A
+Game 23:  20%|██        | 10/50 [00:22<01:13,  1.84s/it, done=0, won=0][A
+Game 23:  22%|██▏       | 11/50 [00:22<01:29,  2.30s/it, done=0, won=0][A
+Game 23:  22%|██▏       | 11/50 [00:23<01:29,  2.30s/it, done=0, won=0][A
+Game 23:  24%|██▍       | 12/50 [00:23<01:21,  2.15s/it, done=0, won=0][A
+Game 23:  24%|██▍       | 12/50 [00:25<01:21,  2.15s/it, done=0, won=0][A
+Game 23:  26%|██▌       | 13/50 [00:25<01:13,  2.00s/it, done=0, won=0][A
+Game 23:  26%|██▌       | 13/50 [00:29<01:13,  2.00s/it, done=0, won=0][A
+Game 23:  28%|██▊       | 14/50 [00:29<01:31,  2.56s/it, done=0, won=0][A
+Game 23:  28%|██▊       | 14/50 [00:31<01:31,  2.56s/it, done=0, won=0][A
+Game 23:  30%|███       | 15/50 [00:31<01:21,  2.34s/it, done=0, won=0][A
+Game 23:  30%|███       | 15/50 [00:32<01:21,  2.34s/it, done=0, won=0][A
+Game 23:  32%|███▏      | 16/50 [00:32<01:12,  2.13s/it, done=0, won=0][A
+Game 23:  32%|███▏      | 16/50 [00:34<01:12,  2.13s/it, done=0, won=0][A
+Game 23:  34%|███▍      | 17/50 [00:34<01:03,  1.93s/it, done=0, won=0][A
+Game 23:  34%|███▍      | 17/50 [00:36<01:03,  1.93s/it, done=0, won=0][A
+Game 23:  36%|███▌      | 18/50 [00:36<01:07,  2.12s/it, done=0, won=0][A
+Game 23:  36%|███▌      | 18/50 [00:38<01:07,  2.12s/it, done=0, won=0][A
+Game 23:  38%|███▊      | 19/50 [00:38<01:04,  2.08s/it, done=0, won=0][A
+Game 23:  38%|███▊      | 19/50 [00:42<01:04,  2.08s/it, done=0, won=0][A
+Game 23:  40%|████      | 20/50 [00:42<01:13,  2.43s/it, done=0, won=0][A
+Game 23:  40%|████      | 20/50 [00:45<01:13,  2.43s/it, done=0, won=0][A
+Game 23:  42%|████▏     | 21/50 [00:45<01:16,  2.65s/it, done=0, won=0][A
+Game 23:  42%|████▏     | 21/50 [00:48<01:16,  2.65s/it, done=0, won=0][A
+Game 23:  44%|████▍     | 22/50 [00:48<01:18,  2.80s/it, done=0, won=0][A
+Game 23:  44%|████▍     | 22/50 [00:51<01:18,  2.80s/it, done=0, won=0][A
+Game 23:  46%|████▌     | 23/50 [00:51<01:21,  3.00s/it, done=0, won=0][A
+Game 23:  46%|████▌     | 23/50 [00:53<01:21,  3.00s/it, done=0, won=0][A
+Game 23:  48%|████▊     | 24/50 [00:53<01:05,  2.53s/it, done=0, won=0][A
+Game 23:  48%|████▊     | 24/50 [00:55<01:05,  2.53s/it, done=0, won=0][A
+Game 23:  50%|█████     | 25/50 [00:55<01:03,  2.52s/it, done=0, won=0][A
+Game 23:  50%|█████     | 25/50 [00:58<01:03,  2.52s/it, done=0, won=0][A
+Game 23:  52%|█████▏    | 26/50 [00:58<01:00,  2.54s/it, done=0, won=0][A
+Game 23:  52%|█████▏    | 26/50 [01:00<01:00,  2.54s/it, done=0, won=0][A
+Game 23:  54%|█████▍    | 27/50 [01:00<00:52,  2.28s/it, done=0, won=0][A
+Game 23:  54%|█████▍    | 27/50 [01:01<00:52,  2.28s/it, done=0, won=0][A
+Game 23:  56%|█████▌    | 28/50 [01:01<00:43,  2.00s/it, done=0, won=0][A
+Game 23:  56%|█████▌    | 28/50 [01:04<00:43,  2.00s/it, done=0, won=0][A
+Game 23:  58%|█████▊    | 29/50 [01:04<00:50,  2.41s/it, done=0, won=0][A
+Game 23:  58%|█████▊    | 29/50 [01:06<00:50,  2.41s/it, done=0, won=0][A
+Game 23:  60%|██████    | 30/50 [01:06<00:45,  2.28s/it, done=0, won=0][A
+Game 23:  60%|██████    | 30/50 [01:08<00:45,  2.28s/it, done=0, won=0][A
+Game 23:  62%|██████▏   | 31/50 [01:08<00:40,  2.14s/it, done=0, won=0][A
+Game 23:  62%|██████▏   | 31/50 [01:10<00:40,  2.14s/it, done=0, won=0][A
+Game 23:  64%|██████▍   | 32/50 [01:10<00:35,  1.98s/it, done=0, won=0][A
+Game 23:  64%|██████▍   | 32/50 [01:11<00:35,  1.98s/it, done=0, won=0][A
+Game 23:  66%|██████▌   | 33/50 [01:11<00:30,  1.77s/it, done=0, won=0][A
+Game 23:  66%|██████▌   | 33/50 [01:14<00:30,  1.77s/it, done=0, won=0][A
+Game 23:  68%|██████▊   | 34/50 [01:14<00:33,  2.07s/it, done=0, won=0][A
+Game 23:  68%|██████▊   | 34/50 [01:17<00:33,  2.07s/it, done=0, won=0][A
+Game 23:  70%|███████   | 35/50 [01:17<00:35,  2.39s/it, done=0, won=0][A
+Game 23:  70%|███████   | 35/50 [01:20<00:35,  2.39s/it, done=0, won=0][A
+Game 23:  72%|███████▏  | 36/50 [01:20<00:38,  2.74s/it, done=0, won=0][A
+Game 23:  72%|███████▏  | 36/50 [01:24<00:38,  2.74s/it, done=0, won=0][A
+Game 23:  74%|███████▍  | 37/50 [01:24<00:37,  2.91s/it, done=0, won=0][A
+Game 23:  74%|███████▍  | 37/50 [01:25<00:37,  2.91s/it, done=0, won=0][A
+Game 23:  76%|███████▌  | 38/50 [01:25<00:30,  2.52s/it, done=0, won=0][A
+Game 23:  76%|███████▌  | 38/50 [01:27<00:30,  2.52s/it, done=0, won=0][A
+Game 23:  78%|███████▊  | 39/50 [01:27<00:26,  2.38s/it, done=0, won=0][A
+Game 23:  78%|███████▊  | 39/50 [01:29<00:26,  2.38s/it, done=0, won=0][A
+Game 23:  80%|████████  | 40/50 [01:29<00:21,  2.11s/it, done=0, won=0][A
+Game 23:  80%|████████  | 40/50 [01:31<00:21,  2.11s/it, done=0, won=0][A
+Game 23:  82%|████████▏ | 41/50 [01:31<00:18,  2.03s/it, done=0, won=0][A
+Game 23:  82%|████████▏ | 41/50 [01:33<00:18,  2.03s/it, done=0, won=0][A
+Game 23:  84%|████████▍ | 42/50 [01:33<00:15,  1.95s/it, done=0, won=0][A
+Game 23:  84%|████████▍ | 42/50 [01:34<00:15,  1.95s/it, done=0, won=0][A
+Game 23:  86%|████████▌ | 43/50 [01:34<00:13,  1.89s/it, done=0, won=0][A
+Game 23:  86%|████████▌ | 43/50 [01:37<00:13,  1.89s/it, done=0, won=0][A
+Game 23:  88%|████████▊ | 44/50 [01:37<00:12,  2.10s/it, done=0, won=0][A
+Game 23:  88%|████████▊ | 44/50 [01:39<00:12,  2.10s/it, done=0, won=0][A
+Game 23:  90%|█████████ | 45/50 [01:39<00:10,  2.01s/it, done=0, won=0][A
+Game 23:  90%|█████████ | 45/50 [01:40<00:10,  2.01s/it, done=0, won=0][A
+Game 23:  92%|█████████▏| 46/50 [01:40<00:07,  1.83s/it, done=0, won=0][A
+Game 23:  92%|█████████▏| 46/50 [01:41<00:07,  1.83s/it, done=0, won=0][A
+Game 23:  94%|█████████▍| 47/50 [01:41<00:05,  1.71s/it, done=0, won=0][A
+Game 23:  94%|█████████▍| 47/50 [01:44<00:05,  1.71s/it, done=0, won=0][A
+Game 23:  96%|█████████▌| 48/50 [01:44<00:03,  1.98s/it, done=0, won=0][A
+Game 23:  96%|█████████▌| 48/50 [01:46<00:03,  1.98s/it, done=0, won=0][A
+Game 23:  98%|█████████▊| 49/50 [01:46<00:01,  1.90s/it, done=0, won=0][A
+Game 23:  98%|█████████▊| 49/50 [01:47<00:01,  1.90s/it, done=1, won=0][A2026-04-08 19:11:56,533 - Episode 23 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes:  95%|█████████▌| 19/20 [33:51<01:53, 113.15s/it, offset=23]ALFWorld eval episodes:  95%|█████████▌| 19/20 [33:51<01:53, 113.15s/it, offset=24]2026-04-08 19:11:56,534 - Episode 20/20 | dataset index=24
+Initializing AlfredTWEnv...
+
+  0%|          | 0/494 [00:00<?, ?it/s][A
+ 66%|██████▌   | 326/494 [00:00<00:00, 3258.86it/s][A100%|██████████| 494/494 [00:00<00:00, 3059.64it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 1 games (start=24)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+
+Game 24:   0%|          | 0/50 [00:00<?, ?it/s][A
+Game 24:   0%|          | 0/50 [00:01<?, ?it/s, done=0, won=0][A
+Game 24:   2%|▏         | 1/50 [00:01<01:26,  1.77s/it, done=0, won=0][A
+Game 24:   2%|▏         | 1/50 [00:03<01:26,  1.77s/it, done=0, won=0][A
+Game 24:   4%|▍         | 2/50 [00:03<01:19,  1.65s/it, done=0, won=0][A
+Game 24:   4%|▍         | 2/50 [00:05<01:19,  1.65s/it, done=0, won=0][A
+Game 24:   6%|▌         | 3/50 [00:05<01:18,  1.67s/it, done=0, won=0][A
+Game 24:   6%|▌         | 3/50 [00:08<01:18,  1.67s/it, done=0, won=0][A
+Game 24:   8%|▊         | 4/50 [00:08<01:49,  2.39s/it, done=0, won=0][A
+Game 24:   8%|▊         | 4/50 [00:11<01:49,  2.39s/it, done=0, won=0][A
+Game 24:  10%|█         | 5/50 [00:11<01:58,  2.64s/it, done=0, won=0][A
+Game 24:  10%|█         | 5/50 [00:13<01:58,  2.64s/it, done=0, won=0][A
+Game 24:  12%|█▏        | 6/50 [00:13<01:47,  2.44s/it, done=0, won=0][A
+Game 24:  12%|█▏        | 6/50 [00:15<01:47,  2.44s/it, done=0, won=0][A
+Game 24:  14%|█▍        | 7/50 [00:15<01:31,  2.13s/it, done=0, won=0][A
+Game 24:  14%|█▍        | 7/50 [00:16<01:31,  2.13s/it, done=0, won=0][A
+Game 24:  16%|█▌        | 8/50 [00:16<01:22,  1.95s/it, done=0, won=0][A
+Game 24:  16%|█▌        | 8/50 [00:17<01:22,  1.95s/it, done=0, won=0][A
+Game 24:  18%|█▊        | 9/50 [00:17<01:10,  1.73s/it, done=0, won=0][A
+Game 24:  18%|█▊        | 9/50 [00:20<01:10,  1.73s/it, done=0, won=0][A
+Game 24:  20%|██        | 10/50 [00:20<01:23,  2.09s/it, done=0, won=0][A
+Game 24:  20%|██        | 10/50 [00:22<01:23,  2.09s/it, done=0, won=0][A
+Game 24:  22%|██▏       | 11/50 [00:22<01:16,  1.95s/it, done=0, won=0][A
+Game 24:  22%|██▏       | 11/50 [00:26<01:16,  1.95s/it, done=0, won=0][A
+Game 24:  24%|██▍       | 12/50 [00:26<01:38,  2.58s/it, done=0, won=0][A
+Game 24:  24%|██▍       | 12/50 [00:28<01:38,  2.58s/it, done=0, won=0][A
+Game 24:  26%|██▌       | 13/50 [00:28<01:25,  2.30s/it, done=0, won=0][A
+Game 24:  26%|██▌       | 13/50 [00:30<01:25,  2.30s/it, done=0, won=0][A
+Game 24:  28%|██▊       | 14/50 [00:30<01:27,  2.43s/it, done=0, won=0][A
+Game 24:  28%|██▊       | 14/50 [00:33<01:27,  2.43s/it, done=0, won=0][A
+Game 24:  30%|███       | 15/50 [00:33<01:29,  2.55s/it, done=0, won=0][A
+Game 24:  30%|███       | 15/50 [00:36<01:29,  2.55s/it, done=0, won=0][A
+Game 24:  32%|███▏      | 16/50 [00:36<01:33,  2.74s/it, done=0, won=0][A
+Game 24:  32%|███▏      | 16/50 [00:39<01:33,  2.74s/it, done=0, won=0][A
+Game 24:  34%|███▍      | 17/50 [00:39<01:30,  2.75s/it, done=0, won=0][A
+Game 24:  34%|███▍      | 17/50 [00:41<01:30,  2.75s/it, done=0, won=0][A
+Game 24:  36%|███▌      | 18/50 [00:41<01:15,  2.36s/it, done=0, won=0][A
+Game 24:  36%|███▌      | 18/50 [00:42<01:15,  2.36s/it, done=0, won=0][A
+Game 24:  38%|███▊      | 19/50 [00:42<01:03,  2.06s/it, done=0, won=0][A
+Game 24:  38%|███▊      | 19/50 [00:43<01:03,  2.06s/it, done=0, won=0][A
+Game 24:  40%|████      | 20/50 [00:43<00:54,  1.82s/it, done=0, won=0][A
+Game 24:  40%|████      | 20/50 [00:47<00:54,  1.82s/it, done=0, won=0][A
+Game 24:  42%|████▏     | 21/50 [00:47<01:10,  2.43s/it, done=0, won=0][A
+Game 24:  42%|████▏     | 21/50 [00:50<01:10,  2.43s/it, done=0, won=0][A
+Game 24:  44%|████▍     | 22/50 [00:50<01:11,  2.56s/it, done=0, won=0][A
+Game 24:  44%|████▍     | 22/50 [00:53<01:11,  2.56s/it, done=0, won=0][A
+Game 24:  46%|████▌     | 23/50 [00:53<01:12,  2.68s/it, done=0, won=0][A
+Game 24:  46%|████▌     | 23/50 [00:54<01:12,  2.68s/it, done=0, won=0][A
+Game 24:  48%|████▊     | 24/50 [00:54<00:59,  2.28s/it, done=0, won=0][A
+Game 24:  48%|████▊     | 24/50 [00:57<00:59,  2.28s/it, done=0, won=0][A
+Game 24:  50%|█████     | 25/50 [00:57<01:00,  2.41s/it, done=0, won=0][A
+Game 24:  50%|█████     | 25/50 [01:00<01:00,  2.41s/it, done=0, won=0][A
+Game 24:  52%|█████▏    | 26/50 [01:00<00:58,  2.43s/it, done=0, won=0][A
+Game 24:  52%|█████▏    | 26/50 [01:01<00:58,  2.43s/it, done=0, won=0][A
+Game 24:  54%|█████▍    | 27/50 [01:01<00:49,  2.15s/it, done=0, won=0][A
+Game 24:  54%|█████▍    | 27/50 [01:02<00:49,  2.15s/it, done=0, won=0][A
+Game 24:  56%|█████▌    | 28/50 [01:02<00:42,  1.94s/it, done=0, won=0][A
+Game 24:  56%|█████▌    | 28/50 [01:05<00:42,  1.94s/it, done=0, won=0][A
+Game 24:  58%|█████▊    | 29/50 [01:05<00:46,  2.22s/it, done=0, won=0][A
+Game 24:  58%|█████▊    | 29/50 [01:07<00:46,  2.22s/it, done=0, won=0][A
+Game 24:  60%|██████    | 30/50 [01:07<00:40,  2.03s/it, done=0, won=0][A
+Game 24:  60%|██████    | 30/50 [01:08<00:40,  2.03s/it, done=0, won=0][A
+Game 24:  62%|██████▏   | 31/50 [01:08<00:35,  1.89s/it, done=0, won=0][A
+Game 24:  62%|██████▏   | 31/50 [01:11<00:35,  1.89s/it, done=0, won=0][A
+Game 24:  64%|██████▍   | 32/50 [01:11<00:39,  2.21s/it, done=0, won=0][A
+Game 24:  64%|██████▍   | 32/50 [01:13<00:39,  2.21s/it, done=0, won=0][A
+Game 24:  66%|██████▌   | 33/50 [01:13<00:34,  2.03s/it, done=0, won=0][A
+Game 24:  66%|██████▌   | 33/50 [01:16<00:34,  2.03s/it, done=0, won=0][A
+Game 24:  68%|██████▊   | 34/50 [01:16<00:36,  2.29s/it, done=0, won=0][A
+Game 24:  68%|██████▊   | 34/50 [01:17<00:36,  2.29s/it, done=0, won=0][A
+Game 24:  70%|███████   | 35/50 [01:17<00:30,  2.05s/it, done=0, won=0][A
+Game 24:  70%|███████   | 35/50 [01:20<00:30,  2.05s/it, done=0, won=0][A
+Game 24:  72%|███████▏  | 36/50 [01:20<00:32,  2.35s/it, done=0, won=0][A
+Game 24:  72%|███████▏  | 36/50 [01:23<00:32,  2.35s/it, done=0, won=0][A
+Game 24:  74%|███████▍  | 37/50 [01:23<00:30,  2.38s/it, done=0, won=0][A
+Game 24:  74%|███████▍  | 37/50 [01:24<00:30,  2.38s/it, done=0, won=0][A
+Game 24:  76%|███████▌  | 38/50 [01:24<00:24,  2.05s/it, done=0, won=0][A
+Game 24:  76%|███████▌  | 38/50 [01:27<00:24,  2.05s/it, done=0, won=0][A
+Game 24:  78%|███████▊  | 39/50 [01:27<00:25,  2.28s/it, done=0, won=0][A
+Game 24:  78%|███████▊  | 39/50 [01:31<00:25,  2.28s/it, done=0, won=0][A
+Game 24:  80%|████████  | 40/50 [01:31<00:27,  2.71s/it, done=0, won=0][A
+Game 24:  80%|████████  | 40/50 [01:34<00:27,  2.71s/it, done=0, won=0][A
+Game 24:  82%|████████▏ | 41/50 [01:34<00:27,  3.02s/it, done=0, won=0][A
+Game 24:  82%|████████▏ | 41/50 [01:36<00:27,  3.02s/it, done=0, won=0][A
+Game 24:  84%|████████▍ | 42/50 [01:36<00:20,  2.53s/it, done=0, won=0][A
+Game 24:  84%|████████▍ | 42/50 [01:39<00:20,  2.53s/it, done=0, won=0][A
+Game 24:  86%|████████▌ | 43/50 [01:39<00:19,  2.76s/it, done=0, won=0][A
+Game 24:  86%|████████▌ | 43/50 [01:41<00:19,  2.76s/it, done=0, won=0][A
+Game 24:  88%|████████▊ | 44/50 [01:41<00:14,  2.34s/it, done=0, won=0][A
+Game 24:  88%|████████▊ | 44/50 [01:43<00:14,  2.34s/it, done=0, won=0][A
+Game 24:  90%|█████████ | 45/50 [01:43<00:12,  2.45s/it, done=0, won=0][A
+Game 24:  90%|█████████ | 45/50 [01:45<00:12,  2.45s/it, done=0, won=0][A
+Game 24:  92%|█████████▏| 46/50 [01:45<00:08,  2.14s/it, done=0, won=0][A
+Game 24:  92%|█████████▏| 46/50 [01:46<00:08,  2.14s/it, done=0, won=0][A
+Game 24:  94%|█████████▍| 47/50 [01:46<00:05,  1.88s/it, done=0, won=0][A
+Game 24:  94%|█████████▍| 47/50 [01:49<00:05,  1.88s/it, done=0, won=0][A
+Game 24:  96%|█████████▌| 48/50 [01:49<00:04,  2.18s/it, done=0, won=0][A
+Game 24:  96%|█████████▌| 48/50 [01:50<00:04,  2.18s/it, done=0, won=0][A
+Game 24:  98%|█████████▊| 49/50 [01:50<00:02,  2.01s/it, done=0, won=0][A
+Game 24:  98%|█████████▊| 49/50 [01:52<00:02,  2.01s/it, done=1, won=0][A2026-04-08 19:13:59,298 - Episode 24 finished at step 49 | won=False
+
+                                                                       [AALFWorld eval episodes: 100%|██████████| 20/20 [35:54<00:00, 116.03s/it, offset=24]ALFWorld eval episodes: 100%|██████████| 20/20 [35:54<00:00, 107.73s/it, offset=24]2026-04-08 19:13:59,393 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_5_20/summary.json
+2026-04-08 19:13:59,394 - Overall success rate: 0.0500
+2026-04-08 19:13:59,394 - pick_and_place | 0.1429 (1/7)
+2026-04-08 19:13:59,394 - pick_clean_then_place_in_recep | 0.0000 (0/5)
+2026-04-08 19:13:59,394 - pick_two_obj_and_place | 0.0000 (0/4)
+2026-04-08 19:13:59,394 - pick_cool_then_place_in_recep | 0.0000 (0/4)
+

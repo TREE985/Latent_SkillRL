@@ -1,0 +1,93 @@
+2026-04-20 20:41:30,490 - Run directory: /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/rl/alfworld_7b_rl_100_140
+2026-04-20 20:41:30,490 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL-hf env_num=8 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-04-20 20:41:30,490 - Evaluation coverage | game_offset=100 num_games=40
+2026-04-20 20:41:30,490 - --env-num=8 is ignored for execution concurrency. This script now runs strictly serial on a single GPU process. Total requested games=40.
+2026-04-20 20:41:31,145 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-20 20:41:33,993 - Episode 1/40 | dataset index=100
+2026-04-20 20:42:07,172 - Episode 100 finished at step 8 | won=True
+2026-04-20 20:42:07,173 - Episode 2/40 | dataset index=101
+2026-04-20 20:43:07,557 - Episode 101 finished at step 27 | won=True
+2026-04-20 20:43:07,558 - Episode 3/40 | dataset index=102
+2026-04-20 20:43:55,236 - Episode 102 finished at step 23 | won=True
+2026-04-20 20:43:55,237 - Episode 4/40 | dataset index=103
+2026-04-20 20:44:37,427 - Episode 103 finished at step 21 | won=True
+2026-04-20 20:44:37,428 - Episode 5/40 | dataset index=104
+2026-04-20 20:44:56,634 - Episode 104 finished at step 7 | won=True
+2026-04-20 20:44:56,635 - Episode 6/40 | dataset index=105
+2026-04-20 20:45:08,642 - Episode 105 finished at step 2 | won=True
+2026-04-20 20:45:08,643 - Episode 7/40 | dataset index=106
+2026-04-20 20:45:42,014 - Episode 106 finished at step 16 | won=True
+2026-04-20 20:45:42,014 - Episode 8/40 | dataset index=107
+2026-04-20 20:46:14,209 - Episode 107 finished at step 15 | won=True
+2026-04-20 20:46:14,210 - Episode 9/40 | dataset index=108
+2026-04-20 20:46:40,019 - Episode 108 finished at step 12 | won=True
+2026-04-20 20:46:40,020 - Episode 10/40 | dataset index=109
+2026-04-20 20:48:32,037 - Episode 109 finished at step 47 | won=True
+2026-04-20 20:48:32,038 - Episode 11/40 | dataset index=110
+2026-04-20 20:48:45,536 - Episode 110 finished at step 4 | won=True
+2026-04-20 20:48:45,536 - Episode 12/40 | dataset index=111
+2026-04-20 20:49:21,572 - Episode 111 finished at step 18 | won=True
+2026-04-20 20:49:21,573 - Episode 13/40 | dataset index=112
+2026-04-20 20:49:35,428 - Episode 112 finished at step 5 | won=True
+2026-04-20 20:49:35,428 - Episode 14/40 | dataset index=113
+2026-04-20 20:49:53,823 - Episode 113 finished at step 6 | won=True
+2026-04-20 20:49:53,824 - Episode 15/40 | dataset index=114
+2026-04-20 20:50:48,345 - Episode 114 finished at step 27 | won=True
+2026-04-20 20:50:48,345 - Episode 16/40 | dataset index=115
+2026-04-20 20:51:05,771 - Episode 115 finished at step 5 | won=True
+2026-04-20 20:51:05,772 - Episode 17/40 | dataset index=116
+2026-04-20 20:52:13,622 - Episode 116 finished at step 41 | won=True
+2026-04-20 20:52:13,623 - Episode 18/40 | dataset index=117
+2026-04-20 20:53:05,758 - Episode 117 finished at step 31 | won=True
+2026-04-20 20:53:05,758 - Episode 19/40 | dataset index=118
+2026-04-20 20:53:40,743 - Episode 118 finished at step 16 | won=True
+2026-04-20 20:53:40,743 - Episode 20/40 | dataset index=119
+2026-04-20 20:54:13,478 - Episode 119 finished at step 16 | won=True
+2026-04-20 20:54:13,478 - Episode 21/40 | dataset index=120
+2026-04-20 20:54:46,217 - Episode 120 finished at step 17 | won=True
+2026-04-20 20:54:46,217 - Episode 22/40 | dataset index=121
+2026-04-20 20:55:11,059 - Episode 121 finished at step 12 | won=True
+2026-04-20 20:55:11,060 - Episode 23/40 | dataset index=122
+2026-04-20 20:55:25,813 - Episode 122 finished at step 4 | won=True
+2026-04-20 20:55:25,814 - Episode 24/40 | dataset index=123
+2026-04-20 20:57:06,207 - Episode 123 finished at step 49 | won=False
+2026-04-20 20:57:06,208 - Episode 25/40 | dataset index=124
+2026-04-20 20:58:00,426 - Episode 124 finished at step 27 | won=True
+2026-04-20 20:58:00,427 - Episode 26/40 | dataset index=125
+2026-04-20 20:59:36,094 - Episode 125 finished at step 49 | won=False
+2026-04-20 20:59:36,094 - Episode 27/40 | dataset index=126
+2026-04-20 21:00:07,052 - Episode 126 finished at step 15 | won=True
+2026-04-20 21:00:07,053 - Episode 28/40 | dataset index=127
+2026-04-20 21:00:22,580 - Episode 127 finished at step 6 | won=True
+2026-04-20 21:00:22,580 - Episode 29/40 | dataset index=128
+2026-04-20 21:00:41,261 - Episode 128 finished at step 7 | won=True
+2026-04-20 21:00:41,261 - Episode 30/40 | dataset index=129
+2026-04-20 21:01:04,145 - Episode 129 finished at step 11 | won=True
+2026-04-20 21:01:04,145 - Episode 31/40 | dataset index=130
+2026-04-20 21:02:32,519 - Episode 130 finished at step 49 | won=False
+2026-04-20 21:02:32,520 - Episode 32/40 | dataset index=131
+2026-04-20 21:04:03,269 - Episode 131 finished at step 49 | won=False
+2026-04-20 21:04:03,270 - Episode 33/40 | dataset index=132
+2026-04-20 21:04:45,038 - Episode 132 finished at step 18 | won=True
+2026-04-20 21:04:45,038 - Episode 34/40 | dataset index=133
+2026-04-20 21:05:56,544 - Episode 133 finished at step 49 | won=False
+2026-04-20 21:05:56,544 - Episode 35/40 | dataset index=134
+2026-04-20 21:06:15,241 - Episode 134 finished at step 7 | won=True
+2026-04-20 21:06:15,242 - Episode 36/40 | dataset index=135
+2026-04-20 21:06:30,094 - Episode 135 finished at step 3 | won=True
+2026-04-20 21:06:30,095 - Episode 37/40 | dataset index=136
+2026-04-20 21:06:53,713 - Episode 136 finished at step 9 | won=True
+2026-04-20 21:06:53,714 - Episode 38/40 | dataset index=137
+2026-04-20 21:07:27,332 - Episode 137 finished at step 14 | won=True
+2026-04-20 21:07:27,332 - Episode 39/40 | dataset index=138
+2026-04-20 21:07:58,145 - Episode 138 finished at step 14 | won=True
+2026-04-20 21:07:58,145 - Episode 40/40 | dataset index=139
+2026-04-20 21:08:30,395 - Episode 139 finished at step 15 | won=True
+2026-04-20 21:08:30,473 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/rl/alfworld_7b_rl_100_140/summary.json
+2026-04-20 21:08:30,474 - Overall success rate: 0.8750
+2026-04-20 21:08:30,474 - pick_heat_then_place_in_recep | 0.8571 (6/7)
+2026-04-20 21:08:30,474 - pick_cool_then_place_in_recep | 0.7500 (6/8)
+2026-04-20 21:08:30,474 - pick_two_obj_and_place | 0.9000 (9/10)
+2026-04-20 21:08:30,474 - look_at_obj_in_light | 0.8333 (5/6)
+2026-04-20 21:08:30,474 - pick_and_place | 1.0000 (7/7)
+2026-04-20 21:08:30,474 - pick_clean_then_place_in_recep | 1.0000 (2/2)

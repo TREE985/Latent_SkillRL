@@ -1,0 +1,31 @@
+{
+  "num_episodes": 2,
+  "num_success": 2,
+  "success_rate": 1.0,
+  "by_task": {
+    "pick_and_place": {
+      "success": 1,
+      "total": 1,
+      "success_rate": 1.0
+    },
+    "pick_heat_then_place_in_recep": {
+      "success": 1,
+      "total": 1,
+      "success_rate": 1.0
+    }
+  },
+  "elapsed_seconds": 31.203654766082764,
+  "model_path": "/mnt/agent-project/ckpts/Alfworld-7B-RL",
+  "eval_dataset": "eval_in_distribution",
+  "use_skills_only_memory": true,
+  "skills_only_memory": {
+    "skills_json_path": "/home/nvidia/Jiashu/SkillRL/memory_data/alfworld/claude_style_skills.json",
+    "retrieval_mode": "template",
+    "top_k": 6,
+    "task_specific_top_k": null,
+    "enable_dynamic_update": true,
+    "update_threshold": 0.4,
+    "max_new_skills": 3,
+    "embedding_model_path": "Qwen/Qwen3-Embedding-0.6B"
+  }
+}

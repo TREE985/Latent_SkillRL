@@ -1,0 +1,34 @@
+2026-03-30 17:29:37,313 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_openai/smoke_test_openai
+2026-03-30 17:29:37,313 - Starting step-0 evaluation | provider=openai model=gpt-4o env_num=2 max_steps=10 eval_dataset=eval_in_distribution
+2026-03-30 17:29:54,223 - Step 0 | finished 0/2
+2026-03-30 17:29:54,615 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-03-30 17:30:42,388 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_openai/smoke_test_openai
+2026-03-30 17:30:42,388 - Starting step-0 evaluation | provider=openai model=gpt-4o env_num=2 max_steps=10 eval_dataset=eval_in_distribution
+2026-03-30 17:31:02,962 - Step 0 | finished 0/2
+2026-03-30 17:31:06,613 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:09,470 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:09,601 - Step 1 | finished 0/2
+2026-03-30 17:31:11,800 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:14,795 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:14,926 - Step 2 | finished 0/2
+2026-03-30 17:31:17,483 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:21,382 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:21,511 - Step 3 | finished 0/2
+2026-03-30 17:31:25,147 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:27,098 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:27,230 - Step 4 | finished 1/2
+2026-03-30 17:31:30,616 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:30,740 - Step 5 | finished 1/2
+2026-03-30 17:31:33,281 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:33,401 - Step 6 | finished 1/2
+2026-03-30 17:31:37,089 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:37,221 - Step 7 | finished 1/2
+2026-03-30 17:31:40,336 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:40,460 - Step 8 | finished 1/2
+2026-03-30 17:31:42,393 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:42,521 - Step 9 | finished 1/2
+2026-03-30 17:31:44,775 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 17:31:44,909 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/logs/step0_eval_openai/smoke_test_openai/summary.json
+2026-03-30 17:31:44,909 - Overall success rate: 0.5000
+2026-03-30 17:31:44,910 - pick_and_place | 1.0000 (1/1)
+2026-03-30 17:31:44,910 - unfinished | 0.0000 (0/1)

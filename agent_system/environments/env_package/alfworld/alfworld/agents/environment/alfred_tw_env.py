@@ -201,10 +201,23 @@ class AlfredTWEnv(object):
             self.num_games = len(self.game_files)
             print("Training with %d games" % (len(self.game_files)))
         else:
+            eval_start_index = self.config['dataset'].get('eval_start_index', 0)
+            if eval_start_index < 0:
+                raise ValueError(f"eval_start_index must be >= 0, got {eval_start_index}")
+
+            if eval_start_index > len(self.game_files):
+                raise ValueError(
+                    f"eval_start_index={eval_start_index} exceeds available games={len(self.game_files)}"
+                )
+
             num_eval_games = self.config['dataset']['num_eval_games'] if self.config['dataset']['num_eval_games'] > 0 else len(self.game_files)
-            self.game_files = self.game_files[:num_eval_games]
+            eval_end_index = None if num_eval_games <= 0 else eval_start_index + num_eval_games
+            self.game_files = self.game_files[eval_start_index:eval_end_index]
             self.num_games = len(self.game_files)
-            print("Evaluating with %d games" % (len(self.game_files)))
+            print(
+                "Evaluating with %d games (start=%d)" %
+                (len(self.game_files), eval_start_index)
+            )
 
     def get_game_logic(self):
         self.game_logic = {

@@ -1,0 +1,24 @@
+2026-03-30 19:18:17,816 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_test
+2026-03-30 19:18:17,816 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=2 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-03-30 19:18:17,816 - Merging verl FSDP checkpoint to HF format: /home/nvidia/miniconda3/envs/skillrl/bin/python /home/nvidia/Jiashu/SkillRL/scripts/model_merger.py merge --backend fsdp --local_dir /mnt/agent-project/ckpts/Alfworld-7B-RL/actor --target_dir /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_test/merged_hf_model
+2026-03-30 19:19:03,123 - Step 0 | finished 0/2
+2026-03-30 19:19:07,800 - Step 1 | finished 0/2
+2026-03-30 19:19:11,461 - Step 2 | finished 0/2
+2026-03-30 19:19:15,172 - Step 3 | finished 0/2
+2026-03-30 19:19:19,110 - Step 4 | finished 1/2
+2026-03-30 19:19:21,250 - Step 5 | finished 1/2
+2026-03-30 19:19:22,854 - Step 6 | finished 1/2
+2026-03-30 19:19:24,762 - Step 7 | finished 1/2
+2026-03-30 19:19:26,598 - Step 8 | finished 1/2
+2026-03-30 19:19:28,406 - Step 9 | finished 1/2
+2026-03-30 19:19:31,772 - All environments finished early at step 9
+2026-03-30 19:19:34,328 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_test/summary.json
+2026-03-30 19:19:34,329 - Overall success rate: 1.0000
+2026-03-30 19:19:34,330 - pick_and_place | 1.0000 (1/1)
+2026-03-30 19:19:34,330 - pick_heat_then_place_in_recep | 1.0000 (1/1)
+2026-03-30 19:30:39,441 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_test
+2026-03-30 19:30:39,441 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=100 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-03-30 19:30:39,441 - Using cached merged HF model: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_test/merged_hf_model
+2026-03-30 19:30:40,409 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-03-30 19:31:03,615 - Step 0 | finished 0/100
+2026-03-30 19:32:47,634 - Step 1 | finished 0/100

@@ -1,0 +1,76 @@
+nohup: ignoring input
+2026-04-08 17:53:47,222 - Run directory: /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_hf_eval_offset0_n20
+2026-04-08 17:53:47,222 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-SFT-hf env_num=5 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-04-08 17:53:47,223 - Evaluation coverage | game_offset=0 num_games=20
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-04-08 17:53:47,833 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:00<00:01,  5.08it/s]Loading checkpoint shards:  22%|██▏       | 2/9 [00:00<00:01,  5.03it/s]Loading checkpoint shards:  33%|███▎      | 3/9 [00:00<00:01,  4.96it/s]Loading checkpoint shards:  44%|████▍     | 4/9 [00:00<00:01,  4.98it/s]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:00<00:00,  5.01it/s]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:01<00:00,  4.98it/s]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:01<00:00,  5.03it/s]Loading checkpoint shards:  89%|████████▉ | 8/9 [00:01<00:00,  5.84it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:01<00:00,  6.68it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:01<00:00,  5.58it/s]
+2026-04-08 17:53:56,590	INFO worker.py:2004 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+/home/nvidia/miniconda3/envs/skillrl/lib/python3.10/site-packages/ray/_private/worker.py:2052: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+Initializing AlfredTWEnv...
+  0%|          | 0/494 [00:00<?, ?it/s] 67%|██████▋   | 330/494 [00:00<00:00, 3282.02it/s]100%|██████████| 494/494 [00:00<00:00, 3102.33it/s]
+Overall we have 140 games in split=eval_in_distribution
+Evaluating with 20 games (start=0)
+use_expert = False
+[SkillsOnlyMemory] Loaded skills: 12 general, 32 task-specific, 11 mistakes  | retrieval_mode=template
+[AlfWorldEnvironmentManager] Skills-only memory enabled (mode=template)
+ALFWorld eval:   0%|          | 0/50 [00:00<?, ?it/s]2026-04-08 17:54:09,972 - Step 0 | finished 0/5
+ALFWorld eval:   0%|          | 0/50 [00:00<?, ?it/s, finished=0/5]ALFWorld eval:   2%|▏         | 1/50 [00:08<07:11,  8.81s/it, finished=0/5]2026-04-08 17:54:18,780 - Step 1 | finished 0/5
+ALFWorld eval:   2%|▏         | 1/50 [00:08<07:11,  8.81s/it, finished=0/5]ALFWorld eval:   4%|▍         | 2/50 [00:19<08:03, 10.08s/it, finished=0/5]2026-04-08 17:54:29,747 - Step 2 | finished 0/5
+ALFWorld eval:   4%|▍         | 2/50 [00:19<08:03, 10.08s/it, finished=0/5]ALFWorld eval:   6%|▌         | 3/50 [00:32<08:47, 11.23s/it, finished=0/5]2026-04-08 17:54:42,347 - Step 3 | finished 0/5
+ALFWorld eval:   6%|▌         | 3/50 [00:32<08:47, 11.23s/it, finished=0/5]ALFWorld eval:   8%|▊         | 4/50 [00:45<09:06, 11.89s/it, finished=0/5]2026-04-08 17:54:55,242 - Step 4 | finished 0/5
+ALFWorld eval:   8%|▊         | 4/50 [00:45<09:06, 11.89s/it, finished=0/5]ALFWorld eval:  10%|█         | 5/50 [00:56<08:41, 11.58s/it, finished=0/5]2026-04-08 17:55:06,284 - Step 5 | finished 0/5
+ALFWorld eval:  10%|█         | 5/50 [00:56<08:41, 11.58s/it, finished=0/5]ALFWorld eval:  12%|█▏        | 6/50 [01:07<08:25, 11.49s/it, finished=0/5]2026-04-08 17:55:17,583 - Step 6 | finished 0/5
+ALFWorld eval:  12%|█▏        | 6/50 [01:07<08:25, 11.49s/it, finished=0/5]ALFWorld eval:  14%|█▍        | 7/50 [01:19<08:24, 11.73s/it, finished=0/5]2026-04-08 17:55:29,814 - Step 7 | finished 0/5
+ALFWorld eval:  14%|█▍        | 7/50 [01:19<08:24, 11.73s/it, finished=0/5]ALFWorld eval:  16%|█▌        | 8/50 [01:33<08:39, 12.36s/it, finished=0/5]2026-04-08 17:55:43,526 - Step 8 | finished 0/5
+ALFWorld eval:  16%|█▌        | 8/50 [01:33<08:39, 12.36s/it, finished=0/5]ALFWorld eval:  18%|█▊        | 9/50 [01:45<08:16, 12.10s/it, finished=0/5]2026-04-08 17:55:55,051 - Step 9 | finished 0/5
+ALFWorld eval:  18%|█▊        | 9/50 [01:45<08:16, 12.10s/it, finished=0/5]ALFWorld eval:  20%|██        | 10/50 [01:56<08:01, 12.04s/it, finished=0/5]2026-04-08 17:56:06,960 - Step 10 | finished 0/5
+ALFWorld eval:  20%|██        | 10/50 [01:56<08:01, 12.04s/it, finished=0/5]ALFWorld eval:  22%|██▏       | 11/50 [02:09<07:53, 12.14s/it, finished=0/5]2026-04-08 17:56:19,315 - Step 11 | finished 0/5
+ALFWorld eval:  22%|██▏       | 11/50 [02:09<07:53, 12.14s/it, finished=0/5]ALFWorld eval:  24%|██▍       | 12/50 [02:25<08:30, 13.42s/it, finished=0/5]2026-04-08 17:56:35,677 - Step 12 | finished 0/5
+ALFWorld eval:  24%|██▍       | 12/50 [02:25<08:30, 13.42s/it, finished=0/5]ALFWorld eval:  26%|██▌       | 13/50 [02:38<08:07, 13.17s/it, finished=0/5]2026-04-08 17:56:48,269 - Step 13 | finished 0/5
+ALFWorld eval:  26%|██▌       | 13/50 [02:38<08:07, 13.17s/it, finished=0/5]ALFWorld eval:  28%|██▊       | 14/50 [02:48<07:18, 12.17s/it, finished=0/5]2026-04-08 17:56:58,118 - Step 14 | finished 0/5
+ALFWorld eval:  28%|██▊       | 14/50 [02:48<07:18, 12.17s/it, finished=0/5]ALFWorld eval:  30%|███       | 15/50 [02:59<07:01, 12.05s/it, finished=0/5]2026-04-08 17:57:09,880 - Step 15 | finished 0/5
+ALFWorld eval:  30%|███       | 15/50 [02:59<07:01, 12.05s/it, finished=0/5]ALFWorld eval:  32%|███▏      | 16/50 [03:14<07:18, 12.89s/it, finished=0/5]2026-04-08 17:57:24,735 - Step 16 | finished 0/5
+ALFWorld eval:  32%|███▏      | 16/50 [03:14<07:18, 12.89s/it, finished=0/5]ALFWorld eval:  34%|███▍      | 17/50 [03:26<06:49, 12.40s/it, finished=0/5]2026-04-08 17:57:35,991 - Step 17 | finished 0/5
+ALFWorld eval:  34%|███▍      | 17/50 [03:26<06:49, 12.40s/it, finished=0/5]ALFWorld eval:  36%|███▌      | 18/50 [03:37<06:31, 12.22s/it, finished=0/5]2026-04-08 17:57:47,802 - Step 18 | finished 0/5
+ALFWorld eval:  36%|███▌      | 18/50 [03:37<06:31, 12.22s/it, finished=0/5]ALFWorld eval:  38%|███▊      | 19/50 [03:47<05:57, 11.52s/it, finished=0/5]2026-04-08 17:57:57,680 - Step 19 | finished 0/5
+ALFWorld eval:  38%|███▊      | 19/50 [03:47<05:57, 11.52s/it, finished=0/5]ALFWorld eval:  40%|████      | 20/50 [04:01<06:01, 12.05s/it, finished=0/5]2026-04-08 17:58:10,984 - Step 20 | finished 0/5
+ALFWorld eval:  40%|████      | 20/50 [04:01<06:01, 12.05s/it, finished=0/5]ALFWorld eval:  42%|████▏     | 21/50 [04:08<05:11, 10.75s/it, finished=0/5]2026-04-08 17:58:18,700 - Step 21 | finished 0/5
+ALFWorld eval:  42%|████▏     | 21/50 [04:08<05:11, 10.75s/it, finished=0/5]ALFWorld eval:  44%|████▍     | 22/50 [04:18<04:56, 10.59s/it, finished=0/5]2026-04-08 17:58:28,917 - Step 22 | finished 0/5
+ALFWorld eval:  44%|████▍     | 22/50 [04:18<04:56, 10.59s/it, finished=0/5]ALFWorld eval:  46%|████▌     | 23/50 [04:28<04:37, 10.26s/it, finished=0/5]2026-04-08 17:58:38,411 - Step 23 | finished 0/5
+ALFWorld eval:  46%|████▌     | 23/50 [04:28<04:37, 10.26s/it, finished=0/5]ALFWorld eval:  48%|████▊     | 24/50 [04:40<04:41, 10.82s/it, finished=0/5]2026-04-08 17:58:50,547 - Step 24 | finished 0/5
+ALFWorld eval:  48%|████▊     | 24/50 [04:40<04:41, 10.82s/it, finished=0/5]ALFWorld eval:  50%|█████     | 25/50 [04:49<04:16, 10.26s/it, finished=0/5]2026-04-08 17:58:59,487 - Step 25 | finished 0/5
+ALFWorld eval:  50%|█████     | 25/50 [04:49<04:16, 10.26s/it, finished=0/5]ALFWorld eval:  52%|█████▏    | 26/50 [05:01<04:18, 10.76s/it, finished=0/5]2026-04-08 17:59:11,408 - Step 26 | finished 0/5
+ALFWorld eval:  52%|█████▏    | 26/50 [05:01<04:18, 10.76s/it, finished=0/5]ALFWorld eval:  54%|█████▍    | 27/50 [05:10<03:57, 10.32s/it, finished=0/5]2026-04-08 17:59:20,716 - Step 27 | finished 0/5
+ALFWorld eval:  54%|█████▍    | 27/50 [05:10<03:57, 10.32s/it, finished=0/5]ALFWorld eval:  56%|█████▌    | 28/50 [05:22<03:58, 10.83s/it, finished=0/5]2026-04-08 17:59:32,744 - Step 28 | finished 0/5
+ALFWorld eval:  56%|█████▌    | 28/50 [05:22<03:58, 10.83s/it, finished=0/5]ALFWorld eval:  58%|█████▊    | 29/50 [05:34<03:53, 11.11s/it, finished=0/5]2026-04-08 17:59:44,498 - Step 29 | finished 0/5
+ALFWorld eval:  58%|█████▊    | 29/50 [05:34<03:53, 11.11s/it, finished=0/5]ALFWorld eval:  60%|██████    | 30/50 [05:44<03:35, 10.76s/it, finished=0/5]2026-04-08 17:59:54,428 - Step 30 | finished 0/5
+ALFWorld eval:  60%|██████    | 30/50 [05:44<03:35, 10.76s/it, finished=0/5]ALFWorld eval:  62%|██████▏   | 31/50 [05:53<03:13, 10.19s/it, finished=0/5]2026-04-08 18:00:03,287 - Step 31 | finished 0/5
+ALFWorld eval:  62%|██████▏   | 31/50 [05:53<03:13, 10.19s/it, finished=0/5]ALFWorld eval:  64%|██████▍   | 32/50 [06:04<03:06, 10.35s/it, finished=0/5]2026-04-08 18:00:14,021 - Step 32 | finished 0/5
+ALFWorld eval:  64%|██████▍   | 32/50 [06:04<03:06, 10.35s/it, finished=0/5]ALFWorld eval:  66%|██████▌   | 33/50 [06:10<02:38,  9.30s/it, finished=0/5]2026-04-08 18:00:20,876 - Step 33 | finished 0/5
+ALFWorld eval:  66%|██████▌   | 33/50 [06:10<02:38,  9.30s/it, finished=0/5]ALFWorld eval:  68%|██████▊   | 34/50 [06:19<02:26,  9.13s/it, finished=0/5]2026-04-08 18:00:29,613 - Step 34 | finished 0/5
+ALFWorld eval:  68%|██████▊   | 34/50 [06:19<02:26,  9.13s/it, finished=0/5]ALFWorld eval:  70%|███████   | 35/50 [06:30<02:22,  9.51s/it, finished=0/5]2026-04-08 18:00:39,992 - Step 35 | finished 0/5
+ALFWorld eval:  70%|███████   | 35/50 [06:30<02:22,  9.51s/it, finished=0/5]ALFWorld eval:  72%|███████▏  | 36/50 [06:38<02:06,  9.05s/it, finished=0/5]2026-04-08 18:00:47,991 - Step 36 | finished 0/5
+ALFWorld eval:  72%|███████▏  | 36/50 [06:38<02:06,  9.05s/it, finished=0/5]ALFWorld eval:  74%|███████▍  | 37/50 [06:48<02:02,  9.45s/it, finished=0/5]2026-04-08 18:00:58,350 - Step 37 | finished 0/5
+ALFWorld eval:  74%|███████▍  | 37/50 [06:48<02:02,  9.45s/it, finished=0/5]ALFWorld eval:  76%|███████▌  | 38/50 [06:59<02:00, 10.05s/it, finished=0/5]2026-04-08 18:01:09,819 - Step 38 | finished 0/5
+ALFWorld eval:  76%|███████▌  | 38/50 [06:59<02:00, 10.05s/it, finished=0/5]ALFWorld eval:  78%|███████▊  | 39/50 [07:07<01:44,  9.47s/it, finished=0/5]2026-04-08 18:01:17,927 - Step 39 | finished 0/5
+ALFWorld eval:  78%|███████▊  | 39/50 [07:07<01:44,  9.47s/it, finished=0/5]ALFWorld eval:  80%|████████  | 40/50 [07:19<01:40, 10.02s/it, finished=0/5]2026-04-08 18:01:29,219 - Step 40 | finished 0/5
+ALFWorld eval:  80%|████████  | 40/50 [07:19<01:40, 10.02s/it, finished=0/5]ALFWorld eval:  82%|████████▏ | 41/50 [07:29<01:31, 10.14s/it, finished=0/5]2026-04-08 18:01:39,664 - Step 41 | finished 0/5
+ALFWorld eval:  82%|████████▏ | 41/50 [07:29<01:31, 10.14s/it, finished=0/5]ALFWorld eval:  84%|████████▍ | 42/50 [07:39<01:20, 10.01s/it, finished=0/5]2026-04-08 18:01:49,347 - Step 42 | finished 0/5
+ALFWorld eval:  84%|████████▍ | 42/50 [07:39<01:20, 10.01s/it, finished=0/5]ALFWorld eval:  86%|████████▌ | 43/50 [07:50<01:13, 10.46s/it, finished=0/5]2026-04-08 18:02:00,850 - Step 43 | finished 0/5
+ALFWorld eval:  86%|████████▌ | 43/50 [07:50<01:13, 10.46s/it, finished=0/5]ALFWorld eval:  88%|████████▊ | 44/50 [08:01<01:02, 10.44s/it, finished=0/5]2026-04-08 18:02:11,267 - Step 44 | finished 0/5
+ALFWorld eval:  88%|████████▊ | 44/50 [08:01<01:02, 10.44s/it, finished=0/5]ALFWorld eval:  90%|█████████ | 45/50 [08:10<00:50, 10.09s/it, finished=0/5]2026-04-08 18:02:20,545 - Step 45 | finished 0/5
+ALFWorld eval:  90%|█████████ | 45/50 [08:10<00:50, 10.09s/it, finished=0/5]ALFWorld eval:  92%|█████████▏| 46/50 [08:18<00:38,  9.53s/it, finished=0/5]2026-04-08 18:02:28,752 - Step 46 | finished 0/5
+ALFWorld eval:  92%|█████████▏| 46/50 [08:18<00:38,  9.53s/it, finished=0/5]ALFWorld eval:  94%|█████████▍| 47/50 [08:32<00:31, 10.65s/it, finished=0/5]2026-04-08 18:02:42,006 - Step 47 | finished 0/5
+ALFWorld eval:  94%|█████████▍| 47/50 [08:32<00:31, 10.65s/it, finished=0/5]ALFWorld eval:  96%|█████████▌| 48/50 [08:39<00:19,  9.80s/it, finished=0/5]2026-04-08 18:02:49,831 - Step 48 | finished 0/5
+ALFWorld eval:  96%|█████████▌| 48/50 [08:39<00:19,  9.80s/it, finished=0/5]ALFWorld eval:  98%|█████████▊| 49/50 [08:46<00:08,  8.89s/it, finished=0/5]2026-04-08 18:02:56,583 - Step 49 | finished 0/5
+ALFWorld eval:  98%|█████████▊| 49/50 [08:46<00:08,  8.89s/it, finished=0/5]2026-04-08 18:03:08,127 - All environments finished early at step 49
+ALFWorld eval:  98%|█████████▊| 49/50 [08:58<00:10, 10.98s/it, finished=0/5]2026-04-08 18:03:08,152 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_hf_eval_offset0_n20/summary.json
+2026-04-08 18:03:08,153 - Overall success rate: 0.0000
+2026-04-08 18:03:08,153 - pick_clean_then_place_in_recep | 0.0000 (0/1)
+2026-04-08 18:03:08,153 - pick_two_obj_and_place | 0.0000 (0/1)
+2026-04-08 18:03:08,153 - pick_and_place | 0.0000 (0/1)
+2026-04-08 18:03:08,153 - pick_cool_then_place_in_recep | 0.0000 (0/1)
+2026-04-08 18:03:08,153 - pick_heat_then_place_in_recep | 0.0000 (0/1)
+

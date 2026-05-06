@@ -1,17 +1,32 @@
 set -x
 
 ENGINE=${1:-vllm}
+if [ "$#" -gt 0 ]; then
+    shift
+fi
 
 # export WANDB_API_KEY=""
 # export MODEL_PATH=""
 export WANDB_NAME="search_grpo_qwen2.5_7b_skills"
 
+if [ -z "${MODEL_PATH:-}" ]; then
+    echo "MODEL_PATH is not set."
+    exit 1
+fi
+
+RESOLVED_MODEL_PATH="$MODEL_PATH"
+if [ -d "$MODEL_PATH/actor" ] && [ -f "$MODEL_PATH/actor/config.json" ] && [ ! -f "$MODEL_PATH/config.json" ]; then
+    RESOLVED_MODEL_PATH="$MODEL_PATH/actor"
+    echo "Detected verl checkpoint root. Using actor directory: $RESOLVED_MODEL_PATH"
+fi
+
 train_data_size=256
 val_data_size=512
 group_size=4
 
-TRAIN_DATA="$HOME/data/searchR1_processed_direct/train.parquet"
-VAL_DATA="$HOME/data/searchR1_processed_direct/test.parquet"
+DATA_ROOT="${DATA_ROOT:-/home/nvidia/Jiashu/SkillRL/data/searchR1_processed_direct}"
+TRAIN_DATA="${TRAIN_DATA:-$DATA_ROOT/train.parquet}"
+VAL_DATA="${VAL_DATA:-$DATA_ROOT/test.parquet}"
 
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
@@ -24,10 +39,10 @@ python3 -m verl.trainer.main_ppo \
     data.filter_overlong_prompts=True \
     data.truncation='left' \
     data.return_raw_chat=True \
-    actor_rollout_ref.model.path=$MODEL_PATH \
+    actor_rollout_ref.model.path=$RESOLVED_MODEL_PATH \
     actor_rollout_ref.actor.optim.lr=1e-6 \
     actor_rollout_ref.actor.optim.lr_warmup_steps_ratio=0.1 \
-    actor_rollout_ref.model.use_remove_padding=True \
+    actor_rollout_ref.model.use_remove_padding=False \
     actor_rollout_ref.actor.ppo_mini_batch_size=256 \
     actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu=8 \
     actor_rollout_ref.actor.use_kl_loss=True \

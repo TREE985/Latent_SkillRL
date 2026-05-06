@@ -1,0 +1,63 @@
+2026-03-30 20:18:39,040 - Run directory: /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset40_n20
+2026-03-30 20:18:39,040 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-RL env_num=20 max_steps=50 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-03-30 20:18:39,040 - Evaluation coverage | game_offset=40 num_games=20
+2026-03-30 20:18:39,040 - Merging verl FSDP checkpoint to HF format: /home/nvidia/miniconda3/envs/skillrl/bin/python /home/nvidia/Jiashu/SkillRL/scripts/model_merger.py merge --backend fsdp --local_dir /mnt/agent-project/ckpts/Alfworld-7B-RL/actor --target_dir /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset40_n20/merged_hf_model
+2026-03-30 20:19:07,974 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-03-30 20:19:27,805 - Step 0 | finished 0/20
+2026-03-30 20:19:50,754 - Step 1 | finished 0/20
+2026-03-30 20:20:14,292 - Step 2 | finished 0/20
+2026-03-30 20:20:40,501 - Step 3 | finished 0/20
+2026-03-30 20:21:08,102 - Step 4 | finished 0/20
+2026-03-30 20:21:34,616 - Step 5 | finished 0/20
+2026-03-30 20:22:03,441 - Step 6 | finished 0/20
+2026-03-30 20:22:30,180 - Step 7 | finished 0/20
+2026-03-30 20:22:58,928 - Step 8 | finished 1/20
+2026-03-30 20:23:28,949 - Step 9 | finished 1/20
+2026-03-30 20:23:57,924 - Step 10 | finished 1/20
+2026-03-30 20:24:27,055 - Step 11 | finished 1/20
+2026-03-30 20:24:59,302 - Step 12 | finished 1/20
+2026-03-30 20:25:26,862 - Step 13 | finished 2/20
+2026-03-30 20:25:55,678 - Step 14 | finished 2/20
+2026-03-30 20:26:22,449 - Step 15 | finished 3/20
+2026-03-30 20:26:49,851 - Step 16 | finished 4/20
+2026-03-30 20:27:14,788 - Step 17 | finished 4/20
+2026-03-30 20:27:38,340 - Step 18 | finished 4/20
+2026-03-30 20:27:59,887 - Step 19 | finished 6/20
+2026-03-30 20:28:23,736 - Step 20 | finished 8/20
+2026-03-30 20:28:40,999 - Step 21 | finished 8/20
+2026-03-30 20:28:58,252 - Step 22 | finished 10/20
+2026-03-30 20:29:12,830 - Step 23 | finished 11/20
+2026-03-30 20:29:25,428 - Step 24 | finished 13/20
+2026-03-30 20:29:35,905 - Step 25 | finished 16/20
+2026-03-30 20:29:43,498 - Step 26 | finished 16/20
+2026-03-30 20:29:48,409 - Step 27 | finished 16/20
+2026-03-30 20:29:55,701 - Step 28 | finished 16/20
+2026-03-30 20:30:01,139 - Step 29 | finished 16/20
+2026-03-30 20:30:07,236 - Step 30 | finished 16/20
+2026-03-30 20:30:12,620 - Step 31 | finished 16/20
+2026-03-30 20:30:17,778 - Step 32 | finished 16/20
+2026-03-30 20:30:22,782 - Step 33 | finished 17/20
+2026-03-30 20:30:28,514 - Step 34 | finished 17/20
+2026-03-30 20:30:33,453 - Step 35 | finished 17/20
+2026-03-30 20:30:37,505 - Step 36 | finished 17/20
+2026-03-30 20:30:41,296 - Step 37 | finished 17/20
+2026-03-30 20:30:44,960 - Step 38 | finished 17/20
+2026-03-30 20:30:50,724 - Step 39 | finished 17/20
+2026-03-30 20:30:55,682 - Step 40 | finished 17/20
+2026-03-30 20:30:59,823 - Step 41 | finished 17/20
+2026-03-30 20:31:04,331 - Step 42 | finished 17/20
+2026-03-30 20:31:09,240 - Step 43 | finished 17/20
+2026-03-30 20:31:13,166 - Step 44 | finished 17/20
+2026-03-30 20:31:18,122 - Step 45 | finished 17/20
+2026-03-30 20:31:21,780 - Step 46 | finished 17/20
+2026-03-30 20:31:26,120 - Step 47 | finished 17/20
+2026-03-30 20:31:31,073 - Step 48 | finished 17/20
+2026-03-30 20:31:35,512 - Step 49 | finished 17/20
+2026-03-30 20:31:41,443 - All environments finished early at step 49
+2026-03-30 20:31:41,492 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/logs/step0_eval_local/local_skillbank_eval_id_offset40_n20/summary.json
+2026-03-30 20:31:41,492 - Overall success rate: 0.8500
+2026-03-30 20:31:41,493 - pick_clean_then_place_in_recep | 1.0000 (2/2)
+2026-03-30 20:31:41,493 - pick_cool_then_place_in_recep | 1.0000 (9/9)
+2026-03-30 20:31:41,493 - pick_two_obj_and_place | 0.8000 (4/5)
+2026-03-30 20:31:41,493 - pick_and_place | 1.0000 (1/1)
+2026-03-30 20:31:41,493 - look_at_obj_in_light | 0.3333 (1/3)

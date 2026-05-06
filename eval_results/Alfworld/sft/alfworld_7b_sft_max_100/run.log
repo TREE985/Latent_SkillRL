@@ -1,0 +1,73 @@
+2026-04-09 02:14:50,208 - Run directory: /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_max_100
+2026-04-09 02:14:50,208 - Starting local step-0 evaluation | model_path=/mnt/agent-project/ckpts/Alfworld-7B-SFT-hf env_num=8 max_steps=100 eval_dataset=eval_in_distribution skills=True retrieval_mode=template
+2026-04-09 02:14:50,208 - Evaluation coverage | game_offset=0 num_games=30
+2026-04-09 02:14:50,208 - --env-num=8 is ignored for execution concurrency. This script now runs strictly serial on a single GPU process. Total requested games=30.
+2026-04-09 02:14:50,832 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-09 02:14:52,584 - Episode 1/30 | dataset index=0
+2026-04-09 02:15:27,926 - Episode 0 finished at step 9 | won=True
+2026-04-09 02:15:27,927 - Episode 2/30 | dataset index=1
+2026-04-09 02:16:58,427 - Episode 1 finished at step 49 | won=False
+2026-04-09 02:16:58,428 - Episode 3/30 | dataset index=2
+2026-04-09 02:18:44,235 - Episode 2 finished at step 49 | won=False
+2026-04-09 02:18:44,236 - Episode 4/30 | dataset index=3
+2026-04-09 02:21:05,984 - Episode 3 finished at step 49 | won=False
+2026-04-09 02:21:05,984 - Episode 5/30 | dataset index=4
+2026-04-09 02:23:28,761 - Episode 4 finished at step 49 | won=False
+2026-04-09 02:23:28,761 - Episode 6/30 | dataset index=5
+2026-04-09 02:24:59,794 - Episode 5 finished at step 49 | won=False
+2026-04-09 02:24:59,794 - Episode 7/30 | dataset index=6
+2026-04-09 02:27:12,860 - Episode 6 finished at step 49 | won=False
+2026-04-09 02:27:12,861 - Episode 8/30 | dataset index=7
+2026-04-09 02:29:11,525 - Episode 7 finished at step 49 | won=False
+2026-04-09 02:29:11,525 - Episode 9/30 | dataset index=8
+2026-04-09 02:31:04,523 - Episode 8 finished at step 49 | won=False
+2026-04-09 02:31:04,524 - Episode 10/30 | dataset index=9
+2026-04-09 02:32:32,277 - Episode 9 finished at step 49 | won=False
+2026-04-09 02:32:32,278 - Episode 11/30 | dataset index=10
+2026-04-09 02:32:53,019 - Episode 10 finished at step 7 | won=True
+2026-04-09 02:32:53,019 - Episode 12/30 | dataset index=11
+2026-04-09 02:34:52,238 - Episode 11 finished at step 49 | won=False
+2026-04-09 02:34:52,238 - Episode 13/30 | dataset index=12
+2026-04-09 02:36:45,321 - Episode 12 finished at step 49 | won=False
+2026-04-09 02:36:45,322 - Episode 14/30 | dataset index=13
+2026-04-09 02:38:59,937 - Episode 13 finished at step 49 | won=False
+2026-04-09 02:38:59,937 - Episode 15/30 | dataset index=14
+2026-04-09 02:40:32,604 - Episode 14 finished at step 49 | won=False
+2026-04-09 02:40:32,605 - Episode 16/30 | dataset index=15
+2026-04-09 02:42:32,478 - Episode 15 finished at step 49 | won=False
+2026-04-09 02:42:32,479 - Episode 17/30 | dataset index=16
+2026-04-09 02:43:58,667 - Episode 16 finished at step 49 | won=False
+2026-04-09 02:43:58,667 - Episode 18/30 | dataset index=17
+2026-04-09 02:45:37,463 - Episode 17 finished at step 49 | won=False
+2026-04-09 02:45:37,463 - Episode 19/30 | dataset index=18
+2026-04-09 02:47:31,092 - Episode 18 finished at step 49 | won=False
+2026-04-09 02:47:31,092 - Episode 20/30 | dataset index=19
+2026-04-09 02:49:48,226 - Episode 19 finished at step 49 | won=False
+2026-04-09 02:49:48,226 - Episode 21/30 | dataset index=20
+2026-04-09 02:51:10,868 - Episode 20 finished at step 49 | won=False
+2026-04-09 02:51:10,868 - Episode 22/30 | dataset index=21
+2026-04-09 02:53:28,287 - Episode 21 finished at step 49 | won=False
+2026-04-09 02:53:28,287 - Episode 23/30 | dataset index=22
+2026-04-09 02:55:37,321 - Episode 22 finished at step 49 | won=False
+2026-04-09 02:55:37,322 - Episode 24/30 | dataset index=23
+2026-04-09 02:57:41,906 - Episode 23 finished at step 49 | won=False
+2026-04-09 02:57:41,906 - Episode 25/30 | dataset index=24
+2026-04-09 02:59:40,434 - Episode 24 finished at step 49 | won=False
+2026-04-09 02:59:40,434 - Episode 26/30 | dataset index=25
+2026-04-09 03:01:13,023 - Episode 25 finished at step 49 | won=False
+2026-04-09 03:01:13,024 - Episode 27/30 | dataset index=26
+2026-04-09 03:03:38,430 - Episode 26 finished at step 49 | won=False
+2026-04-09 03:03:38,430 - Episode 28/30 | dataset index=27
+2026-04-09 03:06:03,139 - Episode 27 finished at step 49 | won=False
+2026-04-09 03:06:03,139 - Episode 29/30 | dataset index=28
+2026-04-09 03:08:00,183 - Episode 28 finished at step 49 | won=False
+2026-04-09 03:08:00,184 - Episode 30/30 | dataset index=29
+2026-04-09 03:08:56,985 - Episode 29 finished at step 25 | won=True
+2026-04-09 03:08:57,127 - Finished. Summary saved to /home/nvidia/Jiashu/SkillRL/eval_results/Alfworld/sft/alfworld_7b_sft_max_100/summary.json
+2026-04-09 03:08:57,128 - Overall success rate: 0.1000
+2026-04-09 03:08:57,128 - pick_and_place | 0.2000 (2/10)
+2026-04-09 03:08:57,128 - pick_heat_then_place_in_recep | 0.0000 (0/1)
+2026-04-09 03:08:57,128 - pick_clean_then_place_in_recep | 0.0000 (0/8)
+2026-04-09 03:08:57,128 - pick_cool_then_place_in_recep | 0.0000 (0/5)
+2026-04-09 03:08:57,128 - pick_two_obj_and_place | 0.0000 (0/4)
+2026-04-09 03:08:57,128 - look_at_obj_in_light | 0.5000 (1/2)
